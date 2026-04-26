@@ -1,0 +1,120 @@
+{
+  "CVE-2013-2055": {
+    "OWNER": "apache",
+    "REPO": "wicket",
+    "description": "Unspecified vulnerability in Apache Wicket 1.4.x before 1.4.23, 1.5.x before 1.5.11, and 6.x before 6.8.0 allows remote attackers to obtain sensitive information via vectors that cause raw HTML templates to be rendered without being processed and reading the information that is outside of wicket:panel markup.",
+    "cwe": [],
+    "version_pair": [
+      {
+        "appears": "1.5.0",
+        "not appears": "1.5.1",
+        "BASE_TAG": "wicket-1.5.0",
+        "HEAD_TAG": "wicket-1.5.1",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/wicket-1.5.0...wicket-1.5.1",
+        "seek_patch": true,
+        "compile": false,
+        "cause": "Failed to collect dependencies at org.apache.wicket:wicket-core:jar:1.5.1"
+      },
+      {
+        "appears": "1.5.2",
+        "not appears": "1.5.1",
+        "BASE_TAG": "wicket-1.5.1",
+        "HEAD_TAG": "wicket-1.5.2",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/wicket-1.5.1...wicket-1.5.2",
+        "seek_patch": false,
+        "compile": false,
+        "cause": "Failed to collect dependencies at org.apache.wicket:wicket-core:jar:1.5.1"
+      },
+      {
+        "appears": "1.5.8",
+        "not appears": "1.5.9",
+        "BASE_TAG": "release/wicket.1.5.8",
+        "HEAD_TAG": "release/wicket-1.5.9",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/release/wicket.1.5.8...release/wicket-1.5.9",
+        "seek_patch": true,
+        "compile": false,
+        "cause": "Failed to collect dependencies at org.apache.wicket:wicket-core:jar:1.5.9"
+      },
+      {
+        "appears": "1.5.10",
+        "not appears": "1.5.9",
+        "BASE_TAG": "release/wicket-1.5.9",
+        "HEAD_TAG": "release/wicket-1.5.10",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/release/wicket-1.5.9...release/wicket-1.5.10",
+        "seek_patch": false,
+        "compile": false,
+        "cause": "Failed to collect dependencies at org.apache.wicket:wicket-core:jar:1.5.9"
+      },
+      {
+        "appears": "1.5.10",
+        "not appears": "1.5.11",
+        "BASE_TAG": "release/wicket-1.5.10",
+        "HEAD_TAG": "wicket-1.5.11",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/release/wicket-1.5.10...wicket-1.5.11",
+        "seek_patch": true,
+        "compile": true,
+        "cause": ""
+      },
+      {
+        "appears": "6.0.0-beta1",
+        "not appears": "1.5.17",
+        "BASE_TAG": "unknown",
+        "HEAD_TAG": "wicket-6.0.0-beta1",
+        "COMPARE_URL": "unknown",
+        "seek_patch": false,
+        "compile": true,
+        "cause": ""
+      },
+      {
+        "appears": "6.0.0",
+        "not appears": "6.1.0",
+        "BASE_TAG": "wicket-6.0.0",
+        "HEAD_TAG": "wicket-6.1.0",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/wicket-6.0.0...wicket-6.1.0",
+        "seek_patch": true,
+        "compile": false,
+        "cause": "Could not transfer artifact org.apache.wicket:wicket-util:jar:6.1.0"
+      },
+      {
+        "appears": "6.1.1",
+        "not appears": "6.1.0",
+        "BASE_TAG": "wicket-6.1.0",
+        "HEAD_TAG": "wicket-6.1.1",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/wicket-6.1.0...wicket-6.1.1",
+        "seek_patch": false,
+        "compile": false,
+        "cause": "Could not transfer artifact org.apache.wicket:wicket-util:jar:6.1.0"
+      },
+      {
+        "appears": "6.3.0",
+        "not appears": "6.4.0",
+        "BASE_TAG": "wicket-6.3.0",
+        "HEAD_TAG": "wicket-6.4.0",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/wicket-6.3.0...wicket-6.4.0",
+        "seek_patch": true,
+        "compile": false,
+        "cause": "Could not transfer artifact org.apache.wicket:wicket-util:jar:6.4.0"
+      },
+      {
+        "appears": "6.5.0",
+        "not appears": "6.4.0",
+        "BASE_TAG": "wicket-6.4.0",
+        "HEAD_TAG": "wicket-6.5.0",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/wicket-6.4.0...wicket-6.5.0",
+        "seek_patch": false,
+        "compile": false,
+        "cause": "Could not transfer artifact org.apache.wicket:wicket-util:jar:6.4.0"
+      },
+      {
+        "appears": "6.7.0",
+        "not appears": "6.8.0",
+        "BASE_TAG": "wicket-6.7.0",
+        "HEAD_TAG": "wicket-6.8.0",
+        "COMPARE_URL": "https://github.com/apache/wicket/compare/wicket-6.7.0...wicket-6.8.0",
+        "seek_patch": true,
+        "compile": true,
+        "cause": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,2167 @@
+{
+    "CVE-2011-2732": {
+        "description": "CRLF injection vulnerability in the logout functionality in VMware SpringSource Spring Security before 2.0.7 and 3.0.x before 3.0.6 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via the spring-security-redirect parameter.",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2013-2055": {
+        "description": "Unspecified vulnerability in Apache Wicket 1.4.x before 1.4.23, 1.5.x before 1.5.11, and 6.x before 6.8.0 allows remote attackers to obtain sensitive information via vectors that cause raw HTML templates to be rendered without being processed and reading the information that is outside of wicket:panel markup.",
+        "cwe": [],
+        "github_url": "https://github.com/apache/wicket",
+        "owner": "apache",
+        "repo": "wicket"
+    },
+    "CVE-2013-5679": {
+        "description": "The authenticated-encryption feature in the symmetric-encryption implementation in the OWASP Enterprise Security API (ESAPI) for Java 2.x before 2.1.0 does not properly resist tampering with serialized ciphertext, which makes it easier for remote attackers to bypass intended cryptographic protection mechanisms via an attack against authenticity in the default configuration, involving a null MAC and a zero MAC length.",
+        "cwe": [
+            "CWE-310"
+        ],
+        "github_url": "https://github.com/ESAPI/esapi-java-legacy",
+        "owner": "ESAPI",
+        "repo": "esapi-java-legacy"
+    },
+    "CVE-2013-6430": {
+        "description": "The JavaScriptUtils.javaScriptEscape method in web/util/JavaScriptUtils.java in Spring MVC in Spring Framework before 3.2.2 does not properly escape certain characters, which allows remote attackers to conduct cross-site scripting (XSS) attacks via a (1) line separator or (2) paragraph separator Unicode character or (3) left or (4) right angle bracket.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2013-7285": {
+        "description": "Xstream API versions up to 1.4.6 and version 1.4.10, if the security framework has not been initialized, may allow a remote attacker to run arbitrary shell commands by manipulating the processed input stream when unmarshaling XML or any supported format. e.g. JSON.",
+        "cwe": [
+            "CWE-78"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2014-0050": {
+        "description": "MultipartStream.java in Apache Commons FileUpload before 1.3.1, as used in Apache Tomcat, JBoss Web, and other products, allows remote attackers to cause a denial of service (infinite loop and CPU consumption) via a crafted Content-Type header that bypasses a loop's intended exit conditions.",
+        "cwe": [
+            "CWE-264"
+        ],
+        "github_url": "https://github.com/apache/commons-fileupload",
+        "owner": "apache",
+        "repo": "commons-fileupload"
+    },
+    "CVE-2014-0097": {
+        "description": "The ActiveDirectoryLdapAuthenticator in Spring Security 3.2.0 to 3.2.1 and 3.1.0 to 3.1.5 does not check the password length. If the directory allows anonymous binds then it may incorrectly authenticate a user who supplies an empty password.",
+        "cwe": [
+            "CWE-287"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2014-0114": {
+        "description": "Apache Commons BeanUtils, as distributed in lib/commons-beanutils-1.8.0.jar in Apache Struts 1.x through 1.3.10 and in other products requiring commons-beanutils through 1.9.2, does not suppress the class property, which allows remote attackers to \"manipulate\" the ClassLoader and execute arbitrary code via the class parameter, as demonstrated by the passing of this parameter to the getClass method of the ActionForm object in Struts 1.",
+        "cwe": [
+            "CWE-20"
+        ],
+        "github_url": "https://github.com/apache/commons-beanutils",
+        "owner": "apache",
+        "repo": "commons-beanutils"
+    },
+    "CVE-2014-125087": {
+        "description": "A vulnerability was found in java-xmlbuilder up to 1.1. It has been rated as problematic. Affected by this issue is some unknown functionality. The manipulation leads to xml external entity reference. Upgrading to version 1.2 is able to address this issue. The name of the patch is e6fddca201790abab4f2c274341c0bb8835c3e73. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-221480.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/jmurty/java-xmlbuilder",
+        "owner": "jmurty",
+        "repo": "java-xmlbuilder"
+    },
+    "CVE-2014-3004": {
+        "description": "The default configuration for the Xerces SAX Parser in Castor before 1.3.3 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted XML document.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/castor-data-binding/castor",
+        "owner": "castor-data-binding",
+        "repo": "castor"
+    },
+    "CVE-2014-3578": {
+        "description": "Directory traversal vulnerability in Pivotal Spring Framework 3.x before 3.2.9 and 4.0 before 4.0.5 allows remote attackers to read arbitrary files via a crafted URL.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2014-3584": {
+        "description": "The SamlHeaderInHandler in Apache CXF before 2.6.11, 2.7.x before 2.7.8, and 3.0.x before 3.0.1 allows remote attackers to cause a denial of service (infinite loop) via a crafted SAML token in the authorization header of a request to a JAX-RS service.",
+        "cwe": [
+            "CWE-399"
+        ],
+        "github_url": "https://github.com/apache/cxf",
+        "owner": "apache",
+        "repo": "cxf"
+    },
+    "CVE-2014-3625": {
+        "description": "Directory traversal vulnerability in Pivotal Spring Framework 3.0.4 through 3.2.x before 3.2.12, 4.0.x before 4.0.8, and 4.1.x before 4.1.2 allows remote attackers to read arbitrary files via unspecified vectors, related to static resource handling.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2014-4172": {
+        "description": "A URL parameter injection vulnerability was found in the back-channel ticket validation step of the CAS protocol in Jasig Java CAS Client before 3.3.2, .NET CAS Client before 1.0.2, and phpCAS before 1.3.3 that allow remote attackers to inject arbitrary web script or HTML via the (1) service parameter to validation/AbstractUrlBasedTicketValidator.java or (2) pgtUrl parameter to validation/Cas20ServiceTicketValidator.java.",
+        "cwe": [
+            "CWE-74"
+        ],
+        "github_url": "https://github.com/apereo/java-cas-client",
+        "owner": "apereo",
+        "repo": "java-cas-client"
+    },
+    "CVE-2015-0250": {
+        "description": "XML external entity (XXE) vulnerability in the SVG to (1) PNG and (2) JPG conversion classes in Apache Batik 1.x before 1.8 allows remote attackers to read arbitrary files or cause a denial of service via a crafted SVG file.",
+        "cwe": [
+            "NVD-CWE-Other"
+        ],
+        "github_url": "https://github.com/apache/batik",
+        "owner": "apache",
+        "repo": "batik"
+    },
+    "CVE-2015-2156": {
+        "description": "Netty before 3.9.8.Final, 3.10.x before 3.10.3.Final, 4.0.x before 4.0.28.Final, and 4.1.x before 4.1.0.Beta5 and Play Framework 2.x before 2.3.9 might allow remote attackers to bypass the httpOnly flag on cookies and obtain sensitive information by leveraging improper validation of cookie name and value characters.",
+        "cwe": [
+            "CWE-20"
+        ],
+        "github_url": "https://github.com/netty/netty",
+        "owner": "netty",
+        "repo": "netty"
+    },
+    "CVE-2015-6748": {
+        "description": "Cross-site scripting (XSS) vulnerability in jsoup before 1.8.3.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/jhy/jsoup",
+        "owner": "jhy",
+        "repo": "jsoup"
+    },
+    "CVE-2016-1000031": {
+        "description": "Apache Commons FileUpload before 1.3.3 DiskFileItem File Manipulation Remote Code Execution",
+        "cwe": [
+            "CWE-284"
+        ],
+        "github_url": "https://github.com/apache/commons-fileupload",
+        "owner": "apache",
+        "repo": "commons-fileupload"
+    },
+    "CVE-2016-1000338": {
+        "description": "In Bouncy Castle JCE Provider version 1.55 and earlier the DSA does not fully validate ASN.1 encoding of signature on verification. It is possible to inject extra elements in the sequence making up the signature and still have it validate, which in some cases may allow the introduction of 'invisible' data into a signed structure.",
+        "cwe": [
+            "CWE-347"
+        ],
+        "github_url": "https://github.com/bcgit/bc-java",
+        "owner": "bcgit",
+        "repo": "bc-java"
+    },
+    "CVE-2016-4465": {
+        "description": "The URLValidator class in Apache Struts 2 2.3.20 through 2.3.28.1 and 2.5.x before 2.5.1 allows remote attackers to cause a denial of service via a null value for a URL field.",
+        "cwe": [
+            "CWE-20"
+        ],
+        "github_url": "https://github.com/apache/struts",
+        "owner": "apache",
+        "repo": "struts"
+    },
+    "CVE-2016-6814": {
+        "description": "When an application with unsupported Codehaus versions of Groovy from 1.7.0 to 2.4.3, Apache Groovy 2.4.4 to 2.4.7 on classpath uses standard Java serialization mechanisms, e.g. to communicate between servers or to store local data, it was possible for an attacker to bake a special serialized object that will execute code directly when deserialized. All applications which rely on serialization and do not isolate the code which deserializes objects were subject to this vulnerability.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/apache/groovy",
+        "owner": "apache",
+        "repo": "groovy"
+    },
+    "CVE-2016-7051": {
+        "description": "XmlMapper in the Jackson XML dataformat component (aka jackson-dataformat-xml) before 2.7.8 and 2.8.x before 2.8.4 allows remote attackers to conduct server-side request forgery (SSRF) attacks via vectors related to a DTD.",
+        "cwe": [
+            "CWE-611",
+            "CWE-918"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-dataformat-xml",
+        "owner": "FasterXML",
+        "repo": "jackson-dataformat-xml"
+    },
+    "CVE-2016-9878": {
+        "description": "An issue was discovered in Pivotal Spring Framework before 3.2.18, 4.2.x before 4.2.9, and 4.3.x before 4.3.5. Paths provided to the ResourceServlet were not properly sanitized and as a result exposed to directory traversal attacks.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2016-9879": {
+        "description": "An issue was discovered in Pivotal Spring Security before 3.2.10, 4.1.x before 4.1.4, and 4.2.x before 4.2.1. Spring Security does not consider URL path parameters when processing security constraints. By adding a URL path parameter with an encoded \"/\" to a request, an attacker may be able to bypass a security constraint. The root cause of this issue is a lack of clarity regarding the handling of path parameters in the Servlet Specification. Some Servlet containers include path parameters in the value returned for getPathInfo() and some do not. Spring Security uses the value returned by getPathInfo() as part of the process of mapping requests to security constraints. The unexpected presence of path parameters can cause a constraint to be bypassed. Users of Apache Tomcat (all current versions) are not affected by this vulnerability since Tomcat follows the guidance previously provided by the Servlet Expert group and strips path parameters from the value returned by getContextPath(), getServletPath(), and getPathInfo(). Users of other Servlet containers based on Apache Tomcat may or may not be affected depending on whether or not the handling of path parameters has been modified. Users of IBM WebSphere Application Server 8.5.x are known to be affected. Users of other containers that implement the Servlet specification may be affected.",
+        "cwe": [
+            "CWE-417"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2017-1000487": {
+        "description": "Plexus-utils before 3.0.16 is vulnerable to command injection because it does not correctly process the contents of double quoted strings.",
+        "cwe": [
+            "CWE-78"
+        ],
+        "github_url": "https://github.com/codehaus-plexus/plexus-utils",
+        "owner": "codehaus-plexus",
+        "repo": "plexus-utils"
+    },
+    "CVE-2017-15095": {
+        "description": "A deserialization flaw was discovered in the jackson-databind in versions before 2.8.10 and 2.9.1, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper. This issue extends the previous flaw CVE-2017-7525 by blacklisting more classes that could be used maliciously.",
+        "cwe": [
+            "CWE-184",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2017-4995": {
+        "description": "An issue was discovered in Pivotal Spring Security 4.2.0.RELEASE through 4.2.2.RELEASE, and Spring Security 5.0.0.M1. When configured to enable default typing, Jackson contained a deserialization vulnerability that could lead to arbitrary code execution. Jackson fixed this vulnerability by blacklisting known \"deserialization gadgets.\" Spring Security configures Jackson with global default typing enabled, which means that (through the previous exploit) arbitrary code could be executed if all of the following is true: (1) Spring Security's Jackson support is being leveraged by invoking SecurityJackson2Modules.getModules(ClassLoader) or SecurityJackson2Modules.enableDefaultTyping(ObjectMapper); (2) Jackson is used to deserialize data that is not trusted (Spring Security does not perform deserialization using Jackson, so this is an explicit choice of the user); and (3) there is an unknown (Jackson is not blacklisting it already) \"deserialization gadget\" that allows code execution present on the classpath. Jackson provides a blacklisting approach to protecting against this type of attack, but Spring Security should be proactive against blocking unknown \"deserialization gadgets\" when Spring Security enables default typing.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2017-7525": {
+        "description": "A deserialization flaw was discovered in the jackson-databind, versions before 2.6.7.1, 2.7.9.1 and 2.8.9, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper.",
+        "cwe": [
+            "CWE-184",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2017-7957": {
+        "description": "XStream through 1.4.9, when a certain denyTypes workaround is not used, mishandles attempts to create an instance of the primitive type 'void' during unmarshalling, leading to a remote application crash, as demonstrated by an xstream.fromXML(\"<void/>\") call.",
+        "cwe": [
+            "CWE-20"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2018-1000613": {
+        "description": "Legion of the Bouncy Castle Legion of the Bouncy Castle Java Cryptography APIs 1.58 up to but not including 1.60 contains a CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') vulnerability in XMSS/XMSS^MT private key deserialization that can result in Deserializing an XMSS/XMSS^MT private key can result in the execution of unexpected code. This attack appear to be exploitable via A handcrafted private key can include references to unexpected classes which will be picked up from the class path for the executing application. This vulnerability appears to have been fixed in 1.60 and later.",
+        "cwe": [
+            "CWE-470"
+        ],
+        "github_url": "https://github.com/bcgit/bc-java",
+        "owner": "bcgit",
+        "repo": "bc-java"
+    },
+    "CVE-2018-1000632": {
+        "description": "dom4j version prior to version 2.1.1 contains a CWE-91: XML Injection vulnerability in Class: Element. Methods: addElement, addAttribute that can result in an attacker tampering with XML documents through XML injection. This attack appear to be exploitable via an attacker specifying attributes or elements in the XML document. This vulnerability appears to have been fixed in 2.1.1 or later.",
+        "cwe": [
+            "CWE-91"
+        ],
+        "github_url": "https://github.com/dom4j/dom4j",
+        "owner": "dom4j",
+        "repo": "dom4j"
+    },
+    "CVE-2018-1000844": {
+        "description": "Square Open Source Retrofit version Prior to commit 4a693c5aeeef2be6c7ecf80e7b5ec79f6ab59437 contains a XML External Entity (XXE) vulnerability in JAXB that can result in An attacker could use this to remotely read files from the file system or to perform SSRF.. This vulnerability appears to have been fixed in After commit 4a693c5aeeef2be6c7ecf80e7b5ec79f6ab59437.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/square/retrofit",
+        "owner": "square",
+        "repo": "retrofit"
+    },
+    "CVE-2018-1000873": {
+        "description": "Fasterxml Jackson version Before 2.9.8 contains a CWE-20: Improper Input Validation vulnerability in Jackson-Modules-Java8 that can result in Causes a denial-of-service (DoS). This attack appear to be exploitable via The victim deserializes malicious input, specifically very large values in the nanoseconds field of a time value. This vulnerability appears to have been fixed in 2.9.8.",
+        "cwe": [
+            "CWE-20"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-modules-java8",
+        "owner": "FasterXML",
+        "repo": "jackson-modules-java8"
+    },
+    "CVE-2018-1002200": {
+        "description": "plexus-archiver before 3.6.0 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in an archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/codehaus-plexus/plexus-archiver",
+        "owner": "codehaus-plexus",
+        "repo": "plexus-archiver"
+    },
+    "CVE-2018-1002201": {
+        "description": "zt-zip before 1.13 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/zeroturnaround/zt-zip",
+        "owner": "zeroturnaround",
+        "repo": "zt-zip"
+    },
+    "CVE-2018-11039": {
+        "description": "Spring Framework (versions 5.0.x prior to 5.0.7, versions 4.3.x prior to 4.3.18, and older unsupported versions) allow web applications to change the HTTP request method to any HTTP method (including TRACE) using the HiddenHttpMethodFilter in Spring MVC. If an application has a pre-existing XSS vulnerability, a malicious user (or attacker) can use this filter to escalate to an XST (Cross Site Tracing) attack.",
+        "cwe": [],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2018-11771": {
+        "description": "When reading a specially crafted ZIP archive, the read method of Apache Commons Compress 1.7 to 1.17's ZipArchiveInputStream can fail to return the correct EOF indication after the end of the stream has been reached. When combined with a java.io.InputStreamReader this can lead to an infinite stream, which can be used to mount a denial of service attack against services that use Compress' zip package.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/apache/commons-compress",
+        "owner": "apache",
+        "repo": "commons-compress"
+    },
+    "CVE-2018-12036": {
+        "description": "OWASP Dependency-Check before 3.2.0 allows attackers to write to arbitrary files via a crafted archive that holds directory traversal filenames.",
+        "cwe": [
+            "CWE-123",
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/jeremylong/DependencyCheck",
+        "owner": "jeremylong",
+        "repo": "DependencyCheck"
+    },
+    "CVE-2018-12418": {
+        "description": "Archive.java in Junrar before 1.0.1, as used in Apache Tika and other products, is affected by a denial of service vulnerability due to an infinite loop when handling corrupt RAR files.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/junrar/junrar",
+        "owner": "junrar",
+        "repo": "junrar"
+    },
+    "CVE-2018-12544": {
+        "description": "In version from 3.5.Beta1 to 3.5.3 of Eclipse Vert.x, the OpenAPI XML type validator creates XML parsers without taking appropriate defense against XML attacks. This mechanism is exclusively when the developer uses the Eclipse Vert.x OpenAPI XML type validator to validate a provided schema.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/vert-x3/vertx-web",
+        "owner": "vert-x3",
+        "repo": "vertx-web"
+    },
+    "CVE-2018-1260": {
+        "description": "Spring Security OAuth, versions 2.3 prior to 2.3.3, 2.2 prior to 2.2.2, 2.1 prior to 2.1.2, 2.0 prior to 2.0.15 and older unsupported versions contains a remote code execution vulnerability. A malicious user or attacker can craft an authorization request to the authorization endpoint that can lead to remote code execution when the resource owner is forwarded to the approval endpoint.",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security-oauth",
+        "owner": "spring-projects",
+        "repo": "spring-security-oauth"
+    },
+    "CVE-2018-1261": {
+        "description": "Spring-integration-zip versions prior to 1.0.1 exposes an arbitrary file write vulnerability, which can be achieved using a specially crafted zip archive (affects other archives as well, bzip2, tar, xz, war, cpio, 7z) that holds path traversal filenames. So when the filename gets concatenated to the target extraction directory, the final path ends up outside of the target folder.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-integration-extensions",
+        "owner": "spring-projects",
+        "repo": "spring-integration-extensions"
+    },
+    "CVE-2018-1274": {
+        "description": "Spring Data Commons, versions 1.13 to 1.13.10, 2.0 to 2.0.5, and older unsupported versions, contain a property path parser vulnerability caused by unlimited resource allocation. An unauthenticated remote malicious user (or attacker) can issue requests against Spring Data REST endpoints or endpoints using property path parsing which can cause a denial of service (CPU and memory consumption).",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-data-commons",
+        "owner": "spring-projects",
+        "repo": "spring-data-commons"
+    },
+    "CVE-2018-1324": {
+        "description": "A specially crafted ZIP archive can be used to cause an infinite loop inside of Apache Commons Compress' extra field parser used by the ZipFile and ZipArchiveInputStream classes in versions 1.11 to 1.15. This can be used to mount a denial of service attack against services that use Compress' zip package.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/apache/commons-compress",
+        "owner": "apache",
+        "repo": "commons-compress"
+    },
+    "CVE-2018-14721": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.7 might allow remote attackers to conduct server-side request forgery (SSRF) attacks by leveraging failure to block the axis2-jaxws class from polymorphic deserialization.",
+        "cwe": [
+            "CWE-918"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2018-15756": {
+        "description": "Spring Framework, version 5.1, versions 5.0.x prior to 5.0.10, versions 4.3.x prior to 4.3.20, and older unsupported versions on the 4.2.x branch provide support for range requests when serving static resources through the ResourceHttpRequestHandler, or starting in 5.0 when an annotated controller returns an org.springframework.core.io.Resource. A malicious user (or attacker) can add a range header with a high number of ranges, or with wide ranges that overlap, or both, for a denial of service attack. This vulnerability affects applications that depend on either spring-webmvc or spring-webflux. Such applications must also have a registration for serving static resources (e.g. JS, CSS, images, and others), or have an annotated controller that returns an org.springframework.core.io.Resource. Spring Boot applications that depend on spring-boot-starter-web or spring-boot-starter-webflux are ready to serve static resources out of the box and are therefore vulnerable.",
+        "cwe": [],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2018-18893": {
+        "description": "Jinjava before 2.4.6 does not block the getClass method, related to com/hubspot/jinjava/el/ext/JinjavaBeanELResolver.java.",
+        "cwe": [],
+        "github_url": "https://github.com/HubSpot/jinjava",
+        "owner": "HubSpot",
+        "repo": "jinjava"
+    },
+    "CVE-2018-19360": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the axis2-transport-jms class from polymorphic deserialization.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2018-19361": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the openjpa class from polymorphic deserialization.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2018-20227": {
+        "description": "RDF4J 2.4.2 allows Directory Traversal via ../ in an entry in a ZIP archive.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/eclipse/rdf4j",
+        "owner": "eclipse",
+        "repo": "rdf4j"
+    },
+    "CVE-2018-21234": {
+        "description": "Jodd before 5.0.4 performs Deserialization of Untrusted JSON Data when setClassMetadataName is set.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/oblac/jodd",
+        "owner": "oblac",
+        "repo": "jodd"
+    },
+    "CVE-2018-8009": {
+        "description": "Apache Hadoop 3.1.0, 3.0.0-alpha to 3.0.2, 2.9.0 to 2.9.1, 2.8.0 to 2.8.4, 2.0.0-alpha to 2.7.6, 0.23.0 to 0.23.11 is exploitable via the zip slip vulnerability in places that accept a zip file.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/apache/hadoop",
+        "owner": "apache",
+        "repo": "hadoop"
+    },
+    "CVE-2019-10086": {
+        "description": "In Apache Commons Beanutils 1.9.2, a special BeanIntrospector class was added which allows suppressing the ability for an attacker to access the classloader via the class property available on all Java objects. We, however were not using this by default characteristic of the PropertyUtilsBean.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/apache/commons-beanutils",
+        "owner": "apache",
+        "repo": "commons-beanutils"
+    },
+    "CVE-2019-10094": {
+        "description": "A carefully crafted package/compressed file that, when unzipped/uncompressed yields the same file (a quine), causes a StackOverflowError in Apache Tika's RecursiveParserWrapper in versions 1.7-1.21. Apache Tika users should upgrade to 1.22 or later.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/apache/tika",
+        "owner": "apache",
+        "repo": "tika"
+    },
+    "CVE-2019-10219": {
+        "description": "A vulnerability was found in Hibernate-Validator. The SafeHtml validator annotation fails to properly sanitize payloads consisting of potentially malicious code in HTML comments and instructions. This vulnerability can result in an XSS attack.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/hibernate/hibernate-validator",
+        "owner": "hibernate",
+        "repo": "hibernate-validator"
+    },
+    "CVE-2019-11272": {
+        "description": "Spring Security, versions 4.2.x up to 4.2.12, and older unsupported versions support plain text passwords using PlaintextPasswordEncoder. If an application using an affected version of Spring Security is leveraging PlaintextPasswordEncoder and a user has a null encoded password, a malicious user (or attacker) can authenticate using a password of \"null\".",
+        "cwe": [
+            "CWE-287",
+            "CWE-522"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2019-12086": {
+        "description": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9. When Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint, the service has the mysql-connector-java jar (8.0.14 or earlier) in the classpath, and an attacker can host a crafted MySQL server reachable by the victim, an attacker can send a crafted JSON message that allows them to read arbitrary local files on the server. This occurs because of missing com.mysql.cj.jdbc.admin.MiniAdmin validation.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-12384": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.9.1 might allow attackers to have a variety of impacts by leveraging failure to block the logback-core class from polymorphic deserialization. Depending on the classpath content, remote code execution may be possible.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-12402": {
+        "description": "The file name encoding algorithm used internally in Apache Commons Compress 1.15 to 1.18 can get into an infinite loop when faced with specially crafted inputs. This can lead to a denial of service attack if an attacker can choose the file names inside of an archive created by Compress.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/apache/commons-compress",
+        "owner": "apache",
+        "repo": "commons-compress"
+    },
+    "CVE-2019-12415": {
+        "description": "In Apache POI up to 4.1.0, when using the tool XSSFExportToXml to convert user-provided Microsoft Excel documents, a specially crafted document can allow an attacker to read files from the local filesystem or from internal network resources via XML External Entity (XXE) Processing.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/apache/poi",
+        "owner": "apache",
+        "repo": "poi"
+    },
+    "CVE-2019-13990": {
+        "description": "initDocumentParser in xml/XMLSchedulingDataProcessor.java in Terracotta Quartz Scheduler through 2.3.0 allows XXE attacks via a job description.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/quartz-scheduler/quartz",
+        "owner": "quartz-scheduler",
+        "repo": "quartz"
+    },
+    "CVE-2019-14379": {
+        "description": "SubTypeValidator.java in FasterXML jackson-databind before 2.9.9.2 mishandles default typing when ehcache is used (because of net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup), leading to remote code execution.",
+        "cwe": [
+            "CWE-1321"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-14439": {
+        "description": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9.2. This occurs when Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the logback jar in the classpath.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-14540": {
+        "description": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to com.zaxxer.hikari.HikariConfig.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-14893": {
+        "description": "A flaw was discovered in FasterXML jackson-databind in all versions before 2.9.10 and 2.10.0, where it would permit polymorphic deserialization of malicious objects using the xalan JNDI gadget when used in conjunction with polymorphic type handling methods such as `enableDefaultTyping()` or when @JsonTypeInfo is using `Id.CLASS` or `Id.MINIMAL_CLASS` or in any other way which ObjectMapper.readValue might instantiate objects from unsafe sources. An attacker could use this flaw to execute arbitrary code.",
+        "cwe": [
+            "CWE-200",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-16771": {
+        "description": "Versions of Armeria 0.85.0 through and including 0.96.0 are vulnerable to HTTP response splitting, which allows remote attackers to inject arbitrary HTTP headers via CRLF sequences when unsanitized data is used to populate the headers of an HTTP response. This vulnerability has been patched in 0.97.0. Potential impacts of this vulnerability include cross-user defacement, cache poisoning, Cross-site scripting (XSS), and page hijacking.",
+        "cwe": [
+            "CWE-74",
+            "CWE-113"
+        ],
+        "github_url": "https://github.com/line/armeria",
+        "owner": "line",
+        "repo": "armeria"
+    },
+    "CVE-2019-16869": {
+        "description": "Netty before 4.1.42.Final mishandles whitespace before the colon in HTTP headers (such as a \"Transfer-Encoding : chunked\" line), which leads to HTTP request smuggling.",
+        "cwe": [
+            "CWE-444"
+        ],
+        "github_url": "https://github.com/netty/netty",
+        "owner": "netty",
+        "repo": "netty"
+    },
+    "CVE-2019-16942": {
+        "description": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.10. When Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the commons-dbcp (1.4) jar in the classpath, and an attacker can find an RMI service endpoint to access, it is possible to make the service execute a malicious payload. This issue exists because of org.apache.commons.dbcp.datasources.SharedPoolDataSource and org.apache.commons.dbcp.datasources.PerUserPoolDataSource mishandling.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-16943": {
+        "description": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.10. When Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the p6spy (3.8.6) jar in the classpath, and an attacker can find an RMI service endpoint to access, it is possible to make the service execute a malicious payload. This issue exists because of com.p6spy.engine.spy.P6DataSource mishandling.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-20330": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.2 lacks certain net.sf.ehcache blocking.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2019-20444": {
+        "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows an HTTP header that lacks a colon, which might be interpreted as a separate header with an incorrect syntax, or might be interpreted as an \"invalid fold.\"",
+        "cwe": [
+            "CWE-444"
+        ],
+        "github_url": "https://github.com/netty/netty",
+        "owner": "netty",
+        "repo": "netty"
+    },
+    "CVE-2019-20445": {
+        "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows a Content-Length header to be accompanied by a second Content-Length header, or by a Transfer-Encoding header.",
+        "cwe": [
+            "CWE-444"
+        ],
+        "github_url": "https://github.com/netty/netty",
+        "owner": "netty",
+        "repo": "netty"
+    },
+    "CVE-2019-5312": {
+        "description": "An issue was discovered in weixin-java-tools v3.3.0. There is an XXE vulnerability in the getXmlDoc method of the BaseWxPayResult.java file. NOTE: this issue exists because of an incomplete fix for CVE-2018-20318.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/binarywang/WxJava",
+        "owner": "binarywang",
+        "repo": "WxJava"
+    },
+    "CVE-2019-5427": {
+        "description": "c3p0 version < 0.9.5.4 may be exploited by a billion laughs attack when loading XML configuration due to missing protections against recursive entity expansion when loading configuration.",
+        "cwe": [
+            "CWE-776"
+        ],
+        "github_url": "https://github.com/swaldman/c3p0",
+        "owner": "swaldman",
+        "repo": "c3p0"
+    },
+    "CVE-2020-10650": {
+        "description": "A deserialization flaw was discovered in jackson-databind through 2.9.10.4. It could allow an unauthenticated user to perform code execution via ignite-jta or quartz-core: org.apache.ignite.cache.jta.jndi.CacheJndiTmLookup, org.apache.ignite.cache.jta.jndi.CacheJndiTmFactory, and org.quartz.utils.JNDIConnectionProvider.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-10672": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.aries.transaction.jms.internal.XaPooledConnectionFactory (aka aries.transaction.jms).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-10683": {
+        "description": "dom4j before 2.0.3 and 2.1.x before 2.1.3 allows external DTDs and External Entities by default, which might enable XXE attacks. However, there is popular external documentation from OWASP showing how to enable the safe, non-default behavior in any application that uses dom4j.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/dom4j/dom4j",
+        "owner": "dom4j",
+        "repo": "dom4j"
+    },
+    "CVE-2020-10968": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.aoju.bus.proxy.provider.remoting.RmiProvider (aka bus-proxy).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-11112": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.proxy.provider.remoting.RmiProvider (aka apache/commons-proxy).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-11113": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.openjpa.ee.WASRegistryManagedRuntime (aka openjpa).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-11619": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.springframework.aop.config.MethodLocatingFactoryBean (aka spring-aop).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/atlassian/jackson-1",
+        "owner": "atlassian",
+        "repo": "jackson-1"
+    },
+    "CVE-2020-11988": {
+        "description": "Apache XmlGraphics Commons 2.4 and earlier is vulnerable to server-side request forgery, caused by improper input validation by the XMPParser. By using a specially-crafted argument, an attacker could exploit this vulnerability to cause the underlying server to make arbitrary GET requests. Users should upgrade to 2.6 or later.",
+        "cwe": [
+            "CWE-20",
+            "CWE-918"
+        ],
+        "github_url": "https://github.com/apache/xmlgraphics-commons",
+        "owner": "apache",
+        "repo": "xmlgraphics-commons"
+    },
+    "CVE-2020-13956": {
+        "description": "Apache HttpClient versions prior to version 4.5.13 and 5.0.3 can misinterpret malformed authority component in request URIs passed to the library as java.net.URI object and pick the wrong target host for request execution.",
+        "cwe": [],
+        "github_url": "https://github.com/apache/httpcomponents-client",
+        "owner": "apache",
+        "repo": "httpcomponents-client"
+    },
+    "CVE-2020-13973": {
+        "description": "OWASP json-sanitizer before 1.2.1 allows XSS. An attacker who controls a substring of the input JSON, and controls another substring adjacent to a SCRIPT element in which the output is embedded as JavaScript, may be able to confuse the HTML parser as to where the SCRIPT element ends, and cause non-script content to be interpreted as JavaScript.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/OWASP/json-sanitizer",
+        "owner": "OWASP",
+        "repo": "json-sanitizer"
+    },
+    "CVE-2020-14060": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.5 mishandles the interaction between serialization gadgets and typing, related to oadd.org.apache.xalan.lib.sql.JNDIConnectionPool (aka apache/drill).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-14062": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.5 mishandles the interaction between serialization gadgets and typing, related to com.sun.org.apache.xalan.internal.lib.sql.JNDIConnectionPool (aka xalan2).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-15250": {
+        "description": "In JUnit4 from version 4.7 and before 4.13.1, the test rule TemporaryFolder contains a local information disclosure vulnerability. On Unix like systems, the system's temporary directory is shared between all users on that system. Because of this, when files and directories are written into this directory they are, by default, readable by other users on that same system. This vulnerability does not allow other users to overwrite the contents of these directories or files. This is purely an information disclosure vulnerability. This vulnerability impacts you if the JUnit tests write sensitive information, like API keys or passwords, into the temporary folder, and the JUnit tests execute in an environment where the OS has other untrusted users. Because certain JDK file system APIs were only added in JDK 1.7, this this fix is dependent upon the version of the JDK you are using. For Java 1.7 and higher users: this vulnerability is fixed in 4.13.1. For Java 1.6 and lower users: no patch is available, you must use the workaround below. If you are unable to patch, or are stuck running on Java 1.6, specifying the `java.io.tmpdir` system environment variable to a directory that is exclusively owned by the executing user will fix this vulnerability. For more information, including an example of vulnerable code, see the referenced GitHub Security Advisory.",
+        "cwe": [
+            "CWE-200",
+            "CWE-732"
+        ],
+        "github_url": "https://github.com/junit-team/junit4",
+        "owner": "junit-team",
+        "repo": "junit4"
+    },
+    "CVE-2020-1953": {
+        "description": "Apache Commons Configuration uses a third-party library to parse YAML files which by default allows the instantiation of classes if the YAML includes special statements. Apache Commons Configuration versions 2.2, 2.3, 2.4, 2.5, 2.6 did not change the default settings of this library. So if a YAML file was loaded from an untrusted source, it could therefore load and execute code out of the control of the host application.",
+        "cwe": [],
+        "github_url": "https://github.com/apache/commons-configuration",
+        "owner": "apache",
+        "repo": "commons-configuration"
+    },
+    "CVE-2020-24616": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.6 mishandles the interaction between serialization gadgets and typing, related to br.com.anteros.dbcp.AnterosDBCPDataSource (aka Anteros-DBCP).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/qxo/jackson-databind",
+        "owner": "qxo",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-24750": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.6 mishandles the interaction between serialization gadgets and typing, related to com.pastdev.httpcomponents.configuration.JndiConfiguration.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-26217": {
+        "description": "XStream before version 1.4.14 is vulnerable to Remote Code Execution.The vulnerability may allow a remote attacker to run arbitrary shell commands only by manipulating the processed input stream. Only users who rely on blocklists are affected. Anyone using XStream's Security Framework allowlist is not affected. The linked advisory provides code workarounds for users who cannot upgrade. The issue is fixed in version 1.4.14.",
+        "cwe": [
+            "CWE-78"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2020-26258": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.15, a Server-Side Forgery Request vulnerability can be activated when unmarshalling. The vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.15. The reported vulnerability does not exist if running Java 15 or higher. No user is affected who followed the recommendation to setup XStream's Security Framework with a whitelist! Anyone relying on XStream's default blacklist can immediately switch to a whilelist for the allowed types to avoid the vulnerability. Users of XStream 1.4.14 or below who still want to use XStream default blacklist can use a workaround described in more detailed in the referenced advisories.",
+        "cwe": [
+            "CWE-918"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2020-26259": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.15, is vulnerable to an Arbitrary File Deletion on the local host when unmarshalling. The vulnerability may allow a remote attacker to delete arbitrary know files on the host as log as the executing process has sufficient rights only by manipulating the processed input stream. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.15. The reported vulnerability does not exist running Java 15 or higher. No user is affected, who followed the recommendation to setup XStream's Security Framework with a whitelist! Anyone relying on XStream's default blacklist can immediately switch to a whilelist for the allowed types to avoid the vulnerability. Users of XStream 1.4.14 or below who still want to use XStream default blacklist can use a workaround described in more detailed in the referenced advisories.",
+        "cwe": [
+            "CWE-78"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2020-28052": {
+        "description": "An issue was discovered in Legion of the Bouncy Castle BC Java 1.65 and 1.66. The OpenBSDBCrypt.checkPassword utility method compared incorrect data when checking the password, allowing incorrect passwords to indicate they were matching with previously hashed ones that were different.",
+        "cwe": [],
+        "github_url": "https://github.com/bcgit/bc-java",
+        "owner": "bcgit",
+        "repo": "bc-java"
+    },
+    "CVE-2020-28491": {
+        "description": "This affects the package com.fasterxml.jackson.dataformat:jackson-dataformat-cbor from 0 and before 2.11.4, from 2.12.0-rc1 and before 2.12.1. Unchecked allocation of byte buffer can cause a java.lang.OutOfMemoryError exception.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-dataformats-binary",
+        "owner": "FasterXML",
+        "repo": "jackson-dataformats-binary"
+    },
+    "CVE-2020-35728": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.oracle.wls.shaded.org.apache.xalan.lib.sql.JNDIConnectionPool (aka embedded Xalan in org.glassfish.web/javax.servlet.jsp.jstl).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-36183": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.docx4j.org.apache.xalan.lib.sql.JNDIConnectionPool.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-36186": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.PerUserPoolDataSource.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-36188": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.JNDIConnectionSource.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-36518": {
+        "description": "jackson-databind before 2.13.0 allows a Java StackOverflow exception and denial of service via a large depth of nested objects.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-5245": {
+        "description": "Dropwizard-Validation before 1.3.19, and 2.0.2 may allow arbitrary code execution on the host system, with the privileges of the Dropwizard service account, by injecting arbitrary Java Expression Language expressions when using the self-validating feature.\n\nThe issue has been fixed in dropwizard-validation 1.3.19 and 2.0.2.",
+        "cwe": [
+            "CWE-74"
+        ],
+        "github_url": "https://github.com/dropwizard/dropwizard",
+        "owner": "dropwizard",
+        "repo": "dropwizard"
+    },
+    "CVE-2020-5398": {
+        "description": "In Spring Framework, versions 5.2.x prior to 5.2.3, versions 5.1.x prior to 5.1.13, and versions 5.0.x prior to 5.0.16, an application is vulnerable to a reflected file download (RFD) attack when it sets a \"Content-Disposition\" header in the response where the filename attribute is derived from user supplied input.",
+        "cwe": [
+            "CWE-494",
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2020-5421": {
+        "description": "In Spring Framework versions 5.2.0 - 5.2.8, 5.1.0 - 5.1.17, 5.0.0 - 5.0.18, 4.3.0 - 4.3.28, and older unsupported versions, the protections against RFD attacks from CVE-2015-5211 may be bypassed depending on the browser used through the use of a jsessionid path parameter.",
+        "cwe": [],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2020-6858": {
+        "description": "Hotels Styx through 1.0.0.beta8 allows HTTP response splitting due to CRLF Injection. This is exploitable if untrusted user input can appear in a response header.",
+        "cwe": [
+            "CWE-74"
+        ],
+        "github_url": "https://github.com/ExpediaGroup/styx",
+        "owner": "ExpediaGroup",
+        "repo": "styx"
+    },
+    "CVE-2020-8929": {
+        "description": "A mis-handling of invalid unicode characters in the Java implementation of Tink versions prior to 1.5 allows an attacker to change the ID part of a ciphertext, which result in the creation of a second ciphertext that can decrypt to the same plaintext. This can be a problem with encrypting deterministic AEAD with a single key, and rely on a unique ciphertext-per-plaintext.",
+        "cwe": [
+            "CWE-176"
+        ],
+        "github_url": "https://github.com/google/tink",
+        "owner": "google",
+        "repo": "tink"
+    },
+    "CVE-2020-9546": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.hadoop.shaded.com.zaxxer.hikari.HikariConfig (aka shaded hikari-config).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-9547": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to com.ibatis.sqlmap.engine.transaction.jta.JtaTransactionConfig (aka ibatis-sqlmap).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2020-9548": {
+        "description": "FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to br.com.anteros.dbcp.AnterosDBCPConfig (aka anteros-core).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2021-21234": {
+        "description": "spring-boot-actuator-logview in a library that adds a simple logfile viewer as spring boot actuator endpoint. It is maven package \"eu.hinsch:spring-boot-actuator-logview\". In spring-boot-actuator-logview before version 0.2.13 there is a directory traversal vulnerability. The nature of this library is to expose a log file directory via admin (spring boot actuator) HTTP endpoints. Both the filename to view and a base folder (relative to the logging folder root) can be specified via request parameters. While the filename parameter was checked to prevent directory traversal exploits (so that `filename=../somefile` would not work), the base folder parameter was not sufficiently checked, so that `filename=somefile&base=../` could access a file outside the logging base directory). The vulnerability has been patched in release 0.2.13. Any users of 0.2.12 should be able to update without any issues as there are no other changes in that release. There is no workaround to fix the vulnerability other than updating or removing the dependency. However, removing read access of the user the application is run with to any directory not required for running the application can limit the impact. Additionally, access to the logview endpoint can be limited by deploying the application behind a reverse proxy.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/lukashinsch/spring-boot-actuator-logview",
+        "owner": "lukashinsch",
+        "repo": "spring-boot-actuator-logview"
+    },
+    "CVE-2021-21341": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is vulnerability which may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. No user is affected who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+        "cwe": [
+            "CWE-502",
+            "CWE-400"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-21344": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+        "cwe": [
+            "CWE-434",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-21345": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker who has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+        "cwe": [
+            "CWE-94",
+            "CWE-502",
+            "CWE-78"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-21346": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+        "cwe": [
+            "CWE-434",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-21349": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+        "cwe": [
+            "CWE-502",
+            "CWE-918"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-21351": {
+        "description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+        "cwe": [
+            "CWE-434",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-23792": {
+        "description": "The package com.twelvemonkeys.imageio:imageio-metadata before 3.7.1 are vulnerable to XML External Entity (XXE) Injection due to an insecurely initialized XML parser for reading XMP Metadata. An attacker can exploit this vulnerability if they are able to supply a file (e.g. when an online profile picture is processed) with a malicious XMP segment. If the XMP metadata of the uploaded image is parsed, then the XXE vulnerability is triggered.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/haraldk/TwelveMonkeys",
+        "owner": "haraldk",
+        "repo": "TwelveMonkeys"
+    },
+    "CVE-2021-23899": {
+        "description": "OWASP json-sanitizer before 1.2.2 may emit closing SCRIPT tags and CDATA section delimiters for crafted input. This allows an attacker to inject arbitrary HTML or XML into embedding documents.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/OWASP/json-sanitizer",
+        "owner": "OWASP",
+        "repo": "json-sanitizer"
+    },
+    "CVE-2021-23900": {
+        "description": "OWASP json-sanitizer before 1.2.2 can output invalid JSON or throw an undeclared exception for crafted input. This may lead to denial of service if the application is not prepared to handle these situations.",
+        "cwe": [],
+        "github_url": "https://github.com/OWASP/json-sanitizer",
+        "owner": "OWASP",
+        "repo": "json-sanitizer"
+    },
+    "CVE-2021-27568": {
+        "description": "An issue was discovered in netplex json-smart-v1 through 2015-10-23 and json-smart-v2 through 2.4. An exception is thrown from a function, but it is not caught, as demonstrated by NumberFormatException. When it is not caught, it may cause programs using the library to crash or expose sensitive information.",
+        "cwe": [
+            "CWE-754"
+        ],
+        "github_url": "https://github.com/netplex/json-smart-v2",
+        "owner": "netplex",
+        "repo": "json-smart-v2"
+    },
+    "CVE-2021-27807": {
+        "description": "A carefully crafted PDF file can trigger an infinite loop while loading the file. This issue affects Apache PDFBox version 2.0.22 and prior 2.0.x versions.",
+        "cwe": [
+            "CWE-834"
+        ],
+        "github_url": "https://github.com/apache/pdfbox",
+        "owner": "apache",
+        "repo": "pdfbox"
+    },
+    "CVE-2021-29061": {
+        "description": "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in Vfsjfilechooser2 version 0.2.9 and below which occurs when the application attempts to validate crafted URIs.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/fracpete/vfsjfilechooser2",
+        "owner": "fracpete",
+        "repo": "vfsjfilechooser2"
+    },
+    "CVE-2021-29425": {
+        "description": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value.",
+        "cwe": [
+            "CWE-20",
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/apache/commons-io",
+        "owner": "apache",
+        "repo": "commons-io"
+    },
+    "CVE-2021-29505": {
+        "description": "XStream is software for serializing Java objects to XML and back again. A vulnerability in XStream versions prior to 1.4.17 may allow a remote attacker has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types is affected. The vulnerability is patched in version 1.4.17.",
+        "cwe": [
+            "CWE-94",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-30468": {
+        "description": "A vulnerability in the JsonMapObjectReaderWriter of Apache CXF allows an attacker to submit malformed JSON to a web service, which results in the thread getting stuck in an infinite loop, consuming CPU indefinitely. This issue affects Apache CXF versions prior to 3.4.4; Apache CXF versions prior to 3.3.11.",
+        "cwe": [
+            "CWE-835",
+            "CWE-400"
+        ],
+        "github_url": "https://github.com/apache/cxf",
+        "owner": "apache",
+        "repo": "cxf"
+    },
+    "CVE-2021-31684": {
+        "description": "A vulnerability was discovered in the indexOf function of JSONParserByteArray in JSON Smart versions 1.3 and 2.4 which causes a denial of service (DOS) via a crafted web request.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/netplex/json-smart-v2",
+        "owner": "netplex",
+        "repo": "json-smart-v2"
+    },
+    "CVE-2021-31812": {
+        "description": "In Apache PDFBox, a carefully crafted PDF file can trigger an infinite loop while loading the file. This issue affects Apache PDFBox version 2.0.23 and prior 2.0.x versions.",
+        "cwe": [
+            "CWE-834",
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/apache/pdfbox",
+        "owner": "apache",
+        "repo": "pdfbox"
+    },
+    "CVE-2021-33609": {
+        "description": "Missing check in DataCommunicator class in com.vaadin:vaadin-server versions 8.0.0 through 8.14.0 (Vaadin 8.0.0 through 8.14.0) allows authenticated network attacker to cause heap exhaustion by requesting too many rows of data.",
+        "cwe": [
+            "CWE-20",
+            "CWE-400"
+        ],
+        "github_url": "https://github.com/vaadin/framework",
+        "owner": "vaadin",
+        "repo": "framework"
+    },
+    "CVE-2021-33813": {
+        "description": "An XXE issue in SAXBuilder in JDOM through 2.0.6 allows attackers to cause a denial of service via a crafted HTTP request.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/hunterhacker/jdom",
+        "owner": "hunterhacker",
+        "repo": "jdom"
+    },
+    "CVE-2021-35043": {
+        "description": "OWASP AntiSamy before 1.6.4 allows XSS via HTML attributes when using the HTML output serializer (XHTML is not affected). This was demonstrated by a javascript: URL with &#00058 as the replacement for the : character.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/nahsra/antisamy",
+        "owner": "nahsra",
+        "repo": "antisamy"
+    },
+    "CVE-2021-35516": {
+        "description": "When reading a specially crafted 7Z archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' sevenz package.",
+        "cwe": [
+            "CWE-130",
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/apache/commons-compress",
+        "owner": "apache",
+        "repo": "commons-compress"
+    },
+    "CVE-2021-37714": {
+        "description": "jsoup is a Java library for working with HTML. Those using jsoup versions prior to 1.14.2 to parse untrusted HTML or XML may be vulnerable to DOS attacks. If the parser is run on user supplied input, an attacker may supply content that causes the parser to get stuck (loop indefinitely until cancelled), to complete more slowly than usual, or to throw an unexpected exception. This effect may support a denial of service attack. The issue is patched in version 1.14.2. There are a few available workarounds. Users may rate limit input parsing, limit the size of inputs based on system resources, and/or implement thread watchdogs to cap and timeout parse runtimes.",
+        "cwe": [
+            "CWE-835",
+            "CWE-248"
+        ],
+        "github_url": "https://github.com/jhy/jsoup",
+        "owner": "jhy",
+        "repo": "jsoup"
+    },
+    "CVE-2021-3878": {
+        "description": "corenlp is vulnerable to Improper Restriction of XML External Entity Reference",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/stanfordnlp/corenlp",
+        "owner": "stanfordnlp",
+        "repo": "corenlp"
+    },
+    "CVE-2021-39141": {
+        "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+        "cwe": [
+            "CWE-434",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-39144": {
+        "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+        "cwe": [
+            "CWE-306",
+            "CWE-94",
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-39150": {
+        "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream with a Java runtime version 14 to 8. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the [Security Framework](https://x-stream.github.io/security.html#framework), you will have to use at least version 1.4.18.",
+        "cwe": [
+            "CWE-502",
+            "CWE-918"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-40111": {
+        "description": "In Apache James, while fuzzing with Jazzer the IMAP parsing stack, we discover that crafted APPEND and STATUS IMAP command could be used to trigger infinite loops resulting in expensive CPU computations and OutOfMemory exceptions. This can be used for a Denial Of Service attack. The IMAP user needs to be authenticated to exploit this vulnerability. This affected Apache James prior to version 3.6.1. This vulnerability had been patched in Apache James 3.6.1 and higher. We recommend the upgrade.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/apache/james-project",
+        "owner": "apache",
+        "repo": "james-project"
+    },
+    "CVE-2021-40660": {
+        "description": "An issue was discovered in Delight Nashorn Sandbox 0.2.0. There is an ReDoS vulnerability that can be exploited to launching a denial of service (DoS) attack.",
+        "cwe": [
+            "CWE-1333"
+        ],
+        "github_url": "https://github.com/javadelight/delight-nashorn-sandbox",
+        "owner": "javadelight",
+        "repo": "delight-nashorn-sandbox"
+    },
+    "CVE-2021-42575": {
+        "description": "The OWASP Java HTML Sanitizer before 20211018.1 does not properly enforce policies associated with the SELECT, STYLE, and OPTION elements.",
+        "cwe": [],
+        "github_url": "https://github.com/OWASP/java-html-sanitizer",
+        "owner": "OWASP",
+        "repo": "java-html-sanitizer"
+    },
+    "CVE-2021-43090": {
+        "description": "An XML External Entity (XXE) vulnerability exists in soa-model before 1.6.4 in the WSDLParser function.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/membrane/soa-model",
+        "owner": "membrane",
+        "repo": "soa-model"
+    },
+    "CVE-2021-43113": {
+        "description": "iTextPDF in iText 7 and up to (excluding 4.4.13.3) 7.1.17 allows command injection via a CompareTool filename that is mishandled on the gs (aka Ghostscript) command line in GhostscriptHelper.java.",
+        "cwe": [
+            "CWE-77"
+        ],
+        "github_url": "https://github.com/itext/itext7",
+        "owner": "itext",
+        "repo": "itext7"
+    },
+    "CVE-2021-43795": {
+        "description": "Armeria is an open source microservice framework. In affected versions an attacker can access an Armeria server's local file system beyond its restricted directory by sending an HTTP request whose path contains `%2F` (encoded `/`), such as `/files/..%2Fsecrets.txt`, bypassing Armeria's path validation logic. Armeria 1.13.4 or above contains the hardened path validation logic that handles `%2F` properly. This vulnerability can be worked around by inserting a decorator that performs an additional validation on the request path.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/line/armeria",
+        "owner": "line",
+        "repo": "armeria"
+    },
+    "CVE-2021-43797": {
+        "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. Netty prior to version 4.1.71.Final skips control chars when they are present at the beginning / end of the header name. It should instead fail fast as these are not allowed by the spec and could lead to HTTP request smuggling. Failing to do the validation might cause netty to \"sanitize\" header names before it forward these to another remote system when used as proxy. This remote system can't see the invalid usage anymore, and therefore does not do the validation itself. Users should upgrade to version 4.1.71.Final.",
+        "cwe": [
+            "CWE-444"
+        ],
+        "github_url": "https://github.com/netty/netty",
+        "owner": "netty",
+        "repo": "netty"
+    },
+    "CVE-2021-43859": {
+        "description": "XStream is an open source java library to serialize objects to XML and back again. Versions prior to 1.4.19 may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. XStream 1.4.19 monitors and accumulates the time it takes to add elements to collections and throws an exception if a set threshold is exceeded. Users are advised to upgrade as soon as possible. Users unable to upgrade may set the NO_REFERENCE mode to prevent recursion. See GHSA-rmr5-cpv2-vgjf for further details on a workaround if an upgrade is not possible.",
+        "cwe": [
+            "CWE-400"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2021-44228": {
+        "description": "Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects.",
+        "cwe": [
+            "CWE-20",
+            "CWE-502",
+            "CWE-917",
+            "CWE-400"
+        ],
+        "github_url": "https://github.com/apache/logging-log4j2",
+        "owner": "apache",
+        "repo": "logging-log4j2"
+    },
+    "CVE-2021-45046": {
+        "description": "It was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. This could allows attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a non-default Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in an information leak and remote code execution in some environments and local code execution in all environments. Log4j 2.16.0 (Java 8) and 2.12.2 (Java 7) fix this issue by removing support for message lookup patterns and disabling JNDI functionality by default.",
+        "cwe": [
+            "CWE-917"
+        ],
+        "github_url": "https://github.com/apache/logging-log4j2",
+        "owner": "apache",
+        "repo": "logging-log4j2"
+    },
+    "CVE-2022-0265": {
+        "description": "Improper Restriction of XML External Entity Reference in GitHub repository hazelcast/hazelcast in 5.1-BETA-1.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/hazelcast/hazelcast",
+        "owner": "hazelcast",
+        "repo": "hazelcast"
+    },
+    "CVE-2022-0272": {
+        "description": "Improper Restriction of XML External Entity Reference in GitHub repository detekt/detekt prior to 1.20.0.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/detekt/detekt",
+        "owner": "detekt",
+        "repo": "detekt"
+    },
+    "CVE-2022-0839": {
+        "description": "Improper Restriction of XML External Entity Reference in GitHub repository liquibase/liquibase prior to 4.8.0.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/liquibase/liquibase",
+        "owner": "liquibase",
+        "repo": "liquibase"
+    },
+    "CVE-2022-1848": {
+        "description": "Business Logic Errors in GitHub repository erudika/para prior to 1.45.11.",
+        "cwe": [
+            "CWE-840"
+        ],
+        "github_url": "https://github.com/erudika/para",
+        "owner": "erudika",
+        "repo": "para"
+    },
+    "CVE-2022-21126": {
+        "description": "The package com.github.samtools:htsjdk before 3.0.1 are vulnerable to Creation of Temporary File in Directory with Insecure Permissions due to the createTempDir() function in util/IOUtil.java not checking for the existence of the temporary directory before attempting to create it.",
+        "cwe": [
+            "CWE-668"
+        ],
+        "github_url": "https://github.com/samtools/htsjdk",
+        "owner": "samtools",
+        "repo": "htsjdk"
+    },
+    "CVE-2022-21724": {
+        "description": "pgjdbc is the offical PostgreSQL JDBC Driver. A security hole was found in the jdbc driver for postgresql database while doing security research. The system using the postgresql library will be attacked when attacker control the jdbc url or properties. pgjdbc instantiates plugin instances based on class names provided via `authenticationPluginClassName`, `sslhostnameverifier`, `socketFactory`, `sslfactory`, `sslpasswordcallback` connection properties. However, the driver did not verify if the class implements the expected interface before instantiating the class. This can lead to code execution loaded via arbitrary classes. Users using plugins are advised to upgrade. There are no known workarounds for this issue.",
+        "cwe": [
+            "CWE-665"
+        ],
+        "github_url": "https://github.com/pgjdbc/pgjdbc",
+        "owner": "pgjdbc",
+        "repo": "pgjdbc"
+    },
+    "CVE-2022-22885": {
+        "description": "Hutool v5.7.18's HttpRequest was discovered to ignore all TLS/SSL certificate validation.",
+        "cwe": [
+            "CWE-295"
+        ],
+        "github_url": "https://github.com/dromara/hutool",
+        "owner": "dromara",
+        "repo": "hutool"
+    },
+    "CVE-2022-22968": {
+        "description": "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
+        "cwe": [
+            "CWE-178"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-framework",
+        "owner": "spring-projects",
+        "repo": "spring-framework"
+    },
+    "CVE-2022-22976": {
+        "description": "Spring Security versions 5.5.x prior to 5.5.7, 5.6.x prior to 5.6.4, and earlier unsupported versions contain an integer overflow vulnerability. When using the BCrypt class with the maximum work factor (31), the encoder does not perform any salt rounds, due to an integer overflow error. The default settings are not affected by this CVE.",
+        "cwe": [
+            "CWE-190"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2022-22978": {
+        "description": "In spring security versions prior to 5.4.11+, 5.5.7+ , 5.6.4+ and older unsupported versions, RegexRequestMatcher can easily be misconfigured to be bypassed on some servlet containers. Applications using RegexRequestMatcher with `.` in the regular expression are possibly vulnerable to an authorization bypass.",
+        "cwe": [
+            "CWE-863"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2022-22980": {
+        "description": "A Spring Data MongoDB application is vulnerable to SpEL Injection when using @Query or @Aggregation-annotated query methods with SpEL expressions that contain query parameter placeholders for value binding if the input is not sanitized.",
+        "cwe": [
+            "CWE-917"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-data-mongodb",
+        "owner": "spring-projects",
+        "repo": "spring-data-mongodb"
+    },
+    "CVE-2022-23082": {
+        "description": "In CureKit versions v1.0.1 through v1.1.3 are vulnerable to path traversal as the function isFileOutsideDir fails to sanitize the user input which may lead to path traversal.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/whitesource/CureKit",
+        "owner": "whitesource",
+        "repo": "CureKit"
+    },
+    "CVE-2022-23457": {
+        "description": "ESAPI (The OWASP Enterprise Security API) is a free, open source, web application security control library. Prior to version 2.3.0.0, the default implementation of `Validator.getValidDirectoryPath(String, String, File, boolean)` may incorrectly treat the tested input string as a child of the specified parent directory. This potentially could allow control-flow bypass checks to be defeated if an attack can specify the entire string representing the 'input' path. This vulnerability is patched in release 2.3.0.0 of ESAPI. As a workaround, it is possible to write one's own implementation of the Validator interface. However, maintainers do not recommend this.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/ESAPI/esapi-java-legacy",
+        "owner": "ESAPI",
+        "repo": "esapi-java-legacy"
+    },
+    "CVE-2022-23596": {
+        "description": "Junrar is an open source java RAR archive library. In affected versions A carefully crafted RAR archive can trigger an infinite loop while extracting said archive. The impact depends solely on how the application uses the library, and whether files can be provided by malignant users. The problem is patched in 7.4.1. There are no known workarounds and users are advised to upgrade as soon as possible.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/junrar/junrar",
+        "owner": "junrar",
+        "repo": "junrar"
+    },
+    "CVE-2022-24196": {
+        "description": "iText v7.1.17, up to (exluding)\": 7.1.18 and 7.2.2 was discovered to contain an out-of-memory error via the component readStreamBytesRaw, which allows attackers to cause a Denial of Service (DoS) via a crafted PDF file.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/itext/itext7",
+        "owner": "itext",
+        "repo": "itext7"
+    },
+    "CVE-2022-24197": {
+        "description": "iText v7.1.17 was discovered to contain a stack-based buffer overflow via the component ByteBuffer.append, which allows attackers to cause a Denial of Service (DoS) via a crafted PDF file.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/itext/itext7",
+        "owner": "itext",
+        "repo": "itext7"
+    },
+    "CVE-2022-24613": {
+        "description": "metadata-extractor up to 2.16.0 can throw various uncaught exceptions while parsing a specially crafted JPEG file, which could result in an application crash. This could be used to mount a denial of service attack against services that use metadata-extractor library.",
+        "cwe": [
+            "CWE-755"
+        ],
+        "github_url": "https://github.com/drewnoakes/metadata-extractor",
+        "owner": "drewnoakes",
+        "repo": "metadata-extractor"
+    },
+    "CVE-2022-24614": {
+        "description": "When reading a specially crafted JPEG file, metadata-extractor up to 2.16.0 can be made to allocate large amounts of memory that finally leads to an out-of-memory error even for very small inputs. This could be used to mount a denial of service attack against services that use metadata-extractor library.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/drewnoakes/metadata-extractor",
+        "owner": "drewnoakes",
+        "repo": "metadata-extractor"
+    },
+    "CVE-2022-24615": {
+        "description": "zip4j up to v2.10.0 can throw various uncaught exceptions while parsing a specially crafted ZIP file, which could result in an application crash. This could be used to mount a denial of service attack against services that use zip4j library.",
+        "cwe": [
+            "CWE-755"
+        ],
+        "github_url": "https://github.com/srikanth-lingala/zip4j",
+        "owner": "srikanth-lingala",
+        "repo": "zip4j"
+    },
+    "CVE-2022-24897": {
+        "description": "APIs to evaluate content with Velocity is a package for APIs to evaluate content with Velocity. Starting with version 2.3 and prior to 12.6.7, 12.10.3, and 13.0, the velocity scripts are not properly sandboxed against using the Java File API to perform read or write operations on the filesystem. Writing an attacking script in Velocity requires the Script rights in XWiki so not all users can use it, and it also requires finding an XWiki API which returns a File. The problem has been patched in versions 12.6.7, 12.10.3, and 13.0. There is no easy workaround for fixing this vulnerability other than upgrading and being careful when giving Script rights.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/xwiki/xwiki-commons",
+        "owner": "xwiki",
+        "repo": "xwiki-commons"
+    },
+    "CVE-2022-24898": {
+        "description": "org.xwiki.commons:xwiki-commons-xml is a common module used by other XWiki top level projects. Starting in version 2.7 and prior to versions 12.10.10, 13.4.4, and 13.8-rc-1, it is possible for a script to access any file accessing to the user running XWiki application server with XML External Entity Injection through the XML script service. The problem has been patched in versions 12.10.10, 13.4.4, and 13.8-rc-1. There is no easy workaround for fixing this vulnerability other than upgrading and being careful when giving Script rights.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/xwiki/xwiki-commons",
+        "owner": "xwiki",
+        "repo": "xwiki-commons"
+    },
+    "CVE-2022-24913": {
+        "description": "Versions of the package com.fasterxml.util:java-merge-sort before 1.1.0 are vulnerable to Insecure Temporary File in the StdTempFileProvider() function in StdTempFileProvider.java, which uses the permissive File.createTempFile() function, exposing temporary file contents.",
+        "cwe": [
+            "CWE-668",
+            "CWE-377"
+        ],
+        "github_url": "https://github.com/cowtowncoder/java-merge-sort",
+        "owner": "cowtowncoder",
+        "repo": "java-merge-sort"
+    },
+    "CVE-2022-25845": {
+        "description": "The package com.alibaba:fastjson before 1.2.83 are vulnerable to Deserialization of Untrusted Data by bypassing the default autoType shutdown restrictions, which is possible under certain conditions. Exploiting this vulnerability allows attacking remote servers. Workaround: If upgrading is not possible, you can enable [safeMode](https://github.com/alibaba/fastjson/wiki/fastjson_safemode).",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/alibaba/fastjson",
+        "owner": "alibaba",
+        "repo": "fastjson"
+    },
+    "CVE-2022-25857": {
+        "description": "The package org.yaml:snakeyaml from 0 and before 1.31 are vulnerable to Denial of Service (DoS) due missing to nested depth limitation for collections.",
+        "cwe": [
+            "CWE-776"
+        ],
+        "github_url": "https://github.com/snakeyaml/snakeyaml",
+        "owner": "snakeyaml",
+        "repo": "snakeyaml"
+    },
+    "CVE-2022-25867": {
+        "description": "The package io.socket:socket.io-client before 2.0.1 are vulnerable to NULL Pointer Dereference when parsing a packet with with invalid payload format.",
+        "cwe": [
+            "CWE-476"
+        ],
+        "github_url": "https://github.com/socketio/socket.io-client-java",
+        "owner": "socketio",
+        "repo": "socket.io-client-java"
+    },
+    "CVE-2022-25914": {
+        "description": "The package com.google.cloud.tools:jib-core before 0.22.0 are vulnerable to Remote Code Execution (RCE) via the isDockerInstalled function, due to attempting to execute input.",
+        "cwe": [],
+        "github_url": "https://github.com/GoogleContainerTools/jib",
+        "owner": "GoogleContainerTools",
+        "repo": "jib"
+    },
+    "CVE-2022-28367": {
+        "description": "OWASP AntiSamy before 1.6.6 allows XSS via HTML tag smuggling on STYLE content with crafted input. The output serializer does not properly encode the supposed Cascading Style Sheets (CSS) content.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/nahsra/antisamy",
+        "owner": "nahsra",
+        "repo": "antisamy"
+    },
+    "CVE-2022-29546": {
+        "description": "HtmlUnit NekoHtml Parser before 2.61.0 suffers from a denial of service vulnerability. Crafted input associated with the parsing of Processing Instruction (PI) data leads to heap memory consumption. This is similar to CVE-2022-28366 but affects a much later version of the product.",
+        "cwe": [],
+        "github_url": "https://github.com/HtmlUnit/htmlunit-neko",
+        "owner": "HtmlUnit",
+        "repo": "htmlunit-neko"
+    },
+    "CVE-2022-29577": {
+        "description": "OWASP AntiSamy before 1.6.7 allows XSS via HTML tag smuggling on STYLE content with crafted input. The output serializer does not properly encode the supposed Cascading Style Sheets (CSS) content. NOTE: this issue exists because of an incomplete fix for CVE-2022-28367.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/nahsra/antisamy",
+        "owner": "nahsra",
+        "repo": "antisamy"
+    },
+    "CVE-2022-29599": {
+        "description": "In Apache Maven maven-shared-utils prior to version 3.3.3, the Commandline class can emit double-quoted strings without proper escaping, allowing shell injection attacks.",
+        "cwe": [
+            "CWE-116"
+        ],
+        "github_url": "https://github.com/apache/maven-shared-utils",
+        "owner": "apache",
+        "repo": "maven-shared-utils"
+    },
+    "CVE-2022-29631": {
+        "description": "Jodd HTTP v6.0.9 was discovered to contain multiple CLRF injection vulnerabilities via the components jodd.http.HttpRequest#set and `jodd.http.HttpRequest#send. These vulnerabilities allow attackers to execute Server-Side Request Forgery (SSRF) via a crafted TCP payload.",
+        "cwe": [
+            "CWE-74"
+        ],
+        "github_url": "https://github.com/oblac/jodd-http",
+        "owner": "oblac",
+        "repo": "jodd-http"
+    },
+    "CVE-2022-32549": {
+        "description": "Apache Sling Commons Log <= 5.4.0 and Apache Sling API <= 2.25.0 are vulnerable to log injection. The ability to forge logs may allow an attacker to cover tracks by injecting fake logs and potentially corrupt log files.",
+        "cwe": [
+            "CWE-117",
+            "CWE-116"
+        ],
+        "github_url": "https://github.com/apache/sling-org-apache-sling-api",
+        "owner": "apache",
+        "repo": "sling-org-apache-sling-api"
+    },
+    "CVE-2022-34662": {
+        "description": "When users add resources to the resource center with a relation path will cause path traversal issues and only for logged-in users. You could upgrade to version 3.0.0 or higher",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/apache/dolphinscheduler",
+        "owner": "apache",
+        "repo": "dolphinscheduler"
+    },
+    "CVE-2022-36007": {
+        "description": "Venice is a Clojure inspired sandboxed Lisp dialect with excellent Java interoperability. A partial path traversal issue exists within the functions `load-file` and `load-resource`. These functions can be limited to load files from a list of load paths. Assuming Venice has been configured with the load paths: `[ \"/Users/foo/resources\" ]` When passing **relative** paths to these two vulnerable functions everything is fine: `(load-resource \"test.png\")` => loads the file \"/Users/foo/resources/test.png\" `(load-resource \"../resources-alt/test.png\")` => rejected, outside the load path When passing **absolute** paths to these two vulnerable functions Venice may return files outside the configured load paths: `(load-resource \"/Users/foo/resources/test.png\")` => loads the file \"/Users/foo/resources/test.png\" `(load-resource \"/Users/foo/resources-alt/test.png\")` => loads the file \"/Users/foo/resources-alt/test.png\" !!! The latter call suffers from the _Partial Path Traversal_ vulnerability. This issue’s scope is limited to absolute paths whose name prefix matches a load path. E.g. for a load-path `\"/Users/foo/resources\"`, the actor can cause loading a resource also from `\"/Users/foo/resources-alt\"`, but not from `\"/Users/foo/images\"`. Versions of Venice before and including v1.10.17 are affected by this issue. Upgrade to Venice >= 1.10.18, if you are on a version < 1.10.18. There are currently no known workarounds.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/jlangch/venice",
+        "owner": "jlangch",
+        "repo": "venice"
+    },
+    "CVE-2022-36033": {
+        "description": "jsoup is a Java HTML parser, built for HTML editing, cleaning, scraping, and cross-site scripting (XSS) safety. jsoup may incorrectly sanitize HTML including `javascript:` URL expressions, which could allow XSS attacks when a reader subsequently clicks that link. If the non-default `SafeList.preserveRelativeLinks` option is enabled, HTML including `javascript:` URLs that have been crafted with control characters will not be sanitized. If the site that this HTML is published on does not set a Content Security Policy, an XSS attack is then possible. This issue is patched in jsoup 1.15.3. Users should upgrade to this version. Additionally, as the unsanitized input may have been persisted, old content should be cleaned again using the updated version. To remediate this issue without immediately upgrading: - disable `SafeList.preserveRelativeLinks`, which will rewrite input URLs as absolute URLs - ensure an appropriate [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) is defined. (This should be used regardless of upgrading, as a defence-in-depth best practice.)",
+        "cwe": [
+            "CWE-87",
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/jhy/jsoup",
+        "owner": "jhy",
+        "repo": "jsoup"
+    },
+    "CVE-2022-38750": {
+        "description": "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow.",
+        "cwe": [
+            "CWE-121",
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/snakeyaml/snakeyaml",
+        "owner": "snakeyaml",
+        "repo": "snakeyaml"
+    },
+    "CVE-2022-38751": {
+        "description": "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow.",
+        "cwe": [
+            "CWE-121",
+            "CWE-787"
+        ],
+        "github_url": "unknown",
+        "owner": "unknown",
+        "repo": "unknown"
+    },
+    "CVE-2022-38752": {
+        "description": "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack-overflow.",
+        "cwe": [
+            "CWE-121",
+            "CWE-787"
+        ],
+        "github_url": "unknown",
+        "owner": "unknown",
+        "repo": "unknown"
+    },
+    "CVE-2022-39243": {
+        "description": "NuProcess is an external process execution implementation for Java. In all the versions of NuProcess where it forks processes by using the JVM's Java_java_lang_UNIXProcess_forkAndExec method (1.2.0+), attackers can use NUL characters in their strings to perform command line injection. Java's ProcessBuilder isn't vulnerable because of a check in ProcessBuilder.start. NuProcess is missing that check. This vulnerability can only be exploited to inject command line arguments on Linux. Version 2.0.5 contains a patch. As a workaround, users of the library can sanitize command strings to remove NUL characters prior to passing them to NuProcess for execution.",
+        "cwe": [
+            "CWE-77"
+        ],
+        "github_url": "https://github.com/brettwooldridge/NuProcess",
+        "owner": "brettwooldridge",
+        "repo": "NuProcess"
+    },
+    "CVE-2022-40151": {
+        "description": "Those using Xstream to seralize XML data may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow. This effect may support a denial of service attack.",
+        "cwe": [
+            "CWE-121",
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2022-41854": {
+        "description": "Those using Snakeyaml to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack overflow. This effect may support a denial of service attack.",
+        "cwe": [
+            "CWE-121",
+            "CWE-787"
+        ],
+        "github_url": "unknown",
+        "owner": "unknown",
+        "repo": "unknown"
+    },
+    "CVE-2022-41915": {
+        "description": "Netty project is an event-driven asynchronous network application framework. Starting in version 4.1.83.Final and prior to 4.1.86.Final, when calling `DefaultHttpHeadesr.set` with an _iterator_ of values, header value validation was not performed, allowing malicious header values in the iterator to perform HTTP Response Splitting. This issue has been patched in version 4.1.86.Final. Integrators can work around the issue by changing the `DefaultHttpHeaders.set(CharSequence, Iterator<?>)` call, into a `remove()` call, and call `add()` in a loop over the iterator of values.",
+        "cwe": [
+            "CWE-436",
+            "CWE-113"
+        ],
+        "github_url": "https://github.com/netty/netty",
+        "owner": "netty",
+        "repo": "netty"
+    },
+    "CVE-2022-41966": {
+        "description": "XStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable.",
+        "cwe": [
+            "CWE-674",
+            "CWE-120",
+            "CWE-502",
+            "CWE-121"
+        ],
+        "github_url": "https://github.com/x-stream/xstream",
+        "owner": "x-stream",
+        "repo": "xstream"
+    },
+    "CVE-2022-42003": {
+        "description": "In FasterXML jackson-databind before versions 2.13.4.1 and 2.12.17.1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2022-42004": {
+        "description": "In FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization.",
+        "cwe": [
+            "CWE-502"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-databind",
+        "owner": "FasterXML",
+        "repo": "jackson-databind"
+    },
+    "CVE-2022-42889": {
+        "description": "Apache Commons Text performs variable interpolation, allowing properties to be dynamically evaluated and expanded. The standard format for interpolation is \"${prefix:name}\", where \"prefix\" is used to locate an instance of org.apache.commons.text.lookup.StringLookup that performs the interpolation. Starting with version 1.5 and continuing through 1.9, the set of default Lookup instances included interpolators that could result in arbitrary code execution or contact with remote servers. These lookups are: - \"script\" - execute expressions using the JVM script execution engine (javax.script) - \"dns\" - resolve dns records - \"url\" - load values from urls, including from remote servers Applications using the interpolation defaults in the affected versions may be vulnerable to remote code execution or unintentional contact with remote servers if untrusted configuration values are used. Users are recommended to upgrade to Apache Commons Text 1.10.0, which disables the problematic interpolators by default.",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/apache/commons-text",
+        "owner": "apache",
+        "repo": "commons-text"
+    },
+    "CVE-2022-4565": {
+        "description": "A vulnerability classified as problematic was found in Dromara HuTool up to 5.8.10. This vulnerability affects unknown code of the file cn.hutool.core.util.ZipUtil.java. The manipulation leads to resource consumption. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 5.8.11 is able to address this issue. It is recommended to upgrade the affected component. VDB-215974 is the identifier assigned to this vulnerability.",
+        "cwe": [
+            "CWE-404"
+        ],
+        "github_url": "https://github.com/chinabugotech/hutool",
+        "owner": "chinabugotech",
+        "repo": "hutool"
+    },
+    "CVE-2022-45685": {
+        "description": "A stack overflow in Jettison before v1.5.2 allows attackers to cause a Denial of Service (DoS) via crafted JSON data.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/jettison-json/jettison",
+        "owner": "jettison-json",
+        "repo": "jettison"
+    },
+    "CVE-2022-45688": {
+        "description": "A stack overflow in the XML.toJSONObject component of hutool-json v5.8.10 allows attackers to cause a Denial of Service (DoS) via crafted JSON or XML data.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/stleary/JSON-java",
+        "owner": "stleary",
+        "repo": "JSON-java"
+    },
+    "CVE-2022-45690": {
+        "description": "A stack overflow in the org.json.JSONTokener.nextValue::JSONTokener.java component of hutool-json v5.8.10 allows attackers to cause a Denial of Service (DoS) via crafted JSON or XML data.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/stleary/JSON-java",
+        "owner": "stleary",
+        "repo": "JSON-java"
+    },
+    "CVE-2022-45693": {
+        "description": "Jettison before v1.5.2 was discovered to contain a stack overflow via the map parameter. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted string.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/jettison-json/jettison",
+        "owner": "jettison-json",
+        "repo": "jettison"
+    },
+    "CVE-2023-1370": {
+        "description": "[Json-smart](https://netplex.github.io/json-smart/) is a performance focused, JSON processor lib.\n\nWhen reaching a ‘[‘ or ‘{‘ character in the JSON input, the code parses an array or an object respectively.\n\nIt was discovered that the code does not have any limit to the nesting of such arrays or objects. Since the parsing of nested arrays and objects is done recursively, nesting too many of them can cause a stack exhaustion (stack overflow) and crash the software.",
+        "cwe": [
+            "CWE-674"
+        ],
+        "github_url": "https://github.com/netplex/json-smart-v2",
+        "owner": "netplex",
+        "repo": "json-smart-v2"
+    },
+    "CVE-2023-1436": {
+        "description": "An infinite recursion is triggered in Jettison when constructing a JSONArray from a Collection that contains a self-reference in one of its elements. This leads to a StackOverflowError exception being thrown.",
+        "cwe": [
+            "CWE-674"
+        ],
+        "github_url": "https://github.com/jettison-json/jettison",
+        "owner": "jettison-json",
+        "repo": "jettison"
+    },
+    "CVE-2023-24163": {
+        "description": "SQL Inection vulnerability in Dromara hutool before 5.8.21 allows attacker to execute arbitrary code via the aviator template engine.",
+        "cwe": [
+            "CWE-89"
+        ],
+        "github_url": "https://github.com/chinabugotech/hutool",
+        "owner": "chinabugotech",
+        "repo": "hutool"
+    },
+    "CVE-2023-24815": {
+        "description": "Vert.x-Web is a set of building blocks for building web applications in the java programming language. When running vertx web applications that serve files using `StaticHandler` on Windows Operating Systems and Windows File Systems, if the mount point is a wildcard (`*`) then an attacker can exfiltrate any class path resource. When computing the relative path to locate the resource, in case of wildcards, the code: `return \"/\" + rest;` from `Utils.java` returns the user input (without validation) as the segment to lookup. Even though checks are performed to avoid escaping the sandbox, given that the input was not sanitized `\\` are not properly handled and an attacker can build a path that is valid within the classpath. This issue only affects users deploying in windows environments and upgrading is the advised remediation path. There are no known workarounds for this vulnerability.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/vert-x3/vertx-web",
+        "owner": "vert-x3",
+        "repo": "vertx-web"
+    },
+    "CVE-2023-26119": {
+        "description": "Versions of the package net.sourceforge.htmlunit:htmlunit from 0 and before 3.0.0 are vulnerable to Remote Code Execution (RCE) via XSTL, when browsing the attacker’s webpage.",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/HtmlUnit/htmlunit",
+        "owner": "HtmlUnit",
+        "repo": "htmlunit"
+    },
+    "CVE-2023-31582": {
+        "description": "jose4j before v0.9.3 allows attackers to set a low iteration count of 1000 or less.",
+        "cwe": [
+            "CWE-331"
+        ],
+        "github_url": "https://github.com/KANIXB/JWTIssues",
+        "owner": "KANIXB",
+        "repo": "JWTIssues"
+    },
+    "CVE-2023-33962": {
+        "description": "JStachio is a  type-safe Java Mustache templating engine. Prior to version 1.0.1, JStachio fails to escape single quotes `'` in HTML, allowing an attacker to inject malicious code. This vulnerability can be exploited by an attacker to execute arbitrary JavaScript code in the context of other users visiting pages that use this template engine. This can lead to various consequences, including session hijacking, defacement of web pages, theft of sensitive information, or even the propagation of malware.\n\nVersion 1.0.1 contains a patch for this issue. To mitigate this vulnerability, the template engine should properly escape special characters, including single quotes. Common practice is to escape `'` as `&#39`. As a workaround, users can avoid this issue by using only double quotes `\"` for HTML attributes.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/jstachio/jstachio",
+        "owner": "jstachio",
+        "repo": "jstachio"
+    },
+    "CVE-2023-34453": {
+        "description": "snappy-java is a fast compressor/decompressor for Java. Due to unchecked multiplications, an integer overflow may occur in versions prior to 1.1.10.1, causing a fatal error.\n\nThe function `shuffle(int[] input)` in the file `BitShuffle.java` receives an array of integers and applies a bit shuffle on it. It does so by multiplying the length by 4 and passing it to the natively compiled shuffle function. Since the length is not tested, the multiplication by four can cause an integer overflow and become a smaller value than the true size, or even zero or negative. In the case of a negative value, a `java.lang.NegativeArraySizeException` exception will raise, which can crash the program. In a case of a value that is zero or too small, the code that afterwards references the shuffled array will assume a bigger size of the array, which might cause exceptions such as `java.lang.ArrayIndexOutOfBoundsException`.\n\nThe same issue exists also when using the `shuffle` functions that receive a double, float, long and short, each using a different multiplier that may cause the same issue.\n\nVersion 1.1.10.1 contains a patch for this vulnerability.",
+        "cwe": [
+            "CWE-190"
+        ],
+        "github_url": "https://github.com/xerial/snappy-java",
+        "owner": "xerial",
+        "repo": "snappy-java"
+    },
+    "CVE-2023-34454": {
+        "description": "snappy-java is a fast compressor/decompressor for Java. Due to unchecked multiplications, an integer overflow may occur in versions prior to 1.1.10.1, causing an unrecoverable fatal error.\n\nThe function `compress(char[] input)` in the file `Snappy.java` receives an array of characters and compresses it. It does so by multiplying the length by 2 and passing it to the rawCompress` function.\n\nSince the length is not tested, the multiplication by two can cause an integer overflow and become negative. The rawCompress function then uses the received length and passes it to the natively compiled maxCompressedLength function, using the returned value to allocate a byte array.\n\nSince the maxCompressedLength function treats the length as an unsigned integer, it doesn’t care that it is negative, and it returns a valid value, which is casted to a signed integer by the Java engine. If the result is negative, a `java.lang.NegativeArraySizeException` exception will be raised while trying to allocate the array `buf`. On the other side, if the result is positive, the `buf` array will successfully be allocated, but its size might be too small to use for the compression, causing a fatal Access Violation error.\n\nThe same issue exists also when using the `compress` functions that receive double, float, int, long and short, each using a different multiplier that may cause the same issue. The issue most likely won’t occur when using a byte array, since creating a byte array of size 0x80000000 (or any other negative value) is impossible in the first place.\n\nVersion 1.1.10.1 contains a patch for this issue.",
+        "cwe": [
+            "CWE-190"
+        ],
+        "github_url": "https://github.com/xerial/snappy-java",
+        "owner": "xerial",
+        "repo": "snappy-java"
+    },
+    "CVE-2023-34455": {
+        "description": "snappy-java is a fast compressor/decompressor for Java. Due to use of an unchecked chunk length, an unrecoverable fatal error can occur in versions prior to 1.1.10.1.\n\nThe code in the function hasNextChunk in the fileSnappyInputStream.java checks if a given stream has more chunks to read. It does that by attempting to read 4 bytes. If it wasn’t possible to read the 4 bytes, the function returns false. Otherwise, if 4 bytes were available, the code treats them as the length of the next chunk.\n\nIn the case that the `compressed` variable is null, a byte array is allocated with the size given by the input data. Since the code doesn’t test the legality of the `chunkSize` variable, it is possible to pass a negative number (such as 0xFFFFFFFF which is -1), which will cause the code to raise a `java.lang.NegativeArraySizeException` exception. A worse case would happen when passing a huge positive value (such as 0x7FFFFFFF), which would raise the fatal `java.lang.OutOfMemoryError` error.\n\nVersion 1.1.10.1 contains a patch for this issue.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/xerial/snappy-java",
+        "owner": "xerial",
+        "repo": "snappy-java"
+    },
+    "CVE-2023-34610": {
+        "description": "An issue was discovered json-io thru 4.14.0 allows attackers to cause a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/jdereg/json-io",
+        "owner": "jdereg",
+        "repo": "json-io"
+    },
+    "CVE-2023-34620": {
+        "description": "An issue was discovered hjson thru 3.0.0 allows attackers to cause a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/hjson/hjson-java",
+        "owner": "hjson",
+        "repo": "hjson-java"
+    },
+    "CVE-2023-34624": {
+        "description": "An issue was discovered htmlcleaner thru = 2.28 allows attackers to cause a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/github/advisory-database",
+        "owner": "github",
+        "repo": "advisory-database"
+    },
+    "CVE-2023-3635": {
+        "description": "GzipSource does not handle an exception that might be raised when parsing a malformed gzip buffer. This may lead to denial of service of the Okio client when handling a crafted GZIP archive, by using the GzipSource class.",
+        "cwe": [
+            "CWE-681",
+            "CWE-195"
+        ],
+        "github_url": "https://github.com/square/okio",
+        "owner": "square",
+        "repo": "okio"
+    },
+    "CVE-2023-37460": {
+        "description": "Plexis Archiver is a collection of Plexus components to create archives or extract archives to a directory with a unified `Archiver`/`UnArchiver` API. Prior to version 4.8.0, using AbstractUnArchiver for extracting an archive might lead to an arbitrary file creation and possibly remote code execution. When extracting an archive with an entry that already exists in the destination directory as a symbolic link whose target does not exist - the `resolveFile()` function will return the symlink's source instead of its target, which will pass the verification that ensures the file will not be extracted outside of the destination directory. Later `Files.newOutputStream()`, that follows symlinks by default,  will actually write the entry's content to the symlink's target. Whoever uses plexus archiver to extract an untrusted archive is vulnerable to an arbitrary file creation and possibly remote code execution. Version 4.8.0 contains a patch for this issue.",
+        "cwe": [
+            "CWE-22",
+            "CWE-61"
+        ],
+        "github_url": "https://github.com/codehaus-plexus/plexus-archiver",
+        "owner": "codehaus-plexus",
+        "repo": "plexus-archiver"
+    },
+    "CVE-2023-3894": {
+        "description": "Those using jackson-dataformats-text to parse TOML data may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow. This effect may support a denial of service attack.",
+        "cwe": [
+            "CWE-20",
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/FasterXML/jackson-dataformats-text",
+        "owner": "FasterXML",
+        "repo": "jackson-dataformats-text"
+    },
+    "CVE-2023-39010": {
+        "description": "BoofCV 0.42 was discovered to contain a code injection vulnerability via the component boofcv.io.calibration.CalibrationIO.load. This vulnerability is exploited by loading a crafted camera calibration file.",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/lessthanoptimal/BoofCV",
+        "owner": "lessthanoptimal",
+        "repo": "BoofCV"
+    },
+    "CVE-2023-39020": {
+        "description": "stanford-parser v3.9.2 and below was discovered to contain a code injection vulnerability in the component edu.stanford.nlp.io.getBZip2PipedInputStream. This vulnerability is exploited via passing an unchecked argument.",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/stanfordnlp/CoreNLP",
+        "owner": "stanfordnlp",
+        "repo": "CoreNLP"
+    },
+    "CVE-2023-39685": {
+        "description": "An issue in hjson-java up to v3.0.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted JSON string.",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/hjson/hjson-java",
+        "owner": "hjson",
+        "repo": "hjson-java"
+    },
+    "CVE-2023-4043": {
+        "description": "In Eclipse Parsson before versions 1.1.4 and 1.0.5, Parsing JSON from untrusted sources can lead malicious actors to exploit the fact that the built-in support for parsing numbers with large scale in Java has a number of edge cases where the input text of a number can lead to much larger processing time than one would expect.\n\n\nTo mitigate the risk, parsson put in place a size limit for the numbers as well as their scale.",
+        "cwe": [
+            "CWE-20",
+            "CWE-834"
+        ],
+        "github_url": "https://github.com/eclipse-ee4j/parsson",
+        "owner": "eclipse-ee4j",
+        "repo": "parsson"
+    },
+    "CVE-2023-41034": {
+        "description": "Eclipse Leshan is a device management server and client Java implementation. In affected versions DDFFileParser` and `DefaultDDFFileValidator` (and so `ObjectLoader`) are vulnerable to `XXE Attacks`. A DDF file is a LWM2M format used to store LWM2M object description. Leshan users are impacted only if they parse untrusted DDF files (e.g. if they let external users provide their own model), in that case they MUST upgrade to fixed version. If you parse only trusted DDF file and validate only with trusted xml schema, upgrading is not mandatory.  This issue has been fixed in versions 1.5.0 and 2.0.0-M13. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+        "cwe": [
+            "CWE-611"
+        ],
+        "github_url": "https://github.com/eclipse-leshan/leshan",
+        "owner": "eclipse-leshan",
+        "repo": "leshan"
+    },
+    "CVE-2023-42276": {
+        "description": "hutool v5.8.21 was discovered to contain a buffer overflow via the component jsonArray.",
+        "cwe": [
+            "CWE-120"
+        ],
+        "github_url": "https://github.com/dromara/hutool",
+        "owner": "dromara",
+        "repo": "hutool"
+    },
+    "CVE-2023-42278": {
+        "description": "hutool v5.8.21 was discovered to contain a buffer overflow via the component JSONUtil.parse().",
+        "cwe": [
+            "CWE-120"
+        ],
+        "github_url": "https://github.com/chinabugotech/hutool",
+        "owner": "chinabugotech",
+        "repo": "hutool"
+    },
+    "CVE-2023-42503": {
+        "description": "Improper Input Validation, Uncontrolled Resource Consumption vulnerability in Apache Commons Compress in TAR parsing.This issue affects Apache Commons Compress: from 1.22 before 1.24.0.\n\nUsers are recommended to upgrade to version 1.24.0, which fixes the issue.\n\nA third party can create a malformed TAR file by manipulating file modification times headers, which when parsed with Apache Commons Compress, will cause a denial of service issue via CPU consumption.\n\nIn version 1.22 of Apache Commons Compress, support was added for file modification times with higher precision (issue # COMPRESS-612 [1]). The format for the PAX extended headers carrying this data consists of two numbers separated by a period [2], indicating seconds and subsecond precision (for example “1647221103.5998539”). The impacted fields are “atime”, “ctime”, “mtime” and “LIBARCHIVE.creationtime”. No input validation is performed prior to the parsing of header values.\n\nParsing of these numbers uses the BigDecimal [3] class from the JDK which has a publicly known algorithmic complexity issue when doing operations on large numbers, causing denial of service (see issue # JDK-6560193 [4]). A third party can manipulate file time headers in a TAR file by placing a number with a very long fraction (300,000 digits) or a number with exponent notation (such as “9e9999999”) within a file modification time header, and the parsing of files with these headers will take hours instead of seconds, leading to a denial of service via exhaustion of CPU resources. This issue is similar to CVE-2012-2098 [5].\n\n[1]:  https://issues.apache.org/jira/browse/COMPRESS-612 \n[2]:  https://pubs.opengroup.org/onlinepubs/9699919799/utilities/pax.html#tag_20_92_13_05 \n[3]:  https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html \n[4]:  https://bugs.openjdk.org/browse/JDK-6560193 \n[5]:  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2098 \n\nOnly applications using CompressorStreamFactory class (with auto-detection of file types), TarArchiveInputStream and TarFile classes to parse TAR files are impacted. Since this code was introduced in v1.22, only that version and later versions are impacted.",
+        "cwe": [
+            "CWE-20",
+            "CWE-400"
+        ],
+        "github_url": "https://github.com/apache/commons-compress",
+        "owner": "apache",
+        "repo": "commons-compress"
+    },
+    "CVE-2023-43642": {
+        "description": "snappy-java is a Java port of the snappy, a fast C++ compresser/decompresser developed by Google. The SnappyInputStream was found to be vulnerable to Denial of Service (DoS) attacks when decompressing data with a too large chunk size. Due to missing upper bound check on chunk length, an unrecoverable fatal error can occur. All versions of snappy-java including the latest released version 1.1.10.3 are vulnerable to this issue. A fix has been introduced in commit `9f8c3cf74` which will be included in the 1.1.10.4 release. Users are advised to upgrade. Users unable to upgrade should only accept compressed data from trusted sources.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/xerial/snappy-java",
+        "owner": "xerial",
+        "repo": "snappy-java"
+    },
+    "CVE-2023-49093": {
+        "description": "HtmlUnit is a GUI-less browser for Java programs. HtmlUnit is vulnerable to Remote Code Execution (RCE) via XSTL, when browsing the attacker’s webpage. This vulnerability has been patched in version 3.9.0",
+        "cwe": [
+            "CWE-94"
+        ],
+        "github_url": "https://github.com/HtmlUnit/htmlunit",
+        "owner": "HtmlUnit",
+        "repo": "htmlunit"
+    },
+    "CVE-2023-49250": {
+        "description": "Because the HttpUtils class did not verify certificates, an attacker that could perform a Man-in-the-Middle (MITM) attack on outgoing https connections could impersonate the server.\n\nThis issue affects Apache DolphinScheduler: before 3.2.0.\n\nUsers are recommended to upgrade to version 3.2.1, which fixes the issue.",
+        "cwe": [
+            "CWE-295"
+        ],
+        "github_url": "https://github.com/apache/dolphinscheduler",
+        "owner": "apache",
+        "repo": "dolphinscheduler"
+    },
+    "CVE-2023-50572": {
+        "description": "An issue in the component GroovyEngine.execute of jline-groovy v3.24.1 allows attackers to cause an OOM (OutofMemory) error.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/lrytz/jline3",
+        "owner": "lrytz",
+        "repo": "jline3"
+    },
+    "CVE-2023-5072": {
+        "description": "Denial of Service  in JSON-Java versions up to and including 20230618.  A bug in the parser means that an input string of modest size can lead to indefinite amounts of memory being used.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/stleary/JSON-java",
+        "owner": "stleary",
+        "repo": "JSON-java"
+    },
+    "CVE-2023-51074": {
+        "description": "json-path v2.8.0 was discovered to contain a stack overflow via the Criteria.parse() method.",
+        "cwe": [],
+        "github_url": "https://github.com/jenkinsci/parameterized-trigger-plugin",
+        "owner": "jenkinsci",
+        "repo": "parameterized-trigger-plugin"
+    },
+    "CVE-2023-51075": {
+        "description": "hutool-core v5.8.23 was discovered to contain an infinite loop in the StrSplitter.splitByRegex function. This vulnerability allows attackers to cause a Denial of Service (DoS) via manipulation of the first two parameters.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/dromara/hutool",
+        "owner": "dromara",
+        "repo": "hutool"
+    },
+    "CVE-2023-51080": {
+        "description": "The NumberUtil.toBigDecimal method in hutool-core v5.8.23 was discovered to contain a stack overflow.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/dromara/hutool",
+        "owner": "dromara",
+        "repo": "hutool"
+    },
+    "CVE-2023-52428": {
+        "description": "In Connect2id Nimbus JOSE+JWT before 9.37.2, an attacker can cause a denial of service (resource consumption) via a large JWE p2c header value (aka iteration count) for the PasswordBasedDecrypter (PBKDF2) component.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "unknown",
+        "owner": "unknown",
+        "repo": "unknown"
+    },
+    "CVE-2023-7272": {
+        "description": "In Eclipse Parsson before 1.0.4 and 1.1.3, a document with a large depth of nested objects can allow an attacker to cause a Java stack overflow exception and denial of service. Eclipse Parsson allows processing (e.g. parse, generate, transform and query) JSON documents.",
+        "cwe": [
+            "CWE-787"
+        ],
+        "github_url": "https://github.com/eclipse-ee4j/parsson",
+        "owner": "eclipse-ee4j",
+        "repo": "parsson"
+    },
+    "CVE-2024-1597": {
+        "description": "pgjdbc, the PostgreSQL JDBC Driver, allows attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default. In the default mode there is no vulnerability. A placeholder for a numeric value must be immediately preceded by a minus. There must be a second placeholder for a string value after the first placeholder; both must be on the same line. By constructing a matching string payload, the attacker can inject SQL to alter the query,bypassing the protections that parameterized queries bring against SQL Injection attacks. Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.28 are affected.",
+        "cwe": [
+            "CWE-89"
+        ],
+        "github_url": "https://github.com/pgjdbc/pgjdbc",
+        "owner": "pgjdbc",
+        "repo": "pgjdbc"
+    },
+    "CVE-2024-22257": {
+        "description": "In Spring Security, versions 5.7.x prior to 5.7.12, 5.8.x prior to \n5.8.11, versions 6.0.x prior to 6.0.9, versions 6.1.x prior to 6.1.8, \nversions 6.2.x prior to 6.2.3, an application is possible vulnerable to \nbroken access control when it directly uses the AuthenticatedVoter#vote passing a null Authentication parameter.",
+        "cwe": [
+            "CWE-862"
+        ],
+        "github_url": "https://github.com/spring-projects/spring-security",
+        "owner": "spring-projects",
+        "repo": "spring-security"
+    },
+    "CVE-2024-23635": {
+        "description": "AntiSamy is a library for performing fast, configurable cleansing of HTML coming from untrusted sources. Prior to 1.7.5, there is a potential for a mutation XSS (mXSS) vulnerability in AntiSamy caused by flawed parsing of the HTML being sanitized. To be subject to this vulnerability the `preserveComments` directive must be enabled in your policy file. As a result, certain crafty inputs can result in elements in comment tags being interpreted as executable when using AntiSamy's sanitized output. Patched in AntiSamy 1.7.5 and later.",
+        "cwe": [
+            "CWE-79"
+        ],
+        "github_url": "https://github.com/nahsra/antisamy",
+        "owner": "nahsra",
+        "repo": "antisamy"
+    },
+    "CVE-2024-23833": {
+        "description": "OpenRefine is a free, open source power tool for working with messy data and improving it. A jdbc attack vulnerability exists in OpenRefine(version<=3.7.7) where an attacker may construct a JDBC query which may read files on the host filesystem. Due to the newer MySQL driver library in the latest version of OpenRefine (8.0.30), there is no associated deserialization utilization point, so original code execution cannot be achieved, but attackers can use this vulnerability to read sensitive files on the target server. This issue has been addressed in version 3.7.8. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+        "cwe": [
+            "CWE-22",
+            "CWE-863"
+        ],
+        "github_url": "https://github.com/OpenRefine/OpenRefine",
+        "owner": "OpenRefine",
+        "repo": "OpenRefine"
+    },
+    "CVE-2024-25125": {
+        "description": "Digdag is an open source tool that to build, run, schedule, and monitor complex pipelines of tasks across various platforms. Treasure Data's digdag workload automation system is susceptible to a path traversal vulnerability if it's configured to store log files locally. This issue may lead to information disclosure and has been addressed in release version 0.10.5.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/treasure-data/digdag",
+        "owner": "treasure-data",
+        "repo": "digdag"
+    },
+    "CVE-2024-25710": {
+        "description": "Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.3 through 1.25.0.\n\nUsers are recommended to upgrade to version 1.26.0 which fixes the issue.",
+        "cwe": [
+            "CWE-835"
+        ],
+        "github_url": "https://github.com/apache/commons-compress",
+        "owner": "apache",
+        "repo": "commons-compress"
+    },
+    "CVE-2024-26308": {
+        "description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.21 before 1.26.\n\nUsers are recommended to upgrade to version 1.26, which fixes the issue.",
+        "cwe": [
+            "CWE-770"
+        ],
+        "github_url": "https://github.com/apache/commons-compress",
+        "owner": "apache",
+        "repo": "commons-compress"
+    },
+    "CVE-2024-31860": {
+        "description": "Improper Input Validation vulnerability in Apache Zeppelin.\n\nBy adding relative path indicators(E.g ..), attackers can see the contents for any files in the filesystem that the server account can access. \nThis issue affects Apache Zeppelin: from 0.9.0 before 0.11.0.\n\nUsers are recommended to upgrade to version 0.11.0, which fixes the issue.",
+        "cwe": [
+            "CWE-22"
+        ],
+        "github_url": "https://github.com/apache/zeppelin",
+        "owner": "apache",
+        "repo": "zeppelin"
+    }
+}

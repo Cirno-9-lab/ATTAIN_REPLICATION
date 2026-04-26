@@ -1,0 +1,888 @@
+{
+  "generated_at": "2026-04-23T06:07:41",
+  "batch_summary_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/batch-summary.json",
+  "score_no_threshold": 45,
+  "score_yes_threshold": 80,
+  "status_filter": [
+    "trace_diff",
+    "execution_failure"
+  ],
+  "total_cases": 6,
+  "selected_cases": 4,
+  "aggregated_entries": 4,
+  "missing_scenario_count": 0,
+  "missing_markdown_count": 0,
+  "missing_final_response_count": 0,
+  "judgment_mode": "hybrid",
+  "judgment_source_counts": {
+    "llm": 4
+  },
+  "llm_judgment_available_count": 4,
+  "final_failure_reason_counts": {
+    "exploit_invalid_due_to_version_change": 1,
+    "vulnerability_not_present": 3
+  },
+  "vulnerability_presence_counts": {
+    "unknown": 1,
+    "no": 3
+  },
+  "judgment_confidence_counts": {
+    "medium": 2,
+    "high": 2
+  },
+  "entries": [
+    {
+      "case_id": "CVE-2025-48976__00__1.2__1.1.1",
+      "cve_id": "CVE-2025-48976",
+      "pair_index": 0,
+      "artifact": "commons-fileupload:commons-fileupload",
+      "description": null,
+      "baseline_version": "1.2",
+      "target_version": "1.1.1",
+      "status": "trace_diff",
+      "failure_kind": null,
+      "failure_subtype": "trace_difference",
+      "baseline_execution_observation": "test_failure",
+      "target_execution_observation": "test_failure",
+      "compare_url": "unknown",
+      "analysis_dir": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis",
+      "llm_output_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/llm-hunk-analysis.md",
+      "llm_hunk_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/llm-hunk-judgments.json",
+      "llm_hunk_judgment_error_path": null,
+      "llm_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/llm-vulnerability-judgment.json",
+      "llm_judgment_error_path": null,
+      "scenario_type": "trace_diff",
+      "trace_keywords": "trace.log, Baseline, CVE, Target, ENTER, None, Has, True, Trace, First, Execution",
+      "trace_has_difference": true,
+      "trace_has_effective_difference": true,
+      "trace_evidence_valid": true,
+      "trace_invalid_reasons": [],
+      "failure_excerpt_keywords": null,
+      "baseline_command": "mvn -q -Dtarget.library.version=1.2 -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/baseline-trace.log -Ddependency.trace.packages=org/springframework/mock/web/,org/apache/commons/fileupload/ -Dmaven.test.failure.ignore=true -Dtest=edu.vision.se.Testcase1 test",
+      "target_command": "java -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/target-trace.log -Ddependency.trace.packages=org/springframework/mock/web/,org/apache/commons/fileupload/ -Ddifftrace.observe.only=true -Dtarget.library.version=1.1.1 '-javaagent:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/compat-replay/baseline-build/demo-1.0-SNAPSHOT-trace-agent-all.jar=output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/target-trace.log;packages=org/springframework/mock/web/,org/apache/commons/fileupload/' -cp /data-1/xinweimao/code/difftrace/demo/target/demo-1.0-SNAPSHOT-trace-agent-all.jar:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/compat-replay/rewritten-test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/compat-replay/baseline-build/test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-48976__00__1.2__1.1.1/analysis/compat-replay/baseline-build/classes:/home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.1.1/commons-fileupload-1.1.1.jar:/home/xinweimao/.m2/repository/commons-io/commons-io/1.1/commons-io-1.1.jar:/home/xinweimao/.m2/repository/org/springframework/spring-test/5.3.30/spring-test-5.3.30.jar:/home/xinweimao/.m2/repository/org/springframework/spring-core/5.3.30/spring-core-5.3.30.jar:/home/xinweimao/.m2/repository/org/springframework/spring-jcl/5.3.30/spring-jcl-5.3.30.jar:/home/xinweimao/.m2/repository/org/springframework/spring-web/5.3.30/spring-web-5.3.30.jar:/home/xinweimao/.m2/repository/org/springframework/spring-beans/5.3.30/spring-beans-5.3.30.jar:/home/xinweimao/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/home/xinweimao/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/xinweimao/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar com.example.trace.compat.CompatJUnitRunner edu.vision.se.Testcase1",
+      "has_final_response": true,
+      "diagnosis": "The version downgrade from commons-fileupload 1.2 to 1.1.1 shows significant structural changes, primarily through removal of streaming-related classes (FileItemIterator, FileItemStream, and their supporting classes) and size validation exceptions. The trace divergence shows fundamentally different behavior (baseline trace size 35GB vs target 1.2KB), indicating the test likely attempts to use 1.2 streaming features that don't exist in 1.1.1.",
+      "diagnosis_short": "The version downgrade from commons-fileupload 1.2 to 1.1.1 shows significant structural changes, primarily through removal of streaming-related classes (FileItemIterator, FileItemStream, and their supporting classes) and size validation ...",
+      "selected_hunks_text": "1. `version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff`:\npublic class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed\n\n2. `version-diff/summary.json` (fallback excerpt - no direct diff for removed classes):\n\"removed_classes_preview\": [\n  \"org/apache/commons/fileupload/FileItemIterator.class\",\n  \"org/apache/commons/fileupload/FileItemStream.class\",\n  \"org/apache/commons/fileupload/util/LimitedInputStream.class\"\n]",
+      "selected_hunk_count": 2,
+      "selected_hunk_paths": [
+        "version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+        "version-diff/summary.json"
+      ],
+      "selected_hunks": [
+        {
+          "path": "version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+          "details": "``\npublic class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed",
+          "inline_diff_excerpt": "- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed"
+        },
+        {
+          "path": "version-diff/summary.json",
+          "details": "`` (fallback excerpt - no direct diff for removed classes)\n\"removed_classes_preview\": [\n  \"org/apache/commons/fileupload/FileItemIterator.class\",\n  \"org/apache/commons/fileupload/FileItemStream.class\",\n  \"org/apache/commons/fileupload/util/LimitedInputStream.class\"\n]",
+          "inline_diff_excerpt": ""
+        }
+      ],
+      "selected_hunk_payloads": [
+        {
+          "path": "version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+          "details": "``\npublic class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed\nAuto-expanded with paired bytecode diff context from version-diff/diffs/org/apache/commons/fileupload/DefaultFileItem.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/org/apache/commons/fileupload/DefaultFileItem.diff):\n--- 1.2:org.apache.commons.fileupload.DefaultFileItem\n+++ 1.1.1:org.apache.commons.fileupload.DefaultFileItem\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.2/commons-fileupload-1.2.jar -p -c org.apache.commons.fileupload.DefaultFileItem\n+$ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.1.1/commons-fileupload-1.1.1.jar -p -c org.apache.commons.fileupload.DefaultFileItem\n Compiled from \"DefaultFileItem.java\"\n public class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n   public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n\nAligned raw context preview:\nmatched_anchor_terms: - public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, public, org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, int, java.io.File);, java.io.File)\nbaseline_context (anchor line 4):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.2/commons-fileupload-1.2.jar -p -s org.apache.commons.fileupload.DefaultFileItem\n00002: Compiled from \"DefaultFileItem.java\"\n00003: public class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n00004:   public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n00005:     descriptor: (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILjava/io/File;)V\n00006: }\ntarget_context (anchor line 4):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.1.1/commons-fileupload-1.1.1.jar -p -s org.apache.commons.fileupload.DefaultFileItem\n00002: Compiled from \"DefaultFileItem.java\"\n00003: public class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n00004:   public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n00005:     descriptor: (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILjava/io/File;)V\n00006: }",
+          "paired_bytecode_path": "version-diff/diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+          "evidence_kind": "api_diff"
+        },
+        {
+          "path": "version-diff/summary.json",
+          "details": "`` (fallback excerpt - no direct diff for removed classes)\n\"removed_classes_preview\": [\n  \"org/apache/commons/fileupload/FileItemIterator.class\",\n  \"org/apache/commons/fileupload/FileItemStream.class\",\n  \"org/apache/commons/fileupload/util/LimitedInputStream.class\"\n]",
+          "diff_excerpt": "changed_class_count=19\nadded_class_count=0\nremoved_class_count=18\nchanged_classes_preview=org/apache/commons/fileupload/DefaultFileItem.class, org/apache/commons/fileupload/DefaultFileItemFactory.class, org/apache/commons/fileupload/DiskFileUpload.class, org/apache/commons/fileupload/FileUpload.class, org/apache/commons/fileupload/FileUploadBase$InvalidContentTypeException.class",
+          "paired_bytecode_path": null,
+          "evidence_kind": "version_diff_summary"
+        }
+      ],
+      "judgment_payload_count": 2,
+      "judgment_payloads": [
+        {
+          "path": "version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+          "details": "``\npublic class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed\nAuto-expanded with paired bytecode diff context from version-diff/diffs/org/apache/commons/fileupload/DefaultFileItem.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/org/apache/commons/fileupload/DefaultFileItem.diff):\n--- 1.2:org.apache.commons.fileupload.DefaultFileItem\n+++ 1.1.1:org.apache.commons.fileupload.DefaultFileItem\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.2/commons-fileupload-1.2.jar -p -c org.apache.commons.fileupload.DefaultFileItem\n+$ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.1.1/commons-fileupload-1.1.1.jar -p -c org.apache.commons.fileupload.DefaultFileItem\n Compiled from \"DefaultFileItem.java\"\n public class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n   public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n\nAligned raw context preview:\nmatched_anchor_terms: - public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, public, org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, int, java.io.File);, java.io.File)\nbaseline_context (anchor line 4):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.2/commons-fileupload-1.2.jar -p -s org.apache.commons.fileupload.DefaultFileItem\n00002: Compiled from \"DefaultFileItem.java\"\n00003: public class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n00004:   public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n00005:     descriptor: (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILjava/io/File;)V\n00006: }\ntarget_context (anchor line 4):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/commons-fileupload/commons-fileupload/1.1.1/commons-fileupload-1.1.1.jar -p -s org.apache.commons.fileupload.DefaultFileItem\n00002: Compiled from \"DefaultFileItem.java\"\n00003: public class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n00004:   public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n00005:     descriptor: (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILjava/io/File;)V\n00006: }",
+          "paired_bytecode_path": "version-diff/diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+          "evidence_kind": "api_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        },
+        {
+          "path": "version-diff/summary.json",
+          "details": "`` (fallback excerpt - no direct diff for removed classes)\n\"removed_classes_preview\": [\n  \"org/apache/commons/fileupload/FileItemIterator.class\",\n  \"org/apache/commons/fileupload/FileItemStream.class\",\n  \"org/apache/commons/fileupload/util/LimitedInputStream.class\"\n]",
+          "diff_excerpt": "changed_class_count=19\nadded_class_count=0\nremoved_class_count=18\nchanged_classes_preview=org/apache/commons/fileupload/DefaultFileItem.class, org/apache/commons/fileupload/DefaultFileItemFactory.class, org/apache/commons/fileupload/DiskFileUpload.class, org/apache/commons/fileupload/FileUpload.class, org/apache/commons/fileupload/FileUploadBase$InvalidContentTypeException.class",
+          "paired_bytecode_path": null,
+          "evidence_kind": "version_diff_summary",
+          "weak_signal_reasons": [
+            "fallback_evidence"
+          ],
+          "signal_weight": 0.35
+        }
+      ],
+      "hunk_judgment_count": 2,
+      "hunk_judgments": [
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+          "judgment": "exploit_breakage_evidence",
+          "confidence": "medium",
+          "key_evidence": [
+            "Constructor signature changed"
+          ],
+          "reasoning": "The constructor signature change in DefaultFileItem could break exploit compatibility, but it's unclear if it's a direct fix for vulnerability or just API evolution.",
+          "reasoning_short": "The constructor signature change in DefaultFileItem could break exploit compatibility, but it's unclear if it's a direct fix for vulnerability or just API evolution."
+        },
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/summary.json",
+          "judgment": "exploit_breakage_evidence",
+          "confidence": "medium",
+          "key_evidence": [
+            "changed_class_count=19",
+            "removed_class_count=18",
+            "changed_classes_preview includes core file upload classes"
+          ],
+          "reasoning": "Significant class changes and removals in core file upload components suggest potential API/structural changes that could break exploit paths, without clear fix evidence.",
+          "reasoning_short": "Significant class changes and removals in core file upload components suggest potential API/structural changes that could break exploit paths, without clear fix evidence."
+        }
+      ],
+      "supporting_evidence": "- Trace summary shows order-of-magnitude size difference (35GB vs 1.2KB)\n- 18 classes removed in 1.1.1, including critical streaming infrastructure\n- Both versions show test failures but with completely different behavior patterns",
+      "open_questions": "1. Was the test specifically designed for 1.2's streaming API?\n2. Is the size difference due to 1.1.1 failing fast while 1.2 attempts streaming?",
+      "final_response_markdown": "```markdown\nDiagnosis\nThe version downgrade from commons-fileupload 1.2 to 1.1.1 shows significant structural changes, primarily through removal of streaming-related classes (FileItemIterator, FileItemStream, and their supporting classes) and size validation exceptions. The trace divergence shows fundamentally different behavior (baseline trace size 35GB vs target 1.2KB), indicating the test likely attempts to use 1.2 streaming features that don't exist in 1.1.1.\n\nSelected Hunks\n1. `version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff`:\n```diff\npublic class org.apache.commons.fileupload.DefaultFileItem extends org.apache.commons.fileupload.disk.DiskFileItem {\n- public org.apache.commons.fileupload.DefaultFileItem(java.lang.String, java.lang.String, boolean, java.lang.String, int, java.io.File);\n+ // Constructor signature changed\n```\n\n2. `version-diff/summary.json` (fallback excerpt - no direct diff for removed classes):\n```json\n\"removed_classes_preview\": [\n  \"org/apache/commons/fileupload/FileItemIterator.class\",\n  \"org/apache/commons/fileupload/FileItemStream.class\",\n  \"org/apache/commons/fileupload/util/LimitedInputStream.class\"\n]\n```\n\nSupporting Evidence\n- Trace summary shows order-of-magnitude size difference (35GB vs 1.2KB)\n- 18 classes removed in 1.1.1, including critical streaming infrastructure\n- Both versions show test failures but with completely different behavior patterns\n\nOpen Questions\n1. Was the test specifically designed for 1.2's streaming API?\n2. Is the size difference due to 1.1.1 failing fast while 1.2 attempts streaming?\n```",
+      "judgment_source": "llm",
+      "rule_judgment": {
+        "vulnerability_presence_score": 60,
+        "final_failure_reason": "undetermined",
+        "vulnerability_presence_verdict": "unknown",
+        "judgment_confidence": "low",
+        "judgment_scores": {
+          "vulnerability_not_present": 0.0,
+          "exploit_invalid_due_to_version_change": 6.0
+        },
+        "judgment_signals": {
+          "vulnerability_not_present": [],
+          "exploit_invalid_due_to_version_change": [
+            "hunk_exploit_breakage_medium"
+          ],
+          "uncertainty": [
+            "hedged_language",
+            "text_api_shape_change",
+            "text_behavior_change",
+            "text_runtime_or_factory_breakage",
+            "weak_hunk_fallback_evidence",
+            "open_questions_present"
+          ]
+        },
+        "strong_fix_evidence_present": false,
+        "compatibility_breakage_present": false,
+        "trace_evidence_effective": true,
+        "judgment_rationale": "The current evidence mixes compatibility-change and behavior-change signals or leaves too many open questions, so vulnerability existence cannot be determined confidently from the available LLM diagnosis and diff evidence.",
+        "judgment_rationale_short": "The current evidence mixes compatibility-change and behavior-change signals or leaves too many open questions, so vulnerability existence cannot be determined confidently from the available LLM diagnosis and diff evidence."
+      },
+      "llm_judgment": {
+        "prompt_version": "direct_diff_v6",
+        "vulnerability_presence_score": 50,
+        "final_failure_reason": "exploit_invalid_due_to_version_change",
+        "vulnerability_presence_verdict": "unknown",
+        "judgment_confidence": "medium",
+        "judgment_rationale": "The target version shows significant API changes but no direct evidence of vulnerable logic removal. The exploit fails due to version incompatibility, making it unclear if the vulnerability still exists.",
+        "judgment_rationale_short": "The target version shows significant API changes but no direct evidence of vulnerable logic removal. The exploit fails due to version incompatibility, making it unclear if the vulnerability still exists.",
+        "fix_evidence_strength": "none",
+        "exploit_breakage_evidence_strength": "medium",
+        "llm_key_evidence": [
+          "Constructor signature changed in DefaultFileItem",
+          "No explicit removal of vulnerable logic",
+          "Significant API and class structure changes"
+        ],
+        "judged_hunk_count": 2,
+        "judged_hunk_paths": [
+          "version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+          "version-diff/summary.json"
+        ]
+      },
+      "vulnerability_presence_score": 50,
+      "final_failure_reason": "exploit_invalid_due_to_version_change",
+      "vulnerability_presence_verdict": "unknown",
+      "judgment_confidence": "medium",
+      "judgment_scores": {
+        "vulnerability_not_present": 0.0,
+        "exploit_invalid_due_to_version_change": 6.0
+      },
+      "judgment_signals": {
+        "vulnerability_not_present": [],
+        "exploit_invalid_due_to_version_change": [
+          "hunk_exploit_breakage_medium"
+        ],
+        "uncertainty": [
+          "hedged_language",
+          "text_api_shape_change",
+          "text_behavior_change",
+          "text_runtime_or_factory_breakage",
+          "weak_hunk_fallback_evidence",
+          "open_questions_present"
+        ]
+      },
+      "strong_fix_evidence_present": false,
+      "compatibility_breakage_present": false,
+      "trace_evidence_effective": true,
+      "judgment_rationale": "The target version shows significant API changes but no direct evidence of vulnerable logic removal. The exploit fails due to version incompatibility, making it unclear if the vulnerability still exists.",
+      "judgment_rationale_short": "The target version shows significant API changes but no direct evidence of vulnerable logic removal. The exploit fails due to version incompatibility, making it unclear if the vulnerability still exists.",
+      "prompt_version": "direct_diff_v6",
+      "fix_evidence_strength": "none",
+      "exploit_breakage_evidence_strength": "medium",
+      "llm_key_evidence": [
+        "Constructor signature changed in DefaultFileItem",
+        "No explicit removal of vulnerable logic",
+        "Significant API and class structure changes"
+      ],
+      "judged_hunk_count": 2,
+      "judged_hunk_paths": [
+        "version-diff/api-diffs/org/apache/commons/fileupload/DefaultFileItem.diff",
+        "version-diff/summary.json"
+      ]
+    },
+    {
+      "case_id": "CVE-2025-52999__00__2.4.0-rc1__2.3.3",
+      "cve_id": "CVE-2025-52999",
+      "pair_index": 0,
+      "artifact": "com.fasterxml.jackson.core:jackson-databind",
+      "description": null,
+      "baseline_version": "2.4.0-rc1",
+      "target_version": "2.3.3",
+      "status": "execution_failure",
+      "failure_kind": "process_failure",
+      "failure_subtype": "binary_incompatibility",
+      "baseline_execution_observation": "test_failure",
+      "target_execution_observation": "process_failure",
+      "compare_url": "unknown",
+      "analysis_dir": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis",
+      "llm_output_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/llm-hunk-analysis.md",
+      "llm_hunk_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/llm-hunk-judgments.json",
+      "llm_hunk_judgment_error_path": null,
+      "llm_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/llm-vulnerability-judgment.json",
+      "llm_judgment_error_path": null,
+      "scenario_type": "process_failure",
+      "trace_keywords": null,
+      "trace_has_difference": null,
+      "trace_has_effective_difference": null,
+      "trace_evidence_valid": null,
+      "trace_invalid_reasons": null,
+      "failure_excerpt_keywords": "java.lang.NoSuchFieldError, com.example.Testcase1, Testcase1.java, java.base, java.lang.Class.forName0, java.lang.Class.forName, Class.java, com.example.trace.compat.CompatJUnitRunner.main, CompatJUnitRunner.java, Exception, NoSuchFieldError, UNWRAP_SINGLE_VALUE_ARRAYS",
+      "baseline_command": "mvn -q -Dtarget.library.version=2.4.0-rc1 -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/baseline-trace.log -Ddependency.trace.packages=com/fasterxml/jackson/core/,com/fasterxml/jackson/databind/ -Dmaven.test.failure.ignore=true -Dtest=com.example.Testcase1 test",
+      "target_command": "java -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/target-trace.log -Ddependency.trace.packages=com/fasterxml/jackson/core/,com/fasterxml/jackson/databind/ -Ddifftrace.observe.only=true -Dtarget.library.version=2.3.3 '-javaagent:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/compat-replay/baseline-build/demo-1.0-SNAPSHOT-trace-agent-all.jar=output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/target-trace.log;packages=com/fasterxml/jackson/core/,com/fasterxml/jackson/databind/' -cp /data-1/xinweimao/code/difftrace/demo/target/demo-1.0-SNAPSHOT-trace-agent-all.jar:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/compat-replay/rewritten-test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/compat-replay/baseline-build/test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-52999__00__2.4.0-rc1__2.3.3/analysis/compat-replay/baseline-build/classes:/home/xinweimao/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/xinweimao/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3.jar:/home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar:/home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.3.3/jackson-core-2.3.3.jar com.example.trace.compat.CompatJUnitRunner com.example.Testcase1",
+      "has_final_response": true,
+      "diagnosis": "The failure is caused by attempting to access the `UNWRAP_SINGLE_VALUE_ARRAYS` field which was introduced in Jackson Databind 2.4.0-rc1 but doesn't exist in 2.3.3. This is a clear case of binary incompatibility where code compiled against 2.4.0-rc1 tries to use a feature that was introduced in that version but isn't present in the older 2.3.3 version.",
+      "diagnosis_short": "The failure is caused by attempting to access the `UNWRAP_SINGLE_VALUE_ARRAYS` field which was introduced in Jackson Databind 2.4.0-rc1 but doesn't exist in 2.3.3. This is a clear case of binary incompatibility where code compiled agains...",
+      "selected_hunks_text": "1. `version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff`:\n-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n      descriptor: Lcom/fasterxml/jackson/databind/DeserializationFeature;",
+      "selected_hunk_count": 1,
+      "selected_hunk_paths": [
+        "version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff"
+      ],
+      "selected_hunks": [
+        {
+          "path": "version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff",
+          "details": "``\n-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n      descriptor: Lcom/fasterxml/jackson/databind/DeserializationFeature;",
+          "inline_diff_excerpt": "-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;"
+        }
+      ],
+      "selected_hunk_payloads": [
+        {
+          "path": "version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff",
+          "details": "``\n-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n      descriptor: Lcom/fasterxml/jackson/databind/DeserializationFeature;\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff):\n--- 2.4.0-rc1:com.fasterxml.jackson.databind.DeserializationFeature\n+++ 2.3.3:com.fasterxml.jackson.databind.DeserializationFeature\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.0-rc1/jackson-databind-2.4.0-rc1.jar -p -c com.fasterxml.jackson.databind.DeserializationFeature\n+$ javap -classpath /home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3.jar -p -c com.fasterxml.jackson.databind.DeserializationFeature\n Compiled from \"DeserializationFeature.java\"\n public final class com.fasterxml.jackson.databind.DeserializationFeature extends java.lang.Enum<com.fasterxml.jackson.databind.DeserializationFeature> implements com.fasterxml.jackson.databind.cfg.ConfigFeature {\n   public static final com.fasterxml.jackson.databind.DeserializationFeature USE_BIG_DECIMAL_FOR_FLOATS;\n@@ -24,8 +24,6 @@\n   public static final com.fasterxml.jackson.databind.DeserializationFeature WRAP_EXCEPTIONS;\n \n   public static final com.fasterxml.jackson.databind.DeserializationFeature ACCEPT_SINGLE_VALUE_AS_ARRAY;\n-\n-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n \n   public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_ROOT_VALUE;\n \n@@ -171,131 +169,120 @@\n      171: putstatic     #33                 // Field ACCEPT_SINGLE_VALUE_AS_ARRAY:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      174: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      177: dup\n-     178: ldc           #34                 // String UNWRAP_SINGLE_VALUE_ARRAYS\n+     178: ldc           #34                 // String UNWRAP_ROOT_VALUE\n      180: bipush        12\n      182: iconst_0\n      183: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     186: putstatic     #35                 // Field UNWRAP_SINGLE_VALUE_ARRAYS:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n+     186: putstatic     #35                 // Field UNWRAP_ROOT_VALUE:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      189: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      192: dup\n-     193: ldc           #36                 // String UNWRAP_ROOT_VALUE\n+     193: ldc           #36                 // String ACCEPT_EMPTY_STRING_AS_NULL_OBJECT\n      195: bipush        13\n      197: iconst_0\n      198: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     201: putstatic     #37                 // Field UNWRAP_ROOT_VALUE:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n+     201: putstatic     #37                 // Field ACCEPT_EMPTY_STRING_AS_NULL_OBJECT:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      204: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      207: dup\n-     208: ldc           #38                 // String ACCEPT_EMPTY_STRING_AS_NULL_OBJECT\n+     208: ldc           #38                 // String READ_UNKNOWN_ENUM_VALUES_AS_NULL\n      210: bipush        14\n      212: iconst_0\n      213: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     216: putstatic     #39                 // Field ACCEPT_EMPTY_STRING_AS_NULL_OBJECT:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n+     216: putstatic     #39                 // Field READ_UNKNOWN_ENUM_VALUES_AS_NULL:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      219: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      222: dup\n-     223: ldc           #40                 // String READ_UNKNOWN_ENUM_VALUES_AS_NULL\n+     223: ldc           #40                 // String READ_DATE_TIMESTAMPS_AS_NANOSECONDS\n      225: bipush        15\n-     227: iconst_0\n+     227: iconst_1\n      228: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     231: putstatic     #41                 // Field READ_UNKNOWN_ENUM_VALUES_AS_NULL:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: -  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;, public, static, final, com.fasterxml.jackson.databind.DeserializationFeature, UNWRAP_SINGLE_VALUE_ARRAYS, Related bytecode diff context (auto-expanded from version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff):, Related\nbaseline_context (anchor line 1):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.0-rc1/jackson-databind-2.4.0-rc1.jar -p -s com.fasterxml.jackson.databind.DeserializationFeature\n00002: Compiled from \"DeserializationFeature.java\"\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff",
+          "evidence_kind": "api_diff"
+        }
+      ],
+      "judgment_payload_count": 1,
+      "judgment_payloads": [
+        {
+          "path": "version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff",
+          "details": "``\n-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n      descriptor: Lcom/fasterxml/jackson/databind/DeserializationFeature;\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff):\n--- 2.4.0-rc1:com.fasterxml.jackson.databind.DeserializationFeature\n+++ 2.3.3:com.fasterxml.jackson.databind.DeserializationFeature\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.0-rc1/jackson-databind-2.4.0-rc1.jar -p -c com.fasterxml.jackson.databind.DeserializationFeature\n+$ javap -classpath /home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3.jar -p -c com.fasterxml.jackson.databind.DeserializationFeature\n Compiled from \"DeserializationFeature.java\"\n public final class com.fasterxml.jackson.databind.DeserializationFeature extends java.lang.Enum<com.fasterxml.jackson.databind.DeserializationFeature> implements com.fasterxml.jackson.databind.cfg.ConfigFeature {\n   public static final com.fasterxml.jackson.databind.DeserializationFeature USE_BIG_DECIMAL_FOR_FLOATS;\n@@ -24,8 +24,6 @@\n   public static final com.fasterxml.jackson.databind.DeserializationFeature WRAP_EXCEPTIONS;\n \n   public static final com.fasterxml.jackson.databind.DeserializationFeature ACCEPT_SINGLE_VALUE_AS_ARRAY;\n-\n-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n \n   public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_ROOT_VALUE;\n \n@@ -171,131 +169,120 @@\n      171: putstatic     #33                 // Field ACCEPT_SINGLE_VALUE_AS_ARRAY:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      174: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      177: dup\n-     178: ldc           #34                 // String UNWRAP_SINGLE_VALUE_ARRAYS\n+     178: ldc           #34                 // String UNWRAP_ROOT_VALUE\n      180: bipush        12\n      182: iconst_0\n      183: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     186: putstatic     #35                 // Field UNWRAP_SINGLE_VALUE_ARRAYS:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n+     186: putstatic     #35                 // Field UNWRAP_ROOT_VALUE:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      189: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      192: dup\n-     193: ldc           #36                 // String UNWRAP_ROOT_VALUE\n+     193: ldc           #36                 // String ACCEPT_EMPTY_STRING_AS_NULL_OBJECT\n      195: bipush        13\n      197: iconst_0\n      198: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     201: putstatic     #37                 // Field UNWRAP_ROOT_VALUE:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n+     201: putstatic     #37                 // Field ACCEPT_EMPTY_STRING_AS_NULL_OBJECT:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      204: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      207: dup\n-     208: ldc           #38                 // String ACCEPT_EMPTY_STRING_AS_NULL_OBJECT\n+     208: ldc           #38                 // String READ_UNKNOWN_ENUM_VALUES_AS_NULL\n      210: bipush        14\n      212: iconst_0\n      213: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     216: putstatic     #39                 // Field ACCEPT_EMPTY_STRING_AS_NULL_OBJECT:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n+     216: putstatic     #39                 // Field READ_UNKNOWN_ENUM_VALUES_AS_NULL:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n      219: new           #4                  // class com/fasterxml/jackson/databind/DeserializationFeature\n      222: dup\n-     223: ldc           #40                 // String READ_UNKNOWN_ENUM_VALUES_AS_NULL\n+     223: ldc           #40                 // String READ_DATE_TIMESTAMPS_AS_NANOSECONDS\n      225: bipush        15\n-     227: iconst_0\n+     227: iconst_1\n      228: invokespecial #10                 // Method \"<init>\":(Ljava/lang/String;IZ)V\n-     231: putstatic     #41                 // Field READ_UNKNOWN_ENUM_VALUES_AS_NULL:Lcom/fasterxml/jackson/databind/DeserializationFeature;\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: -  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;, public, static, final, com.fasterxml.jackson.databind.DeserializationFeature, UNWRAP_SINGLE_VALUE_ARRAYS, Related bytecode diff context (auto-expanded from version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff):, Related\nbaseline_context (anchor line 1):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.0-rc1/jackson-databind-2.4.0-rc1.jar -p -s com.fasterxml.jackson.databind.DeserializationFeature\n00002: Compiled from \"DeserializationFeature.java\"\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff",
+          "evidence_kind": "api_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        }
+      ],
+      "hunk_judgment_count": 1,
+      "hunk_judgments": [
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff",
+          "judgment": "fix_evidence",
+          "confidence": "high",
+          "key_evidence": [
+            "UNWRAP_SINGLE_VALUE_ARRAYS feature removed in target version"
+          ],
+          "reasoning": "The removal of UNWRAP_SINGLE_VALUE_ARRAYS in 2.3.3 directly modifies deserialization behavior, likely patching the vulnerability by disabling a vulnerable feature path.",
+          "reasoning_short": "The removal of UNWRAP_SINGLE_VALUE_ARRAYS in 2.3.3 directly modifies deserialization behavior, likely patching the vulnerability by disabling a vulnerable feature path."
+        }
+      ],
+      "supporting_evidence": "- The error message shows a `NoSuchFieldError` for `UNWRAP_SINGLE_VALUE_ARRAYS`\n- The API diff confirms this field was added in 2.4.0-rc1 and doesn't exist in 2.3.3\n- The error occurs during test execution when trying to access this field",
+      "open_questions": "- Was the test case specifically testing the `UNWRAP_SINGLE_VALUE_ARRAYS` feature or was this a transitive dependency?\n- Are there workarounds for maintaining compatibility with both versions?",
+      "final_response_markdown": "```markdown\nDiagnosis\nThe failure is caused by attempting to access the `UNWRAP_SINGLE_VALUE_ARRAYS` field which was introduced in Jackson Databind 2.4.0-rc1 but doesn't exist in 2.3.3. This is a clear case of binary incompatibility where code compiled against 2.4.0-rc1 tries to use a feature that was introduced in that version but isn't present in the older 2.3.3 version.\n\nSelected Hunks\n1. `version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff`:\n```diff\n-  public static final com.fasterxml.jackson.databind.DeserializationFeature UNWRAP_SINGLE_VALUE_ARRAYS;\n      descriptor: Lcom/fasterxml/jackson/databind/DeserializationFeature;\n```\n\nSupporting Evidence\n- The error message shows a `NoSuchFieldError` for `UNWRAP_SINGLE_VALUE_ARRAYS`\n- The API diff confirms this field was added in 2.4.0-rc1 and doesn't exist in 2.3.3\n- The error occurs during test execution when trying to access this field\n\nOpen Questions\n- Was the test case specifically testing the `UNWRAP_SINGLE_VALUE_ARRAYS` feature or was this a transitive dependency?\n- Are there workarounds for maintaining compatibility with both versions?\n```",
+      "judgment_source": "llm",
+      "rule_judgment": {
+        "vulnerability_presence_score": 46,
+        "final_failure_reason": "undetermined",
+        "vulnerability_presence_verdict": "unknown",
+        "judgment_confidence": "low",
+        "judgment_scores": {
+          "vulnerability_not_present": 5.0,
+          "exploit_invalid_due_to_version_change": 2.85
+        },
+        "judgment_signals": {
+          "vulnerability_not_present": [
+            "hunk_fix_evidence_high"
+          ],
+          "exploit_invalid_due_to_version_change": [],
+          "uncertainty": [
+            "text_symbol_resolution_breakage",
+            "text_api_shape_change",
+            "text_runtime_or_factory_breakage",
+            "status_execution_failure",
+            "compatibility_failure_subtype_binary_incompatibility",
+            "compatibility_scenario_process_failure",
+            "open_questions_present"
+          ]
+        },
+        "strong_fix_evidence_present": true,
+        "compatibility_breakage_present": true,
+        "trace_evidence_effective": false,
+        "judgment_rationale": "The available evidence is dominated by compatibility/runtime noise or filtered trace divergence (no effective trace signal), so this case is better treated as undetermined than as direct evidence of vulnerability persistence.",
+        "judgment_rationale_short": "The available evidence is dominated by compatibility/runtime noise or filtered trace divergence (no effective trace signal), so this case is better treated as undetermined than as direct evidence of vulnerability persistence."
+      },
+      "llm_judgment": {
+        "prompt_version": "direct_diff_v6",
+        "vulnerability_presence_score": 15,
+        "final_failure_reason": "vulnerability_not_present",
+        "vulnerability_presence_verdict": "no",
+        "judgment_confidence": "high",
+        "judgment_rationale": "The vulnerable feature UNWRAP_SINGLE_VALUE_ARRAYS was completely removed in the target version, breaking the exploit path directly at the feature level.",
+        "judgment_rationale_short": "The vulnerable feature UNWRAP_SINGLE_VALUE_ARRAYS was completely removed in the target version, breaking the exploit path directly at the feature level.",
+        "fix_evidence_strength": "strong",
+        "exploit_breakage_evidence_strength": "none",
+        "llm_key_evidence": [
+          "Removal of UNWRAP_SINGLE_VALUE_ARRAYS feature in target version"
+        ],
+        "judged_hunk_count": 1,
+        "judged_hunk_paths": [
+          "version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff"
+        ]
+      },
+      "vulnerability_presence_score": 15,
+      "final_failure_reason": "vulnerability_not_present",
+      "vulnerability_presence_verdict": "no",
+      "judgment_confidence": "high",
+      "judgment_scores": {
+        "vulnerability_not_present": 5.0,
+        "exploit_invalid_due_to_version_change": 2.85
+      },
+      "judgment_signals": {
+        "vulnerability_not_present": [
+          "hunk_fix_evidence_high"
+        ],
+        "exploit_invalid_due_to_version_change": [],
+        "uncertainty": [
+          "text_symbol_resolution_breakage",
+          "text_api_shape_change",
+          "text_runtime_or_factory_breakage",
+          "status_execution_failure",
+          "compatibility_failure_subtype_binary_incompatibility",
+          "compatibility_scenario_process_failure",
+          "open_questions_present"
+        ]
+      },
+      "strong_fix_evidence_present": true,
+      "compatibility_breakage_present": true,
+      "trace_evidence_effective": false,
+      "judgment_rationale": "The vulnerable feature UNWRAP_SINGLE_VALUE_ARRAYS was completely removed in the target version, breaking the exploit path directly at the feature level.",
+      "judgment_rationale_short": "The vulnerable feature UNWRAP_SINGLE_VALUE_ARRAYS was completely removed in the target version, breaking the exploit path directly at the feature level.",
+      "prompt_version": "direct_diff_v6",
+      "fix_evidence_strength": "strong",
+      "exploit_breakage_evidence_strength": "none",
+      "llm_key_evidence": [
+        "Removal of UNWRAP_SINGLE_VALUE_ARRAYS feature in target version"
+      ],
+      "judged_hunk_count": 1,
+      "judged_hunk_paths": [
+        "version-diff/api-diffs/com/fasterxml/jackson/databind/DeserializationFeature.diff"
+      ]
+    },
+    {
+      "case_id": "CVE-2025-53864__00__9.0__8.20",
+      "cve_id": "CVE-2025-53864",
+      "pair_index": 0,
+      "artifact": "com.nimbusds:nimbus-jose-jwt",
+      "description": null,
+      "baseline_version": "9.0",
+      "target_version": "8.20",
+      "status": "trace_diff",
+      "failure_kind": null,
+      "failure_subtype": "trace_difference",
+      "baseline_execution_observation": "test_failure",
+      "target_execution_observation": "test_failure",
+      "compare_url": "unknown",
+      "analysis_dir": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis",
+      "llm_output_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/llm-hunk-analysis.md",
+      "llm_hunk_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/llm-hunk-judgments.json",
+      "llm_hunk_judgment_error_path": null,
+      "llm_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/llm-vulnerability-judgment.json",
+      "llm_judgment_error_path": null,
+      "scenario_type": "trace_diff",
+      "trace_keywords": "trace.log, com.nimbusds.jwt.JWTClaimsSet, com.nimbusds.jwt.JWTClaimsSet$Builder, Baseline, CVE, Target, ENTER, Has, True, Trace, First, JWTClaimsSet",
+      "trace_has_difference": true,
+      "trace_has_effective_difference": true,
+      "trace_evidence_valid": true,
+      "trace_invalid_reasons": [],
+      "failure_excerpt_keywords": null,
+      "baseline_command": "mvn -q -Dtarget.library.version=9.0 -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/baseline-trace.log -Ddependency.trace.packages=com/nimbusds/jwt/ -Dmaven.test.failure.ignore=true -Dtest=edu.vision.se.Testcase1 test",
+      "target_command": "java -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/target-trace.log -Ddependency.trace.packages=com/nimbusds/jwt/ -Ddifftrace.observe.only=true -Dtarget.library.version=8.20 '-javaagent:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/compat-replay/baseline-build/demo-1.0-SNAPSHOT-trace-agent-all.jar=output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/target-trace.log;packages=com/nimbusds/jwt/' -cp /data-1/xinweimao/code/difftrace/demo/target/demo-1.0-SNAPSHOT-trace-agent-all.jar:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/compat-replay/rewritten-test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/compat-replay/baseline-build/test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-53864__00__9.0__8.20/analysis/compat-replay/baseline-build/classes:/home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:/home/xinweimao/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/home/xinweimao/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/xinweimao/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/xinweimao/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/xinweimao/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/xinweimao/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar com.example.trace.compat.CompatJUnitRunner edu.vision.se.Testcase1",
+      "has_final_response": true,
+      "diagnosis": "The trace divergence occurs in the `com.nimbusds.jwt.JWTClaimsSet` class, specifically in the `parse` method and its related builder operations. The baseline trace shows successful execution of several methods (`parse`, builder operations, and JSON object conversions), while the target trace fails prematurely, ending at the `parse` method call. This suggests a significant behavioral change in how `JWTClaimsSet` handles parsing and building claims in version 8.20 compared to 9.0.",
+      "diagnosis_short": "The trace divergence occurs in the `com.nimbusds.jwt.JWTClaimsSet` class, specifically in the `parse` method and its related builder operations. The baseline trace shows successful execution of several methods (`parse`, builder operation...",
+      "selected_hunks_text": "1. **`version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff`**:\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {\n\n2. **`version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff`**:\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {\n\n3. **`version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff`** (fallback evidence, no concrete diff matched):\n   The bytecode-level diff reveals changes in method implementations, particularly in the `parse` and builder-related methods, but no direct match to the trace divergence was found.",
+      "selected_hunk_count": 3,
+      "selected_hunk_paths": [
+        "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+        "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+        "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff"
+      ],
+      "selected_hunks": [
+        {
+          "path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "details": "**``**\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {",
+          "inline_diff_excerpt": "   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {"
+        },
+        {
+          "path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+          "details": "**``**\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {",
+          "inline_diff_excerpt": "   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {"
+        },
+        {
+          "path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "details": "**``** (fallback evidence, no concrete diff matched)\n   The bytecode-level diff reveals changes in method implementations, particularly in the `parse` and builder-related methods, but no direct match to the trace divergence was found.",
+          "inline_diff_excerpt": ""
+        }
+      ],
+      "selected_hunk_payloads": [
+        {
+          "path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "details": "**``**\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff):\n--- 9.0:com.nimbusds.jwt.JWTClaimsSet\n+++ 8.20:com.nimbusds.jwt.JWTClaimsSet\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n+$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n Compiled from \"JWTClaimsSet.java\"\n public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n   private static final long serialVersionUID;\n@@ -24,28 +24,28 @@\n   private com.nimbusds.jwt.JWTClaimsSet(java.util.Map<java.lang.String, java.lang.Object>);\n     Code:\n        0: aload_0\n-       1: invokespecial #56                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #3                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #58                 // class java/util/LinkedHashMap\n+       5: new           #4                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #59                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #61                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #5                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #2                  // Field claims:Ljava/util/Map;\n       15: aload_0\n-      16: getfield      #61                 // Field claims:Ljava/util/Map;\n+      16: getfield      #2                  // Field claims:Ljava/util/Map;\n       19: aload_1\n-      20: invokeinterface #64,  2           // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n+      20: invokeinterface #6,  2            // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n       25: return\n \n   public static java.util.Set<java.lang.String> getRegisteredNames();\n     Code:\n-       0: getstatic     #71                 // Field REGISTERED_CLAIM_NAMES:Ljava/util/Set;\n+       0: getstatic     #7                  // Field REGISTERED_CLAIM_NAMES:Ljava/util/Set;\n        3: areturn\n \n   public java.lang.String getIssuer();\n     Code:\n        0: aload_0\n-       1: ldc           #26                 // String iss\n-       3: invokevirtual #79                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n+       1: ldc           #9                  // String iss\n+       3: invokevirtual #10                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n        6: areturn\n        7: astore_1\n        8: aconst_null\n@@ -57,8 +57,8 @@\n   public java.lang.String getSubject();\n     Code:\n        0: aload_0\n-       1: ldc           #29                 // String sub\n-       3: invokevirtual #79                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n+       1: ldc           #12                 // String sub\n+       3: invokevirtual #10                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n        6: areturn\n        7: astore_1\n        8: aconst_null\n@@ -70,30 +70,30 @@\n   public java.util.List<java.lang.String> getAudience();\n     Code:\n        0: aload_0\n-       1: ldc           #32                 // String aud\n-       3: invokevirtual #89                 // Method getClaim:(Ljava/lang/String;)Ljava/lang/Object;\n+       1: ldc           #13                 // String aud\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class, +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class, @@ -1, 5 +1, 5 @@, -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject\nbaseline_context (anchor line 84):\n00076:     descriptor: (Ljava/lang/String;)Ljava/util/Date;\n00077: \n00078:   public java.lang.Float getFloatClaim(java.lang.String) throws java.text.ParseException;\n00079:     descriptor: (Ljava/lang/String;)Ljava/lang/Float;\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "evidence_kind": "api_diff"
+        },
+        {
+          "path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+          "details": "**``**\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff):\n--- 9.0:com.nimbusds.jwt.JWTClaimsSet$Builder\n+++ 8.20:com.nimbusds.jwt.JWTClaimsSet$Builder\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c 'com.nimbusds.jwt.JWTClaimsSet$Builder'\n+$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c 'com.nimbusds.jwt.JWTClaimsSet$Builder'\n Compiled from \"JWTClaimsSet.java\"\n public class com.nimbusds.jwt.JWTClaimsSet$Builder {\n   private final java.util.Map<java.lang.String, java.lang.Object> claims;\n@@ -6,37 +6,37 @@\n   public com.nimbusds.jwt.JWTClaimsSet$Builder();\n     Code:\n        0: aload_0\n-       1: invokespecial #17                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #2                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #19                 // class java/util/LinkedHashMap\n+       5: new           #3                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #20                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #22                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #4                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #5                  // Field claims:Ljava/util/Map;\n       15: return\n \n   public com.nimbusds.jwt.JWTClaimsSet$Builder(com.nimbusds.jwt.JWTClaimsSet);\n     Code:\n        0: aload_0\n-       1: invokespecial #17                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #2                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #19                 // class java/util/LinkedHashMap\n+       5: new           #3                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #20                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #22                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #4                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #5                  // Field claims:Ljava/util/Map;\n       15: aload_0\n-      16: getfield      #22                 // Field claims:Ljava/util/Map;\n+      16: getfield      #5                  // Field claims:Ljava/util/Map;\n       19: aload_1\n-      20: invokestatic  #29                 // Method com/nimbusds/jwt/JWTClaimsSet.access$000:(Lcom/nimbusds/jwt/JWTClaimsSet;)Ljava/util/Map;\n-      23: invokeinterface #35,  2           // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n+      20: invokestatic  #6                  // Method com/nimbusds/jwt/JWTClaimsSet.access$000:(Lcom/nimbusds/jwt/JWTClaimsSet;)Ljava/util/Map;\n+      23: invokeinterface #7,  2            // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n       28: return\n \n   public com.nimbusds.jwt.JWTClaimsSet$Builder issuer(java.lang.String);\n     Code:\n        0: aload_0\n-       1: getfield      #22                 // Field claims:Ljava/util/Map;\n-       4: ldc           #41                 // String iss\n+       1: getfield      #5                  // Field claims:Ljava/util/Map;\n+       4: ldc           #8                  // String iss\n        6: aload_1\n-       7: invokeinterface #45,  3           // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\n+       7: invokeinterface #9,  3            // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\n       12: pop\n       13: aload_0\n       14: areturn\n@@ -44,10 +44,10 @@\n   public com.nimbusds.jwt.JWTClaimsSet$Builder subject(java.lang.String);\n     Code:\n        0: aload_0\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, @@ -1, 5 +1, 5 @@, -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\nbaseline_context (anchor line 1):\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+          "evidence_kind": "api_diff"
+        },
+        {
+          "path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "details": "**``** (fallback evidence, no concrete diff matched)\n   The bytecode-level diff reveals changes in method implementations, particularly in the `parse` and builder-related methods, but no direct match to the trace divergence was found.\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- 9.0:com.nimbusds.jwt.JWTClaimsSet\n+++ 8.20:com.nimbusds.jwt.JWTClaimsSet\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n+$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n Compiled from \"JWTClaimsSet.java\"\n public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n   private static final long serialVersionUID;\n@@ -24,28 +24,28 @@\n   private com.nimbusds.jwt.JWTClaimsSet(java.util.Map<java.lang.String, java.lang.Object>);\n     Code:\n        0: aload_0\n-       1: invokespecial #56                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #3                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #58                 // class java/util/LinkedHashMap\n+       5: new           #4                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #59                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #61                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #5                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #2                  // Field claims:Ljava/util/Map;\n       15: aload_0\n-      16: getfield      #61                 // Field claims:Ljava/util/Map;\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: --- 9.0:com.nimbusds.jwt.JWTClaimsSet, com.nimbusds.jwt.JWTClaimsSet, +++ 8.20:com.nimbusds.jwt.JWTClaimsSet, @@ -1, 4 +1, 4 @@, -$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet, javap\nbaseline_context (anchor line 3):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n00002: Compiled from \"JWTClaimsSet.java\"\n00003: public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n00004:   private static final long serialVersionUID;\n00005: \n00006:   private static final java.lang.String ISSUER_CLAIM;\n00007: \n00008:   private static final java.lang.String SUBJECT_CLAIM;\n00009: \n00010:   private static final java.lang.String AUDIENCE_CLAIM;\n00011:\ntarget_context (anchor line 3):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n00002: Compiled from \"JWTClaimsSet.java\"\n00003: public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n00004:   private static final long serialVersionUID;\n00005: \n00006:   private static final java.lang.String ISSUER_CLAIM;\n00007: \n00008:   private static final java.lang.String SUBJECT_CLAIM;\n00009: \n00010:   private static final java.lang.String AUDIENCE_CLAIM;\n00011:",
+          "paired_bytecode_path": null,
+          "evidence_kind": "bytecode_diff"
+        }
+      ],
+      "judgment_payload_count": 3,
+      "judgment_payloads": [
+        {
+          "path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "details": "**``**\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff):\n--- 9.0:com.nimbusds.jwt.JWTClaimsSet\n+++ 8.20:com.nimbusds.jwt.JWTClaimsSet\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n+$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n Compiled from \"JWTClaimsSet.java\"\n public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n   private static final long serialVersionUID;\n@@ -24,28 +24,28 @@\n   private com.nimbusds.jwt.JWTClaimsSet(java.util.Map<java.lang.String, java.lang.Object>);\n     Code:\n        0: aload_0\n-       1: invokespecial #56                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #3                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #58                 // class java/util/LinkedHashMap\n+       5: new           #4                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #59                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #61                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #5                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #2                  // Field claims:Ljava/util/Map;\n       15: aload_0\n-      16: getfield      #61                 // Field claims:Ljava/util/Map;\n+      16: getfield      #2                  // Field claims:Ljava/util/Map;\n       19: aload_1\n-      20: invokeinterface #64,  2           // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n+      20: invokeinterface #6,  2            // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n       25: return\n \n   public static java.util.Set<java.lang.String> getRegisteredNames();\n     Code:\n-       0: getstatic     #71                 // Field REGISTERED_CLAIM_NAMES:Ljava/util/Set;\n+       0: getstatic     #7                  // Field REGISTERED_CLAIM_NAMES:Ljava/util/Set;\n        3: areturn\n \n   public java.lang.String getIssuer();\n     Code:\n        0: aload_0\n-       1: ldc           #26                 // String iss\n-       3: invokevirtual #79                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n+       1: ldc           #9                  // String iss\n+       3: invokevirtual #10                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n        6: areturn\n        7: astore_1\n        8: aconst_null\n@@ -57,8 +57,8 @@\n   public java.lang.String getSubject();\n     Code:\n        0: aload_0\n-       1: ldc           #29                 // String sub\n-       3: invokevirtual #79                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n+       1: ldc           #12                 // String sub\n+       3: invokevirtual #10                 // Method getStringClaim:(Ljava/lang/String;)Ljava/lang/String;\n        6: areturn\n        7: astore_1\n        8: aconst_null\n@@ -70,30 +70,30 @@\n   public java.util.List<java.lang.String> getAudience();\n     Code:\n        0: aload_0\n-       1: ldc           #32                 // String aud\n-       3: invokevirtual #89                 // Method getClaim:(Ljava/lang/String;)Ljava/lang/Object;\n+       1: ldc           #13                 // String aud\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class, +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class, @@ -1, 5 +1, 5 @@, -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject\nbaseline_context (anchor line 84):\n00076:     descriptor: (Ljava/lang/String;)Ljava/util/Date;\n00077: \n00078:   public java.lang.Float getFloatClaim(java.lang.String) throws java.text.ParseException;\n00079:     descriptor: (Ljava/lang/String;)Ljava/lang/Float;\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "evidence_kind": "api_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        },
+        {
+          "path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+          "details": "**``**\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff):\n--- 9.0:com.nimbusds.jwt.JWTClaimsSet$Builder\n+++ 8.20:com.nimbusds.jwt.JWTClaimsSet$Builder\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c 'com.nimbusds.jwt.JWTClaimsSet$Builder'\n+$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c 'com.nimbusds.jwt.JWTClaimsSet$Builder'\n Compiled from \"JWTClaimsSet.java\"\n public class com.nimbusds.jwt.JWTClaimsSet$Builder {\n   private final java.util.Map<java.lang.String, java.lang.Object> claims;\n@@ -6,37 +6,37 @@\n   public com.nimbusds.jwt.JWTClaimsSet$Builder();\n     Code:\n        0: aload_0\n-       1: invokespecial #17                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #2                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #19                 // class java/util/LinkedHashMap\n+       5: new           #3                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #20                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #22                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #4                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #5                  // Field claims:Ljava/util/Map;\n       15: return\n \n   public com.nimbusds.jwt.JWTClaimsSet$Builder(com.nimbusds.jwt.JWTClaimsSet);\n     Code:\n        0: aload_0\n-       1: invokespecial #17                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #2                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #19                 // class java/util/LinkedHashMap\n+       5: new           #3                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #20                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #22                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #4                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #5                  // Field claims:Ljava/util/Map;\n       15: aload_0\n-      16: getfield      #22                 // Field claims:Ljava/util/Map;\n+      16: getfield      #5                  // Field claims:Ljava/util/Map;\n       19: aload_1\n-      20: invokestatic  #29                 // Method com/nimbusds/jwt/JWTClaimsSet.access$000:(Lcom/nimbusds/jwt/JWTClaimsSet;)Ljava/util/Map;\n-      23: invokeinterface #35,  2           // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n+      20: invokestatic  #6                  // Method com/nimbusds/jwt/JWTClaimsSet.access$000:(Lcom/nimbusds/jwt/JWTClaimsSet;)Ljava/util/Map;\n+      23: invokeinterface #7,  2            // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V\n       28: return\n \n   public com.nimbusds.jwt.JWTClaimsSet$Builder issuer(java.lang.String);\n     Code:\n        0: aload_0\n-       1: getfield      #22                 // Field claims:Ljava/util/Map;\n-       4: ldc           #41                 // String iss\n+       1: getfield      #5                  // Field claims:Ljava/util/Map;\n+       4: ldc           #8                  // String iss\n        6: aload_1\n-       7: invokeinterface #45,  3           // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\n+       7: invokeinterface #9,  3            // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\n       12: pop\n       13: aload_0\n       14: areturn\n@@ -44,10 +44,10 @@\n   public com.nimbusds.jwt.JWTClaimsSet$Builder subject(java.lang.String);\n     Code:\n        0: aload_0\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class, @@ -1, 5 +1, 5 @@, -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\nbaseline_context (anchor line 1):\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+          "evidence_kind": "api_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        },
+        {
+          "path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "details": "**``** (fallback evidence, no concrete diff matched)\n   The bytecode-level diff reveals changes in method implementations, particularly in the `parse` and builder-related methods, but no direct match to the trace divergence was found.\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- 9.0:com.nimbusds.jwt.JWTClaimsSet\n+++ 8.20:com.nimbusds.jwt.JWTClaimsSet\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n+$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n Compiled from \"JWTClaimsSet.java\"\n public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n   private static final long serialVersionUID;\n@@ -24,28 +24,28 @@\n   private com.nimbusds.jwt.JWTClaimsSet(java.util.Map<java.lang.String, java.lang.Object>);\n     Code:\n        0: aload_0\n-       1: invokespecial #56                 // Method java/lang/Object.\"<init>\":()V\n+       1: invokespecial #3                  // Method java/lang/Object.\"<init>\":()V\n        4: aload_0\n-       5: new           #58                 // class java/util/LinkedHashMap\n+       5: new           #4                  // class java/util/LinkedHashMap\n        8: dup\n-       9: invokespecial #59                 // Method java/util/LinkedHashMap.\"<init>\":()V\n-      12: putfield      #61                 // Field claims:Ljava/util/Map;\n+       9: invokespecial #5                  // Method java/util/LinkedHashMap.\"<init>\":()V\n+      12: putfield      #2                  // Field claims:Ljava/util/Map;\n       15: aload_0\n-      16: getfield      #61                 // Field claims:Ljava/util/Map;\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: --- 9.0:com.nimbusds.jwt.JWTClaimsSet, com.nimbusds.jwt.JWTClaimsSet, +++ 8.20:com.nimbusds.jwt.JWTClaimsSet, @@ -1, 4 +1, 4 @@, -$ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet, javap\nbaseline_context (anchor line 3):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n00002: Compiled from \"JWTClaimsSet.java\"\n00003: public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n00004:   private static final long serialVersionUID;\n00005: \n00006:   private static final java.lang.String ISSUER_CLAIM;\n00007: \n00008:   private static final java.lang.String SUBJECT_CLAIM;\n00009: \n00010:   private static final java.lang.String AUDIENCE_CLAIM;\n00011:\ntarget_context (anchor line 3):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar -p -c com.nimbusds.jwt.JWTClaimsSet\n00002: Compiled from \"JWTClaimsSet.java\"\n00003: public final class com.nimbusds.jwt.JWTClaimsSet implements java.io.Serializable {\n00004:   private static final long serialVersionUID;\n00005: \n00006:   private static final java.lang.String ISSUER_CLAIM;\n00007: \n00008:   private static final java.lang.String SUBJECT_CLAIM;\n00009: \n00010:   private static final java.lang.String AUDIENCE_CLAIM;\n00011:",
+          "paired_bytecode_path": null,
+          "evidence_kind": "bytecode_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        }
+      ],
+      "hunk_judgment_count": 3,
+      "hunk_judgments": [
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "judgment": "fix_evidence",
+          "confidence": "medium",
+          "key_evidence": [
+            "JWTClaimsSet no longer implements JWTClaimsSetAware in 8.20",
+            "First divergence at JWTClaimsSet#parse method"
+          ],
+          "reasoning": "The removal of JWTClaimsSetAware interface suggests a structural change that may have fixed the vulnerability by altering how JWT claims are processed.",
+          "reasoning_short": "The removal of JWTClaimsSetAware interface suggests a structural change that may have fixed the vulnerability by altering how JWT claims are processed."
+        },
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+          "judgment": "exploit_breakage_evidence",
+          "confidence": "medium",
+          "key_evidence": [
+            "Removed interface implementation: com.nimbusds.jwt.JWTClaimsSetAware$Builder"
+          ],
+          "reasoning": "The removal of the JWTClaimsSetAware$Builder interface suggests a breaking API change that could affect exploit functionality.",
+          "reasoning_short": "The removal of the JWTClaimsSetAware$Builder interface suggests a breaking API change that could affect exploit functionality."
+        },
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "judgment": "neutral",
+          "confidence": "low",
+          "key_evidence": [
+            "invokespecial指令引用号变化",
+            "Method java/util/LinkedHashMap.\"<init>\":()V"
+          ],
+          "reasoning": "仅显示字节码引用号变化和微小指令调整，无脆弱逻辑路径修改或移除的直接证据。",
+          "reasoning_short": "仅显示字节码引用号变化和微小指令调整，无脆弱逻辑路径修改或移除的直接证据。"
+        }
+      ],
+      "supporting_evidence": "- **Trace Summary**: The trace-diff-summary.txt indicates that the baseline successfully executed several `JWTClaimsSet` methods (`parse`, builder operations, and JSON conversions), while the target trace failed at the `parse` method call.\n- **API Diff**: The `JWTClaimsSet` and its `Builder` class lost the `JWTClaimsSetAware` interface in version 8.20, which aligns with the observed behavioral change.\n- **Execution Observations**: Both baseline and target traces resulted in test failures, but the target failed earlier in the execution flow, indicating a regression in functionality.",
+      "open_questions": "1. **Method Implementation Changes**: Are there significant changes in the bytecode of the `parse` method or builder operations that explain the premature failure in the target trace?\n2. **Dependency Impact**: Did the removal of the `JWTClaimsSetAware` interface affect other parts of the codebase that depend on it?",
+      "final_response_markdown": "### Diagnosis\nThe trace divergence occurs in the `com.nimbusds.jwt.JWTClaimsSet` class, specifically in the `parse` method and its related builder operations. The baseline trace shows successful execution of several methods (`parse`, builder operations, and JSON object conversions), while the target trace fails prematurely, ending at the `parse` method call. This suggests a significant behavioral change in how `JWTClaimsSet` handles parsing and building claims in version 8.20 compared to 9.0.\n\n### Selected Hunks\n1. **`version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff`**:\n   ```diff\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet.class\n   @@ -1,5 +1,5 @@\n   -public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, com.nimbusds.jwt.JWTClaimsSetAware, java.io.Serializable {\n   +public class com.nimbusds.jwt.JWTClaimsSet implements com.nimbusds.jose.JOSEObject, java.io.Serializable {\n   ```\n\n2. **`version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff`**:\n   ```diff\n   --- /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.0/nimbus-jose-jwt-9.0.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   +++ /home/xinweimao/.m2/repository/com/nimbusds/nimbus-jose-jwt/8.20/nimbus-jose-jwt-8.20.jar:com/nimbusds/jwt/JWTClaimsSet$Builder.class\n   @@ -1,5 +1,5 @@\n   -public static class com.nimbusds.jwt.JWTClaimsSet$Builder implements com.nimbusds.jwt.JWTClaimsSetAware$Builder {\n   +public static class com.nimbusds.jwt.JWTClaimsSet$Builder {\n   ```\n\n3. **`version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff`** (fallback evidence, no concrete diff matched):\n   The bytecode-level diff reveals changes in method implementations, particularly in the `parse` and builder-related methods, but no direct match to the trace divergence was found.\n\n### Supporting Evidence\n- **Trace Summary**: The trace-diff-summary.txt indicates that the baseline successfully executed several `JWTClaimsSet` methods (`parse`, builder operations, and JSON conversions), while the target trace failed at the `parse` method call.\n- **API Diff**: The `JWTClaimsSet` and its `Builder` class lost the `JWTClaimsSetAware` interface in version 8.20, which aligns with the observed behavioral change.\n- **Execution Observations**: Both baseline and target traces resulted in test failures, but the target failed earlier in the execution flow, indicating a regression in functionality.\n\n### Open Questions\n1. **Method Implementation Changes**: Are there significant changes in the bytecode of the `parse` method or builder operations that explain the premature failure in the target trace?\n2. **Dependency Impact**: Did the removal of the `JWTClaimsSetAware` interface affect other parts of the codebase that depend on it?",
+      "judgment_source": "llm",
+      "rule_judgment": {
+        "vulnerability_presence_score": 46,
+        "final_failure_reason": "undetermined",
+        "vulnerability_presence_verdict": "unknown",
+        "judgment_confidence": "low",
+        "judgment_scores": {
+          "vulnerability_not_present": 7.0,
+          "exploit_invalid_due_to_version_change": 4.95
+        },
+        "judgment_signals": {
+          "vulnerability_not_present": [
+            "hunk_fix_evidence_medium",
+            "target_trace_ended_at_first_divergence",
+            "baseline_recurses_target_exits"
+          ],
+          "exploit_invalid_due_to_version_change": [
+            "hunk_exploit_breakage_medium"
+          ],
+          "uncertainty": [
+            "hedged_language",
+            "text_api_shape_change",
+            "text_behavior_change",
+            "text_runtime_or_factory_breakage",
+            "open_questions_present"
+          ]
+        },
+        "strong_fix_evidence_present": true,
+        "compatibility_breakage_present": false,
+        "trace_evidence_effective": true,
+        "judgment_rationale": "The current evidence mixes compatibility-change and behavior-change signals or leaves too many open questions, so vulnerability existence cannot be determined confidently from the available LLM diagnosis and diff evidence.",
+        "judgment_rationale_short": "The current evidence mixes compatibility-change and behavior-change signals or leaves too many open questions, so vulnerability existence cannot be determined confidently from the available LLM diagnosis and diff evidence."
+      },
+      "llm_judgment": {
+        "prompt_version": "direct_diff_v6",
+        "vulnerability_presence_score": 25,
+        "final_failure_reason": "vulnerability_not_present",
+        "vulnerability_presence_verdict": "no",
+        "judgment_confidence": "medium",
+        "judgment_rationale": "The target version removes key interfaces and methods involved in the vulnerable execution path, indicating structural removal of the vulnerability rather than just API version incompatibility.",
+        "judgment_rationale_short": "The target version removes key interfaces and methods involved in the vulnerable execution path, indicating structural removal of the vulnerability rather than just API version incompatibility.",
+        "fix_evidence_strength": "strong",
+        "exploit_breakage_evidence_strength": "strong",
+        "llm_key_evidence": [
+          "JWTClaimsSet no longer implements JWTClaimsSetAware in 8.20",
+          "JWTClaimsSet$Builder removes JWTClaimsSetAware$Builder implementation",
+          "parse method missing in target trace"
+        ],
+        "judged_hunk_count": 3,
+        "judged_hunk_paths": [
+          "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+          "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+          "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff"
+        ]
+      },
+      "vulnerability_presence_score": 25,
+      "final_failure_reason": "vulnerability_not_present",
+      "vulnerability_presence_verdict": "no",
+      "judgment_confidence": "medium",
+      "judgment_scores": {
+        "vulnerability_not_present": 7.0,
+        "exploit_invalid_due_to_version_change": 4.95
+      },
+      "judgment_signals": {
+        "vulnerability_not_present": [
+          "hunk_fix_evidence_medium",
+          "target_trace_ended_at_first_divergence",
+          "baseline_recurses_target_exits"
+        ],
+        "exploit_invalid_due_to_version_change": [
+          "hunk_exploit_breakage_medium"
+        ],
+        "uncertainty": [
+          "hedged_language",
+          "text_api_shape_change",
+          "text_behavior_change",
+          "text_runtime_or_factory_breakage",
+          "open_questions_present"
+        ]
+      },
+      "strong_fix_evidence_present": true,
+      "compatibility_breakage_present": false,
+      "trace_evidence_effective": true,
+      "judgment_rationale": "The target version removes key interfaces and methods involved in the vulnerable execution path, indicating structural removal of the vulnerability rather than just API version incompatibility.",
+      "judgment_rationale_short": "The target version removes key interfaces and methods involved in the vulnerable execution path, indicating structural removal of the vulnerability rather than just API version incompatibility.",
+      "prompt_version": "direct_diff_v6",
+      "fix_evidence_strength": "strong",
+      "exploit_breakage_evidence_strength": "strong",
+      "llm_key_evidence": [
+        "JWTClaimsSet no longer implements JWTClaimsSetAware in 8.20",
+        "JWTClaimsSet$Builder removes JWTClaimsSetAware$Builder implementation",
+        "parse method missing in target trace"
+      ],
+      "judged_hunk_count": 3,
+      "judged_hunk_paths": [
+        "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet.diff",
+        "version-diff/api-diffs/com/nimbusds/jwt/JWTClaimsSet$Builder.diff",
+        "version-diff/diffs/com/nimbusds/jwt/JWTClaimsSet.diff"
+      ]
+    },
+    {
+      "case_id": "CVE-2025-59340__00__2.0.9__2.0.8",
+      "cve_id": "CVE-2025-59340",
+      "pair_index": 0,
+      "artifact": "com.hubspot.jinjava:jinjava",
+      "description": null,
+      "baseline_version": "2.0.9",
+      "target_version": "2.0.8",
+      "status": "trace_diff",
+      "failure_kind": null,
+      "failure_subtype": "trace_difference",
+      "baseline_execution_observation": "test_failure",
+      "target_execution_observation": "test_failure",
+      "compare_url": "unknown",
+      "analysis_dir": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis",
+      "llm_output_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/llm-hunk-analysis.md",
+      "llm_hunk_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/llm-hunk-judgments.json",
+      "llm_hunk_judgment_error_path": null,
+      "llm_judgment_path": "/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/llm-vulnerability-judgment.json",
+      "llm_judgment_error_path": null,
+      "scenario_type": "trace_diff",
+      "trace_keywords": "trace.log, com.hubspot.jinjava.JinjavaConfig, com.hubspot.jinjava.JinjavaConfig$Builder, com.hubspot.jinjava.Jinjava, com.hubspot.jinjava.util.ScopeMap, com.hubspot.jinjava.interpret.Context, com.hubspot.jinjava.lib.SimpleLibrary, com.hubspot.jinjava.lib.exptest.ExpTestLibrary, com.hubspot.jinjava.lib.exptest.IsDefinedExpTest, com.hubspot.jinjava.lib.exptest.IsDivisibleByExpTest, com.hubspot.jinjava.lib.exptest.IsEqualToExpTest, com.hubspot.jinjava.lib.exptest.IsEvenExpTest",
+      "trace_has_difference": true,
+      "trace_has_effective_difference": true,
+      "trace_evidence_valid": true,
+      "trace_invalid_reasons": [],
+      "failure_excerpt_keywords": null,
+      "baseline_command": "mvn -q -Dtarget.library.version=2.0.9 -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/baseline-trace.log -Ddependency.trace.packages=com/hubspot/jinjava/ -Dmaven.test.failure.ignore=true -Dtest=edu.vision.se.Testcase1 test",
+      "target_command": "java -Ddependency.trace.output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/target-trace.log -Ddependency.trace.packages=com/hubspot/jinjava/ -Ddifftrace.observe.only=true -Dtarget.library.version=2.0.8 '-javaagent:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/compat-replay/baseline-build/demo-1.0-SNAPSHOT-trace-agent-all.jar=output=/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/target-trace.log;packages=com/hubspot/jinjava/' -cp /data-1/xinweimao/code/difftrace/demo/target/demo-1.0-SNAPSHOT-trace-agent-all.jar:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/compat-replay/rewritten-test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/compat-replay/baseline-build/test-classes:/data-1/xinweimao/code/difftrace/demo/target/batch-results/cases/CVE-2025-59340__00__2.0.9__2.0.8/analysis/compat-replay/baseline-build/classes:/home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.8/jinjava-2.0.8.jar:/home/xinweimao/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/home/xinweimao/.m2/repository/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar:/home/xinweimao/.m2/repository/org/jsoup/jsoup/1.8.1/jsoup-1.8.1.jar:/home/xinweimao/.m2/repository/de/odysseus/juel/juel-api/2.2.7/juel-api-2.2.7.jar:/home/xinweimao/.m2/repository/de/odysseus/juel/juel-impl/2.2.7/juel-impl-2.2.7.jar:/home/xinweimao/.m2/repository/de/odysseus/juel/juel-spi/2.2.7/juel-spi-2.2.7.jar:/home/xinweimao/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/home/xinweimao/.m2/repository/com/google/code/findbugs/annotations/3.0.0/annotations-3.0.0.jar:/home/xinweimao/.m2/repository/joda-time/joda-time/2.10.14/joda-time-2.10.14.jar:/home/xinweimao/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/xinweimao/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/home/xinweimao/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/xinweimao/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar com.example.trace.compat.CompatJUnitRunner edu.vision.se.Testcase1",
+      "has_final_response": true,
+      "diagnosis": "The regression from jinjava 2.0.9 to 2.0.8 involves the complete removal of the `JinjavaConfig$Builder` class, which was previously used for constructing `JinjavaConfig` instances. This removal breaks the test execution flow as evidenced by the trace divergence where the target version fails to proceed beyond the first `newBuilder()` call.",
+      "diagnosis_short": "The regression from jinjava 2.0.9 to 2.0.8 involves the complete removal of the `JinjavaConfig$Builder` class, which was previously used for constructing `JinjavaConfig` instances. This removal breaks the test execution flow as evidenced...",
+      "selected_hunks_text": "1. `version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff`:\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]",
+      "selected_hunk_count": 1,
+      "selected_hunk_paths": [
+        "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff"
+      ],
+      "selected_hunks": [
+        {
+          "path": "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+          "details": "``\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]",
+          "inline_diff_excerpt": "--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]"
+        }
+      ],
+      "selected_hunk_payloads": [
+        {
+          "path": "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+          "details": "``\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff):\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,107 +0,0 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.9/jinjava-2.0.9.jar -p -c 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-\n-  private java.util.Locale locale;\n-\n-  private java.time.ZoneId timeZone;\n-\n-  private int maxRenderDepth;\n-\n-  private boolean trimBlocks;\n-\n-  private boolean lstripBlocks;\n-\n-  private com.hubspot.jinjava.JinjavaConfig$Builder();\n-    Code:\n-       0: aload_0\n-       1: invokespecial #2                  // Method java/lang/Object.\"<init>\":()V\n-       4: aload_0\n-       5: getstatic     #3                  // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;\n-       8: putfield      #4                  // Field charset:Ljava/nio/charset/Charset;\n-      11: aload_0\n-      12: getstatic     #5                  // Field java/util/Locale.ENGLISH:Ljava/util/Locale;\n-      15: putfield      #6                  // Field locale:Ljava/util/Locale;\n-      18: aload_0\n-      19: getstatic     #7                  // Field java/time/ZoneOffset.UTC:Ljava/time/ZoneOffset;\n-      22: putfield      #8                  // Field timeZone:Ljava/time/ZoneId;\n-      25: aload_0\n-      26: bipush        10\n-      28: putfield      #9                  // Field maxRenderDepth:I\n-      31: return\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withCharset(java.nio.charset.Charset);\n-    Code:\n-       0: aload_0\n-       1: aload_1\n-       2: putfield      #4                  // Field charset:Ljava/nio/charset/Charset;\n-       5: aload_0\n-       6: areturn\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withLocale(java.util.Locale);\n-    Code:\n-       0: aload_0\n-       1: aload_1\n-       2: putfield      #6                  // Field locale:Ljava/util/Locale;\n-       5: aload_0\n-       6: areturn\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withTimeZone(java.time.ZoneId);\n-    Code:\n-       0: aload_0\n-       1: aload_1\n-       2: putfield      #8                  // Field timeZone:Ljava/time/ZoneId;\n-       5: aload_0\n-       6: areturn\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withMaxRenderDepth(int);\n-    Code:\n-       0: aload_0\n-       1: iload_1\n...(truncated)\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+          "evidence_kind": "api_diff"
+        }
+      ],
+      "judgment_payload_count": 3,
+      "judgment_payloads": [
+        {
+          "path": "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+          "details": "``\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff):\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,107 +0,0 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.9/jinjava-2.0.9.jar -p -c 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-\n-  private java.util.Locale locale;\n-\n-  private java.time.ZoneId timeZone;\n-\n-  private int maxRenderDepth;\n-\n-  private boolean trimBlocks;\n-\n-  private boolean lstripBlocks;\n-\n-  private com.hubspot.jinjava.JinjavaConfig$Builder();\n-    Code:\n-       0: aload_0\n-       1: invokespecial #2                  // Method java/lang/Object.\"<init>\":()V\n-       4: aload_0\n-       5: getstatic     #3                  // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;\n-       8: putfield      #4                  // Field charset:Ljava/nio/charset/Charset;\n-      11: aload_0\n-      12: getstatic     #5                  // Field java/util/Locale.ENGLISH:Ljava/util/Locale;\n-      15: putfield      #6                  // Field locale:Ljava/util/Locale;\n-      18: aload_0\n-      19: getstatic     #7                  // Field java/time/ZoneOffset.UTC:Ljava/time/ZoneOffset;\n-      22: putfield      #8                  // Field timeZone:Ljava/time/ZoneId;\n-      25: aload_0\n-      26: bipush        10\n-      28: putfield      #9                  // Field maxRenderDepth:I\n-      31: return\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withCharset(java.nio.charset.Charset);\n-    Code:\n-       0: aload_0\n-       1: aload_1\n-       2: putfield      #4                  // Field charset:Ljava/nio/charset/Charset;\n-       5: aload_0\n-       6: areturn\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withLocale(java.util.Locale);\n-    Code:\n-       0: aload_0\n-       1: aload_1\n-       2: putfield      #6                  // Field locale:Ljava/util/Locale;\n-       5: aload_0\n-       6: areturn\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withTimeZone(java.time.ZoneId);\n-    Code:\n-       0: aload_0\n-       1: aload_1\n-       2: putfield      #8                  // Field timeZone:Ljava/time/ZoneId;\n-       5: aload_0\n-       6: areturn\n-\n-  public com.hubspot.jinjava.JinjavaConfig$Builder withMaxRenderDepth(int);\n-    Code:\n-       0: aload_0\n-       1: iload_1\n...(truncated)\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+          "evidence_kind": "api_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        },
+        {
+          "path": "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig.diff",
+          "details": "Auto-added related top-level class diff for broader class-level context.\nAuto-expanded with paired bytecode diff context from version-diff/diffs/com/hubspot/jinjava/JinjavaConfig.diff\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- 2.0.9:com.hubspot.jinjava.JinjavaConfig\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.9/jinjava-2.0.9.jar -p -s com.hubspot.jinjava.JinjavaConfig\n+$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.8/jinjava-2.0.8.jar -p -s com.hubspot.jinjava.JinjavaConfig\n Compiled from \"JinjavaConfig.java\"\n public class com.hubspot.jinjava.JinjavaConfig {\n   private final java.nio.charset.Charset charset;\n@@ -9,21 +9,11 @@\n     descriptor: Ljava/time/ZoneId;\n   private final int maxRenderDepth;\n     descriptor: I\n-  private final boolean trimBlocks;\n-    descriptor: Z\n-  private final boolean lstripBlocks;\n-    descriptor: Z\n-  public static com.hubspot.jinjava.JinjavaConfig$Builder newBuilder();\n-    descriptor: ()Lcom/hubspot/jinjava/JinjavaConfig$Builder;\n-\n   public com.hubspot.jinjava.JinjavaConfig();\n     descriptor: ()V\n \n   public com.hubspot.jinjava.JinjavaConfig(java.nio.charset.Charset, java.util.Locale, java.time.ZoneId, int);\n     descriptor: (Ljava/nio/charset/Charset;Ljava/util/Locale;Ljava/time/ZoneId;I)V\n...(truncated)\n\nRelated bytecode diff context (auto-expanded from version-diff/diffs/com/hubspot/jinjava/JinjavaConfig.diff):\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.9/jinjava-2.0.9.jar -p -c com.hubspot.jinjava.JinjavaConfig\n+$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.8/jinjava-2.0.8.jar -p -c com.hubspot.jinjava.JinjavaConfig\n Compiled from \"JinjavaConfig.java\"\n public class com.hubspot.jinjava.JinjavaConfig {\n   private final java.nio.charset.Charset charset;\n@@ -9,111 +9,63 @@\n \n   private final int maxRenderDepth;\n \n-  private final boolean trimBlocks;\n-\n-  private final boolean lstripBlocks;\n-\n-  public static com.hubspot.jinjava.JinjavaConfig$Builder newBuilder();\n-    Code:\n-       0: new           #2                  // class com/hubspot/jinjava/JinjavaConfig$Builder\n-       3: dup\n-       4: aconst_null\n-       5: invokespecial #3                  // Method com/hubspot/jinjava/JinjavaConfig$Builder.\"<init>\":(Lcom/hubspot/jinjava/JinjavaConfig$1;)V\n-       8: areturn\n-\n   public com.hubspot.jinjava.JinjavaConfig();\n     Code:\n        0: aload_0\n-       1: getstatic     #4                  // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;\n-       4: getstatic     #5                  // Field java/util/Locale.ENGLISH:Ljava/util/Locale;\n-       7: getstatic     #6                  // Field java/time/ZoneOffset.UTC:Ljava/time/ZoneOffset;\n-      10: bipush        10\n-      12: iconst_0\n-      13: iconst_0\n-      14: invokespecial #1                  // Method \"<init>\":(Ljava/nio/charset/Charset;Ljava/util/Locale;Ljava/time/ZoneId;IZZ)V\n-      17: return\n+       1: invokespecial #1                  // Method java/lang/Object.\"<init>\":()V\n+       4: aload_0\n+       5: getstatic     #2                  // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;\n+       8: putfield      #3                  // Field charset:Ljava/nio/charset/Charset;\n+      11: aload_0\n+      12: getstatic     #4                  // Field java/util/Locale.ENGLISH:Ljava/util/Locale;\n+      15: putfield      #5                  // Field locale:Ljava/util/Locale;\n+      18: aload_0\n+      19: getstatic     #6                  // Field java/time/ZoneOffset.UTC:Ljava/time/ZoneOffset;\n+      22: putfield      #7                  // Field timeZone:Ljava/time/ZoneId;\n+      25: aload_0\n+      26: bipush        10\n+      28: putfield      #8                  // Field maxRenderDepth:I\n+      31: return\n \n   public com.hubspot.jinjava.JinjavaConfig(java.nio.charset.Charset, java.util.Locale, java.time.ZoneId, int);\n     Code:\n        0: aload_0\n...(truncated)",
+          "paired_bytecode_path": "version-diff/diffs/com/hubspot/jinjava/JinjavaConfig.diff",
+          "evidence_kind": "api_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        },
+        {
+          "path": "version-diff/diffs/com/hubspot/jinjava/JinjavaConfig.diff",
+          "details": "Auto-added related top-level class diff for broader class-level context.\nAuto-expanded with aligned raw baseline/target context.",
+          "diff_excerpt": "--- 2.0.9:com.hubspot.jinjava.JinjavaConfig\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig\n@@ -1,4 +1,4 @@\n-$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.9/jinjava-2.0.9.jar -p -c com.hubspot.jinjava.JinjavaConfig\n+$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.8/jinjava-2.0.8.jar -p -c com.hubspot.jinjava.JinjavaConfig\n Compiled from \"JinjavaConfig.java\"\n public class com.hubspot.jinjava.JinjavaConfig {\n   private final java.nio.charset.Charset charset;\n@@ -9,111 +9,63 @@\n \n   private final int maxRenderDepth;\n \n-  private final boolean trimBlocks;\n-\n-  private final boolean lstripBlocks;\n-\n-  public static com.hubspot.jinjava.JinjavaConfig$Builder newBuilder();\n-    Code:\n-       0: new           #2                  // class com/hubspot/jinjava/JinjavaConfig$Builder\n-       3: dup\n-       4: aconst_null\n-       5: invokespecial #3                  // Method com/hubspot/jinjava/JinjavaConfig$Builder.\"<init>\":(Lcom/hubspot/jinjava/JinjavaConfig$1;)V\n-       8: areturn\n-\n...(truncated)\n\nAligned raw context preview:\nmatched_anchor_terms: --- 2.0.9:com.hubspot.jinjava.JinjavaConfig, com.hubspot.jinjava.JinjavaConfig, +++ 2.0.8:com.hubspot.jinjava.JinjavaConfig, @@ -1, 4 +1, 4 @@, -$ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.9/jinjava-2.0.9.jar -p -c com.hubspot.jinjava.JinjavaConfig, javap\nbaseline_context (anchor line 16):\n00008:   private final java.time.ZoneId timeZone;\n00009: \n00010:   private final int maxRenderDepth;\n00011: \n00012:   private final boolean trimBlocks;\n00013: \n00014:   private final boolean lstripBlocks;\n00015: \n00016:   public static com.hubspot.jinjava.JinjavaConfig$Builder newBuilder();\n00017:     Code:\n00018:        0: new           #2                  // class com/hubspot/jinjava/JinjavaConfig$Builder\n00019:        3: dup\n00020:        4: aconst_null\n00021:        5: invokespecial #3                  // Method com/hubspot/jinjava/JinjavaConfig$Builder.\"<init>\":(Lcom/hubspot/jinjava/JinjavaConfig$1;)V\n00022:        8: areturn\n00023: \n00024:   public com.hubspot.jinjava.JinjavaConfig();\ntarget_context (anchor line 1):\n00001: $ javap -classpath /home/xinweimao/.m2/repository/com/hubspot/jinjava/jinjava/2.0.8/jinjava-2.0.8.jar -p -c com.hubspot.jinjava.JinjavaConfig\n00002: Compiled from \"JinjavaConfig.java\"\n00003: public class com.hubspot.jinjava.JinjavaConfig {\n00004:   private final java.nio.charset.Charset charset;\n00005: \n00006:   private final java.util.Locale locale;\n00007: \n00008:   private final java.time.ZoneId timeZone;\n00009:",
+          "paired_bytecode_path": null,
+          "evidence_kind": "bytecode_diff",
+          "weak_signal_reasons": [],
+          "signal_weight": 1.0
+        }
+      ],
+      "hunk_judgment_count": 3,
+      "hunk_judgments": [
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+          "judgment": "fix_evidence",
+          "confidence": "high",
+          "key_evidence": [
+            "Builder class API removed"
+          ],
+          "reasoning": "The entire Builder class was removed in 2.0.8, which directly affects the vulnerability execution path.",
+          "reasoning_short": "The entire Builder class was removed in 2.0.8, which directly affects the vulnerability execution path."
+        },
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig.diff",
+          "judgment": "fix_evidence",
+          "confidence": "medium",
+          "key_evidence": [
+            "newBuilder() method removed in 2.0.8",
+            "trimBlocks and lstripBlocks fields removed",
+            "trace divergence at JinjavaConfig#newBuilder()"
+          ],
+          "reasoning": "The removal of newBuilder() and related fields in 2.0.8 directly modifies the API that was present in 2.0.9, likely disrupting exploit paths.",
+          "reasoning_short": "The removal of newBuilder() and related fields in 2.0.8 directly modifies the API that was present in 2.0.9, likely disrupting exploit paths."
+        },
+        {
+          "prompt_version": "per_hunk_v4",
+          "hunk_path": "version-diff/diffs/com/hubspot/jinjava/JinjavaConfig.diff",
+          "judgment": "fix_evidence",
+          "confidence": "medium",
+          "key_evidence": [
+            "2.0.9 has trimBlocks and lstripBlocks fields",
+            "2.0.8 lacks these fields",
+            "newBuilder() method exists in both versions"
+          ],
+          "reasoning": "The removal of trimBlocks and lstripBlocks in 2.0.8 suggests direct modification of configuration options that could affect vulnerability execution paths.",
+          "reasoning_short": "The removal of trimBlocks and lstripBlocks in 2.0.8 suggests direct modification of configuration options that could affect vulnerability execution paths."
+        }
+      ],
+      "supporting_evidence": "- `trace-diff-summary.txt` shows the first divergence occurs at `JinjavaConfig#newBuilder()` which would return the now-missing `Builder` class\n- `summary.json` lists `JinjavaConfig$Builder` under removed_classes\n- Trace shows baseline executes multiple `Builder` methods that are completely absent in target",
+      "open_questions": "- Was the builder pattern intentionally deprecated in 2.0.8 or was this an accidental removal?\n- How was `JinjavaConfig` instantiation expected to work in 2.0.8 without the builder?",
+      "final_response_markdown": "```markdown\nDiagnosis\nThe regression from jinjava 2.0.9 to 2.0.8 involves the complete removal of the `JinjavaConfig$Builder` class, which was previously used for constructing `JinjavaConfig` instances. This removal breaks the test execution flow as evidenced by the trace divergence where the target version fails to proceed beyond the first `newBuilder()` call.\n\nSelected Hunks\n1. `version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff`:\n```\n--- 2.0.9:com.hubspot.jinjava.JinjavaConfig$Builder\n+++ 2.0.8:com.hubspot.jinjava.JinjavaConfig$Builder\n@@ -1,42 +0,0 @@\n-$ javap -classpath ... -p -s 'com.hubspot.jinjava.JinjavaConfig$Builder'\n-Compiled from \"JinjavaConfig.java\"\n-public class com.hubspot.jinjava.JinjavaConfig$Builder {\n-  private java.nio.charset.Charset charset;\n-    descriptor: Ljava/nio/charset/Charset;\n-  private java.util.Locale locale;\n-    descriptor: Ljava/util/Locale;\n-  private java.time.ZoneId timeZone;\n-    descriptor: Ljava/time/ZoneId;\n- [... entire Builder class API removed ...]\n```\n\nSupporting Evidence\n- `trace-diff-summary.txt` shows the first divergence occurs at `JinjavaConfig#newBuilder()` which would return the now-missing `Builder` class\n- `summary.json` lists `JinjavaConfig$Builder` under removed_classes\n- Trace shows baseline executes multiple `Builder` methods that are completely absent in target\n\nOpen Questions\n- Was the builder pattern intentionally deprecated in 2.0.8 or was this an accidental removal?\n- How was `JinjavaConfig` instantiation expected to work in 2.0.8 without the builder?\n```",
+      "judgment_source": "llm",
+      "rule_judgment": {
+        "vulnerability_presence_score": 27,
+        "final_failure_reason": "vulnerability_not_present",
+        "vulnerability_presence_verdict": "no",
+        "judgment_confidence": "low",
+        "judgment_scores": {
+          "vulnerability_not_present": 15.0,
+          "exploit_invalid_due_to_version_change": 1.95
+        },
+        "judgment_signals": {
+          "vulnerability_not_present": [
+            "hunk_fix_evidence_high",
+            "hunk_fix_evidence_medium",
+            "target_trace_ended_at_first_divergence",
+            "baseline_recurses_target_exits"
+          ],
+          "exploit_invalid_due_to_version_change": [],
+          "uncertainty": [
+            "hedged_language",
+            "text_api_shape_change",
+            "text_behavior_change",
+            "text_runtime_or_factory_breakage",
+            "open_questions_present"
+          ]
+        },
+        "strong_fix_evidence_present": true,
+        "compatibility_breakage_present": false,
+        "trace_evidence_effective": true,
+        "judgment_rationale": "The strongest signals point to target-side blocking or hardening logic (hunk_fix_evidence_high, hunk_fix_evidence_medium, target_trace_ended_at_first_divergence, baseline_recurses_target_exits), so the PoC failure is more consistent with the vulnerability no longer being reachable/present than with a pure compatibility break.",
+        "judgment_rationale_short": "The strongest signals point to target-side blocking or hardening logic (hunk_fix_evidence_high, hunk_fix_evidence_medium, target_trace_ended_at_first_divergence, baseline_recurses_target_exits), so the PoC failure is more consistent with..."
+      },
+      "llm_judgment": {
+        "prompt_version": "direct_diff_v6",
+        "vulnerability_presence_score": 0,
+        "final_failure_reason": "vulnerability_not_present",
+        "vulnerability_presence_verdict": "no",
+        "judgment_confidence": "high",
+        "judgment_rationale": "The vulnerable Builder class/path is entirely removed in 2.0.8, evidenced by API/bytecode diffs and immediate trace termination at what would have been the entry point. This constitutes direct removal of the vulnerable path.",
+        "judgment_rationale_short": "The vulnerable Builder class/path is entirely removed in 2.0.8, evidenced by API/bytecode diffs and immediate trace termination at what would have been the entry point. This constitutes direct removal of the vulnerable path.",
+        "fix_evidence_strength": "strong",
+        "exploit_breakage_evidence_strength": "none",
+        "llm_key_evidence": [
+          "Builder class and newBuilder() method completely removed in target",
+          "Trace divergence at first call shows vulnerable path eliminated"
+        ],
+        "judged_hunk_count": 3,
+        "judged_hunk_paths": [
+          "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+          "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig.diff",
+          "version-diff/diffs/com/hubspot/jinjava/JinjavaConfig.diff"
+        ]
+      },
+      "vulnerability_presence_score": 0,
+      "final_failure_reason": "vulnerability_not_present",
+      "vulnerability_presence_verdict": "no",
+      "judgment_confidence": "high",
+      "judgment_scores": {
+        "vulnerability_not_present": 15.0,
+        "exploit_invalid_due_to_version_change": 1.95
+      },
+      "judgment_signals": {
+        "vulnerability_not_present": [
+          "hunk_fix_evidence_high",
+          "hunk_fix_evidence_medium",
+          "target_trace_ended_at_first_divergence",
+          "baseline_recurses_target_exits"
+        ],
+        "exploit_invalid_due_to_version_change": [],
+        "uncertainty": [
+          "hedged_language",
+          "text_api_shape_change",
+          "text_behavior_change",
+          "text_runtime_or_factory_breakage",
+          "open_questions_present"
+        ]
+      },
+      "strong_fix_evidence_present": true,
+      "compatibility_breakage_present": false,
+      "trace_evidence_effective": true,
+      "judgment_rationale": "The vulnerable Builder class/path is entirely removed in 2.0.8, evidenced by API/bytecode diffs and immediate trace termination at what would have been the entry point. This constitutes direct removal of the vulnerable path.",
+      "judgment_rationale_short": "The vulnerable Builder class/path is entirely removed in 2.0.8, evidenced by API/bytecode diffs and immediate trace termination at what would have been the entry point. This constitutes direct removal of the vulnerable path.",
+      "prompt_version": "direct_diff_v6",
+      "fix_evidence_strength": "strong",
+      "exploit_breakage_evidence_strength": "none",
+      "llm_key_evidence": [
+        "Builder class and newBuilder() method completely removed in target",
+        "Trace divergence at first call shows vulnerable path eliminated"
+      ],
+      "judged_hunk_count": 3,
+      "judged_hunk_paths": [
+        "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig$Builder.diff",
+        "version-diff/api-diffs/com/hubspot/jinjava/JinjavaConfig.diff",
+        "version-diff/diffs/com/hubspot/jinjava/JinjavaConfig.diff"
+      ]
+    }
+  ]
+}

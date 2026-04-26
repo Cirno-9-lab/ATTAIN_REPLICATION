@@ -1,0 +1,537 @@
+{
+    "spring-security-web": [
+        "org.springframework.security:spring-security-web"
+    ],
+    "wicket-core": [
+        "org.apache.wicket:wicket-core"
+    ],
+    "spring-web": [
+        "cn.ipokerface:spring-web",
+        "com.sap.cloud.s4hana.frameworks:spring-web",
+        "com.sap.cloud.sdk.frameworks:spring-web",
+        "edu.byu.hbll:spring-web",
+        "io.github.mj-youn:spring-web",
+        "io.github.qyg2297248353.components:spring-web",
+        "io.github.redteamobile:spring-web",
+        "io.github.tfedyanin.springframework:spring-web",
+        "io.sourceforge.aliyun.components:spring-web",
+        "io.sourceforge.gitee.components:spring-web",
+        "io.sourceforge.github.components:spring-web",
+        "net.xdob.springframework:spring-web",
+        "org.requirementsascode:spring-web",
+        "org.springframework:spring-web",
+        "spring:spring-web",
+        "springframework:spring-web"
+    ],
+    "spring-security-ldap": [
+        "org.grails.plugins:spring-security-ldap",
+        "org.springframework.security:spring-security-ldap"
+    ],
+    "commons-beanutils": [
+        "com.guicedee.services:commons-beanutils",
+        "commons-beanutils:commons-beanutils",
+        "org.kuali.commons:commons-beanutils",
+        "org.wso2.orbit.commons-beanutils:commons-beanutils"
+    ],
+    "spring-core": [
+        "com.github.vladimirantin:spring-core",
+        "com.hynnet:spring-core",
+        "ee.bitweb:spring-core",
+        "io.github.qyg2297248353.components:spring-core",
+        "io.lsn:spring-core",
+        "io.sourceforge.aliyun.components:spring-core",
+        "io.sourceforge.gitee.components:spring-core",
+        "io.sourceforge.github.components:spring-core",
+        "net.xdob.springframework:spring-core",
+        "org.jvnet.jax-ws-commons.spring:spring-core",
+        "org.springframework:spring-core",
+        "spring:spring-core",
+        "springframework:spring-core"
+    ],
+    "spring-webmvc": [
+        "net.xdob.springframework:spring-webmvc",
+        "org.springframework:spring-webmvc",
+        "spring:spring-webmvc",
+        "springframework:spring-webmvc"
+    ],
+    "cas-client-core": [
+        "org.apereo.cas.client:cas-client-core",
+        "org.jasig.cas.client:cas-client-core",
+        "org.jasig.cas:cas-client-core"
+    ],
+    "groovy": [
+        "au.com.dius.pact.consumer:groovy",
+        "be.orbinson.aem:groovy",
+        "cc.redberry:groovy",
+        "com.simiacryptus.skyenet:groovy",
+        "com.sun.jersey.samples:groovy",
+        "de.mhus.ports:groovy",
+        "groovy:groovy",
+        "io.github.solven-eu.cleanthat:groovy",
+        "io.snamp.connectors:groovy",
+        "io.snamp.gateways:groovy",
+        "org.apache.groovy:groovy",
+        "org.apache.isis.progmodels:groovy",
+        "org.codehaus.groovy.groovy-all.3.0.8.repo.org.codehaus.groovy:groovy",
+        "org.codehaus.groovy:groovy",
+        "org.codehaus.mojo.groovy:groovy",
+        "org.ethelred.util:groovy",
+        "org.glassfish.jersey.examples:groovy",
+        "org.hudsonci.plugins:groovy",
+        "org.jvnet.hudson.plugins:groovy",
+        "org.kohsuke.droovy:groovy",
+        "org.nasdanika.core:groovy",
+        "org.netbeans.cluster:groovy",
+        "org.openidentityplatform.commons.script:groovy",
+        "org.sonarsource.groovy:groovy",
+        "uk.ac.gate.plugins:groovy"
+    ],
+    "plexus-utils": [
+        "org.apache.maven:plexus-utils",
+        "org.codehaus.plexus:plexus-utils",
+        "plexus:plexus-utils"
+    ],
+    "converter-jaxb": [
+        "com.squareup.retrofit2:converter-jaxb",
+        "io.github.goooler.retrofit2:converter-jaxb",
+        "io.github.zawn.retrofit2:converter-jaxb",
+        "io.github.zawn:converter-jaxb"
+    ],
+    "spring-integration-zip": [
+        "org.springframework.integration:spring-integration-zip"
+    ],
+    "spring-data-commons": [
+        "com.github.iherasymenko:spring-data-commons",
+        "com.github.ydespreaux.spring.data:spring-data-commons",
+        "io.github.qyg2297248353.components:spring-data-commons",
+        "io.sourceforge.aliyun.components:spring-data-commons",
+        "io.sourceforge.gitee.components:spring-data-commons",
+        "io.sourceforge.github.components:spring-data-commons",
+        "org.springframework.data:spring-data-commons"
+    ],
+    "hibernate-validator": [
+        "com.guicedee.services:hibernate-validator",
+        "hu.blackbelt.osgi.validator:hibernate-validator",
+        "io.github.qsy7.java.dependencies:hibernate-validator",
+        "io.micronaut.configuration:hibernate-validator",
+        "io.thorntail:hibernate-validator",
+        "org.hibernate.validator:hibernate-validator",
+        "org.hibernate:hibernate-validator",
+        "org.wildfly.swarm:hibernate-validator"
+    ],
+    "spring-security-core": [
+        "io.miragon.miranum.platform:spring-security-core",
+        "io.miragon.miranum:spring-security-core",
+        "org.grails.plugins:spring-security-core",
+        "org.springframework.security:spring-security-core"
+    ],
+    "armeria": [
+        "com.linecorp.armeria:armeria",
+        "kr.ikhoon.armeria:armeria"
+    ],
+    "xmlgraphics-commons": [
+        "org.apache.xmlgraphics:xmlgraphics-commons"
+    ],
+    "commons-configuration2": [
+        "com.melloware:commons-configuration2",
+        "consulting.freiheitsgrade.patched:commons-configuration2",
+        "org.apache.commons:commons-configuration2"
+    ],
+    "dropwizard-validation": [
+        "io.dropwizard:dropwizard-validation"
+    ],
+    "cxf-rt-rs-json-basic": [
+        "org.apache.cxf:cxf-rt-rs-json-basic"
+    ],
+    "vaadin-server": [
+        "com.vaadin:vaadin-server"
+    ],
+    "protocols-imap": [
+        "org.apache.james.protocols:protocols-imap"
+    ],
+    "para-core": [
+        "com.erudika:para-core"
+    ],
+    "spring-context": [
+        "com.hynnet:spring-context",
+        "com.xenoamess.x8l:spring-context",
+        "io.github.qyg2297248353.components:spring-context",
+        "io.sourceforge.aliyun.components:spring-context",
+        "io.sourceforge.gitee.components:spring-context",
+        "io.sourceforge.github.components:spring-context",
+        "net.xdob.springframework:spring-context",
+        "org.springframework:spring-context",
+        "spring:spring-context",
+        "springframework:spring-context"
+    ],
+    "spring-security-crypto": [
+        "com.github.yingzhuo:spring-security-crypto",
+        "org.springframework.security:spring-security-crypto"
+    ],
+    "spring-data-mongodb": [
+        "com.rainingsince:spring-data-mongodb",
+        "com.tuana9a:spring-data-mongodb",
+        "org.springframework.data:spring-data-mongodb",
+        "org.teiid:spring-data-mongodb"
+    ],
+    "xwiki-commons-velocity": [
+        "org.xwiki.commons:xwiki-commons-velocity"
+    ],
+    "neko-htmlunit": [
+        "net.sourceforge.htmlunit:neko-htmlunit",
+        "org.htmlunit:neko-htmlunit"
+    ],
+    "maven-shared-utils": [
+        "org.apache.maven.shared:maven-shared-utils"
+    ],
+    "org.apache.sling.api": [
+        "org.apache.sling:org.apache.sling.api"
+    ],
+    "dolphinscheduler-common": [
+        "org.apache.dolphinscheduler:dolphinscheduler-common"
+    ],
+    "database": [
+        "at.hugob.plugin.library:database",
+        "cn.afternode.commons:database",
+        "cn.javaf.cq:database",
+        "com.brettonw.bedrock:database",
+        "com.d0x7.utils:database",
+        "com.gitee.hljdrl:database",
+        "com.github.mrzhqiang.helper.sample:database",
+        "com.github.simondan.ojcms.server:database",
+        "com.github.simondan:database",
+        "com.github.susom:database",
+        "com.growingio.android:database",
+        "com.joyzl:database",
+        "com.lasmanis.maven.composites:database",
+        "com.m2f-kt:database",
+        "com.mariocairone.cucumbersome:database",
+        "com.puresoltechnologies.purifinity.server:database",
+        "com.swisscom.cloud.sb:database",
+        "com.weicoder:database",
+        "de.gcoding.boot:database",
+        "dev.angerm.ag_server:database",
+        "dev.maximilian.util:database",
+        "io.csra.wily:database",
+        "io.github.andriamarosoa:database",
+        "io.github.devlibx.easy:database",
+        "io.github.embracelong:database",
+        "io.github.harishb2k.easy:database",
+        "io.github.novareseller:database",
+        "io.github.portlek:database",
+        "io.github.yusufsdiscordbot:database",
+        "io.sdsolutions.particle:database",
+        "net.anwiba.database:database",
+        "net.bookrain:database",
+        "no.bekk.bekkopen.cde:database",
+        "org.apache.activemq.examples.broker:database",
+        "org.atteo.moonshine:database",
+        "org.bitbucket.bradleysmithllc.etlunit:database",
+        "org.bitbucket.intenscom:database",
+        "org.eclipse.apoapsis.ortserver.storage:database",
+        "org.eclipse.xpanse.modules:database",
+        "org.fdroid:database",
+        "org.linguafranca.pwdb:database",
+        "org.nbn-resolving:database",
+        "org.openrefine:database",
+        "org.tinygroup.annotation.0.0.12.tinygroup:database",
+        "org.tinygroup:database",
+        "pro.shuangxi.framework.openfx:database",
+        "ru.noties.storm:database",
+        "us.irdev.bedrock:database"
+    ],
+    "digdag-core": [
+        "io.digdag:digdag-core"
+    ],
+    "zeppelin-server": [
+        "com.nflabs.zeppelin:zeppelin-server",
+        "org.apache.zeppelin:zeppelin-server"
+    ],
+    "xwork-core": [
+        "com.opensymphony:xwork-core",
+        "org.apache.struts.xwork:xwork-core"
+    ],
+    "xwiki-commons-xml": [
+        "org.xwiki.commons:xwiki-commons-xml"
+    ],
+    "dolphinscheduler-api": [
+        "org.apache.dolphinscheduler:dolphinscheduler-api"
+    ],
+    "commons-fileupload": [
+        "com.guicedee.services:commons-fileupload",
+        "com.jwebmp.jpms.commons:commons-fileupload",
+        "com.jwebmp.jre11:commons-fileupload",
+        "com.jwebmp:commons-fileupload",
+        "commons-fileupload:commons-fileupload",
+        "org.lucee:commons-fileupload",
+        "org.wso2.orbit.commons-fileupload:commons-fileupload",
+        "tomcat:commons-fileupload"
+    ],
+    "jdom2": [
+        "com.github.hullbend:jdom2",
+        "com.weicoder:jdom2",
+        "org.jdom:jdom2",
+        "org.lucee:jdom2"
+    ],
+    "hutool-json": [
+        "cn.hutool:hutool-json",
+        "com.xiaoleilu:hutool-json",
+        "org.dromara.hutool:hutool-json"
+    ],
+    "json": [
+        "cn.brk2outside:json",
+        "cn.godmao:json",
+        "cn.javaf.cq:json",
+        "co.arago.util:json",
+        "com.adobe.granite.bundles:json",
+        "com.bellotapps.the-messenger:json",
+        "com.brewtab.json:json",
+        "com.buschmais.jqassistant.plugin:json",
+        "com.electronwill.night-config:json",
+        "com.facebook.airlift:json",
+        "com.firework.core:json",
+        "com.github.antonsjava:json",
+        "com.github.bibsysdev:json",
+        "com.github.houbb:json",
+        "com.github.iarellano:json",
+        "com.github.lemfi.kest:json",
+        "com.github.tsohr:json",
+        "com.growingio.android:json",
+        "com.grunka.json:json",
+        "com.guicedee.services:json",
+        "com.harium.marine:json",
+        "com.harium.web:json",
+        "com.heliorm:json",
+        "com.jwebmp.jre11:json",
+        "com.jwebmp.thirdparty:json",
+        "com.jwebmp:json",
+        "com.kohlschutter.jacline.samples:json",
+        "com.metreeca:json",
+        "com.opsbears.webcomponents.application.net.http.rest:json",
+        "com.opsbears.webcomponents.net.http.rest:json",
+        "com.panayotis.lalein:json",
+        "com.proofpoint.platform:json",
+        "com.seepine:json",
+        "com.silentgo:json",
+        "com.sobot.library:json",
+        "com.speedment.common:json",
+        "com.startapp:json",
+        "com.syntaxphoenix.syntaxapi:json",
+        "com.thegoate:json",
+        "com.tomtom.speedtools:json",
+        "com.trib3:json",
+        "com.ufoscout.coreutils:json",
+        "com.walterjwhite.infrastructure.dependencies:json",
+        "com.walterjwhite.java.dependencies:json",
+        "com.weicoder:json",
+        "com.xnx3.json:json",
+        "com.zuunr:json",
+        "dev.entao.app:json",
+        "dev.mccue:json",
+        "dev.ssdd:json",
+        "edu.byu.hbll:json",
+        "io.airlift:json",
+        "io.github.antonsjava:json",
+        "io.github.asewhy:json",
+        "io.github.cuisse:json",
+        "io.github.lucacirillo2738:json",
+        "io.github.maven-rep:json",
+        "io.github.oliviercailloux:json",
+        "io.github.over-run:json",
+        "io.github.poulpogaz:json",
+        "io.github.qsy7.java.dependencies:json",
+        "io.github.ralfspoeth:json",
+        "io.github.solven-eu.cleanthat:json",
+        "io.maryk:json",
+        "io.yupiik.batch:json",
+        "io.zerocopy.json:json",
+        "name.remal.tools:json",
+        "name.remal:json",
+        "net.akehurst.kotlin.json:json",
+        "net.diversionmc:json",
+        "net.kut3:json",
+        "net.lecousin.framework:json",
+        "net.seidengarn:json",
+        "nl.wernerdegroot.applicatives:json",
+        "no.nav.common:json",
+        "one.xingyi:json",
+        "org.activecomponents.jadex:json",
+        "org.bitbucket.javatek:json",
+        "org.burningwave:json",
+        "org.codehaus.sonar-plugins.json:json",
+        "org.dataconservancy.pass.support.messaging:json",
+        "org.eclipse.pass.support.messaging:json",
+        "org.glassfish.main.packager:json",
+        "org.glassfish:json",
+        "org.graalvm.shadowed:json",
+        "org.jdrupes.json:json",
+        "org.json:json",
+        "org.jsonx:json",
+        "org.mvnpm.at.iconify:json",
+        "org.mvnpm.at.lezer:json",
+        "org.mvnpm:json",
+        "org.openidentityplatform.commons.audit:json",
+        "org.openidentityplatform.commons.selfservice:json",
+        "org.openjax:json",
+        "org.openmbee.mms:json",
+        "org.webjars.npm:json",
+        "pl.wendigo.airlift:json",
+        "ru.sbtqa.tag.parsers:json",
+        "tech.sobin:json",
+        "uk.theretiredprogrammer.nbpcglibrary:json"
+    ],
+    "castor-xml": [
+        "org.codehaus.castor:castor-xml"
+    ],
+    "castor": [
+        "castor:castor",
+        "org.apache.geronimo.bundles:castor",
+        "org.codehaus.castor:castor"
+    ],
+    "batik-transcoder": [
+        "batik:batik-transcoder",
+        "john-test:batik-transcoder",
+        "org.apache.xmlgraphics:batik-transcoder"
+    ],
+    "batik": [
+        "batik:batik",
+        "fr.avianey.apache-xmlgraphics:batik",
+        "john-test:batik",
+        "org.apache.xmlgraphics:batik",
+        "org.lucee:batik"
+    ],
+    "jackson-databind": [
+        "com.fasterxml.jackson.core:jackson-databind",
+        "com.jwebmp.jackson.core:jackson-databind",
+        "com.jwebmp.jpms.jackson.core:jackson-databind",
+        "com.jwebmp.jre11.jackson.core:jackson-databind",
+        "com.walterjwhite.java.modules.serialization.modules:jackson-databind",
+        "com.walterjwhite.modules.serialization.modules:jackson-databind",
+        "io.github.behnazh-w.demo:jackson-databind",
+        "io.github.errantfiddle:jackson-databind",
+        "io.github.qsy7.java.modules.serialization.modules:jackson-databind",
+        "org.wso2.orbit.com.fasterxml.jackson.core:jackson-databind",
+        "tools.jackson.core:jackson-databind"
+    ],
+    "rdf4j-util": [
+        "org.eclipse.rdf4j:rdf4j-util"
+    ],
+    "netty-codec-http": [
+        "io.netty:netty-codec-http",
+        "org.jboss.errai.io.netty:netty-codec-http"
+    ],
+    "pdfbox": [
+        "com.github.lafa.pdfbox:pdfbox",
+        "org.apache.pdfbox:pdfbox",
+        "org.lockss:pdfbox",
+        "org.lucee:pdfbox",
+        "pdfbox:pdfbox",
+        "science.aist.imaging:pdfbox"
+    ],
+    "jdom": [
+        "com.cedarsoft.serialization:jdom",
+        "com.github.hullbend:jdom",
+        "com.kenai.nbpwr:jdom",
+        "com.sun.phobos:jdom",
+        "jdom:jdom",
+        "org.jdom:jdom",
+        "org.jopendocument:jdom",
+        "org.lucee:jdom"
+    ],
+    "soa-model-parent": [
+        "com.eluvio:soa-model-parent",
+        "com.predic8:soa-model-parent"
+    ],
+    "jline-groovy": [
+        "org.jline:jline-groovy"
+    ],
+    "jline-parent": [
+        "org.jline:jline-parent"
+    ],
+    "hutool-core": [
+        "cn.hutool:hutool-core",
+        "com.github.jiangjihui:hutool-core",
+        "com.xiaoleilu:hutool-core",
+        "org.dromara.hutool:hutool-core"
+    ],
+    "bcprov-jdk15on": [
+        "com.luhuiguo.bouncycastle:bcprov-jdk15on",
+        "org.bouncycastle.bcprov-jdk15on.1.57.org.bouncycastle:bcprov-jdk15on",
+        "org.bouncycastle:bcprov-jdk15on",
+        "org.lucee:bcprov-jdk15on",
+        "org.wso2.orbit.org.bouncycastle:bcprov-jdk15on"
+    ],
+    "rdf4j-model": [
+        "org.eclipse.rdf4j:rdf4j-model"
+    ],
+    "rdf4j": [
+        "com.metreeca:rdf4j",
+        "org.eclipse.rdf4j:rdf4j"
+    ],
+    "commons-compress": [
+        "com.alanbuttars.commons:commons-compress",
+        "com.github.crabs-hue.commons:commons-compress",
+        "com.guicedee.services:commons-compress",
+        "com.walterjwhite.infrastructure.dependencies:commons-compress",
+        "com.walterjwhite.java.dependencies:commons-compress",
+        "com.xenoamess.fork.org.apache.commons:commons-compress",
+        "commons-compress:commons-compress",
+        "io.github.1tchy.java9modular.org.apache.commons:commons-compress",
+        "io.github.qsy7.java.dependencies:commons-compress",
+        "io.github.qyg2297248353.components:commons-compress",
+        "io.sourceforge.aliyun.components:commons-compress",
+        "io.sourceforge.gitee.components:commons-compress",
+        "io.sourceforge.github.components:commons-compress",
+        "io.takari:commons-compress",
+        "org.apache.commons:commons-compress",
+        "org.carrot2.forks.commons:commons-compress",
+        "org.lucee:commons-compress",
+        "org.wso2.orbit.org.apache.commons:commons-compress"
+    ],
+    "netty-all": [
+        "com.sonsure:netty-all",
+        "io.netty:netty-all",
+        "org.openlabtesting.netty:netty-all",
+        "org.wso2.orbit.io.netty:netty-all"
+    ],
+    "postgresql": [
+        "ca.grimoire.postgresql:postgresql",
+        "ch.ergon.adam:postgresql",
+        "com.alibaba.hologres:postgresql",
+        "com.github.jeanbaptistewatenberg.junit5kubernetes:postgresql",
+        "com.google.code.maven-play-plugin.postgresql:postgresql",
+        "com.harium.database:postgresql",
+        "com.heliorm:postgresql",
+        "com.pulumi:postgresql",
+        "com.redis.testcontainers:postgresql",
+        "com.redislabs.testcontainers:postgresql",
+        "com.torodb.torod.backends.drivers:postgresql",
+        "com.torodb.torod.backends:postgresql",
+        "com.walterjwhite.infrastructure.dependencies:postgresql",
+        "com.walterjwhite.java.dependencies:postgresql",
+        "io.github.qsy7.java.dependencies:postgresql",
+        "io.github.rieske.dbtest:postgresql",
+        "org.atteo.moonshine:postgresql",
+        "org.jumpmind.symmetric.jdbc:postgresql",
+        "org.lucee:postgresql",
+        "org.postgresql:postgresql",
+        "org.rnorth.test-containers:postgresql",
+        "org.rnorth:postgresql",
+        "org.testcontainers:postgresql",
+        "org.wildfly.swarm:postgresql",
+        "org.wisdom-framework:postgresql",
+        "postgresql:postgresql"
+    ],
+    "soa-model-core": [
+        "com.eluvio:soa-model-core",
+        "com.predic8:soa-model-core"
+    ],
+    "nimbus-jose-jwt": [
+        "com.nimbusds:nimbus-jose-jwt",
+        "io.iohk.atala:nimbus-jose-jwt",
+        "org.wso2.orbit.com.nimbusds:nimbus-jose-jwt"
+    ],
+    "jinjava": [
+        "com.hubspot.jinjava:jinjava"
+    ]
+}

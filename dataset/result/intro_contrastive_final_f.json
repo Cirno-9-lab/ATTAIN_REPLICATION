@@ -1,0 +1,1004 @@
+{
+    "cve-2014-3625": [
+        {
+            "base_tag": "v3.0.3.RELEASE",
+            "head_tag": "v3.0.4.RELEASE",
+            "analysis": {
+                "5a1bd20864d9255eafb23d551f7dfe34ed0961e9": {
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/MvcNamespaceHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5207,
+                        "safe_score": 0.5165,
+                        "margin": 0.0042,
+                        "verdict": "yes",
+                        "evidence": "public class MvcNamespaceHandler extends NamespaceHandlerSupport {\nregisterBeanDefinitionParser(\"resources\", new ResourcesBeanDefinitionParser());"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/ResourcesBeanDefinitionParser.java": {
+                        "method": "parse",
+                        "vule_score": 0.3919,
+                        "safe_score": 0.4694,
+                        "margin": -0.0775,
+                        "verdict": "no",
+                        "evidence": "public BeanDefinition parse(Element element, ParserContext parserContext) {\nObject source = parserContext.extractSource(element);\nregisterHandlerAdapterIfNecessary(parserContext, source);\nBeanDefinition handlerMappingDef = registerHandlerMappingIfNecessary(parserContext, source);\nString resourceDire"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resources/ResourceHttpRequestHandler.java": {
+                        "method": "handleRequest",
+                        "vule_score": 0.5731,
+                        "safe_score": 0.667,
+                        "margin": -0.0939,
+                        "verdict": "no",
+                        "evidence": "public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\nif (!\"GET\".equals(request.getMethod())) {\nthrow new HttpRequestMethodNotSupportedException(request.getMethod(),\nnew String[] {\"GET\"}, \"ResourceHttpRequestHandler only supports G"
+                    }
+                },
+                "60a69bd6536656af560ab71df4a14e50acc92320": {
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/ResourcesBeanDefinitionParser.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5365,
+                        "safe_score": 0.5478,
+                        "margin": -0.0113,
+                        "verdict": "yes",
+                        "evidence": "List<String> resourcePaths = new ManagedList<String>();\nresourcePaths.add(\"/\");\nresourceHandlerDef.getConstructorArgumentValues().addIndexedArgumentValue(0, resourcePaths);\nurlMap.put(resourceRequestPath, resourceHandlerDef);\nreturn null;\nprivate void registerHandlerAdapterIfNecessary(ParserContext "
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resources/DefaultServletHttpRequestHandler.java": {
+                        "method": "afterPropertiesSet",
+                        "vule_score": 0.5185,
+                        "safe_score": 0.5042,
+                        "margin": 0.0143,
+                        "verdict": "yes",
+                        "evidence": "public void afterPropertiesSet() throws Exception {\nif (!StringUtils.hasText(this.fileServletName)) {\nif (this.servletContext.getNamedDispatcher(COMMON_DEFAULT_SERVLET_NAME) != null) {\nthis.fileServletName = COMMON_DEFAULT_SERVLET_NAME;\n} else if (this.servletContext.getNamedDispatcher(RESIN_DEFAULT"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resources/ResourceHttpRequestHandler.java": {
+                        "method": "handleRequest",
+                        "vule_score": 0.5381,
+                        "safe_score": 0.6307,
+                        "margin": -0.0926,
+                        "verdict": "no",
+                        "evidence": "public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {\nURLResource resource = getResource(request);\nif (resource == null) {\nprepareResponse(resource, response);\nwriteResponse(resource, request, response);\npublic long getLastModifie"
+                    }
+                },
+                "b4cd58394a3f5477d72a5e5f0476acc8c37bd8d3": {
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/AbstractHttpRequestHandlerBeanDefinitionParser.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5329,
+                        "safe_score": 0.5278,
+                        "margin": 0.0051,
+                        "verdict": "yes",
+                        "evidence": "abstract class AbstractHttpRequestHandlerBeanDefinitionParser implements BeanDefinitionParser{"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/DefaultServletHandlerBeanDefinitionParser.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.4226,
+                        "safe_score": 0.4892,
+                        "margin": -0.0666,
+                        "verdict": "no",
+                        "evidence": "class DefaultServletHandlerBeanDefinitionParser extends AbstractHttpRequestHandlerBeanDefinitionParser {\nObject source = parserContext.extractSource(element);\nString defaultServletName = element.getAttribute(\"default-servlet-name\");\nRootBeanDefinition defaultServletHandlerDef = new RootBeanDefinitio"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/ResourcesBeanDefinitionParser.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.513,
+                        "safe_score": 0.5249,
+                        "margin": -0.0119,
+                        "verdict": "yes",
+                        "evidence": "class ResourcesBeanDefinitionParser extends AbstractHttpRequestHandlerBeanDefinitionParser implements BeanDefinitionParser {\nresourceHandlerDef.getPropertyValues().add(\"locations\", locations);\nreturn beanName;"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resource/DefaultServletHttpRequestHandler.java": {
+                        "method": "setDefaultServletName",
+                        "vule_score": 0.4742,
+                        "safe_score": 0.4966,
+                        "margin": -0.0224,
+                        "verdict": "yes",
+                        "evidence": "public void setDefaultServletName(String defaultServletName) {\nthis.defaultServletName = defaultServletName;\npublic void setServletContext(ServletContext servletContext) {\nthis.servletContext = servletContext;\nif (!StringUtils.hasText(this.defaultServletName)) {\nif (this.servletContext.getNamedDispa"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "setLocations",
+                        "vule_score": 0.5427,
+                        "safe_score": 0.5815,
+                        "margin": -0.0388,
+                        "verdict": "yes",
+                        "evidence": "public void setLocations(List<Resource> locations) {\nAssert.notEmpty(locations, \"Location list must not be empty\");\nthis.locations = locations;\npublic void handleRequest(HttpServletRequest request, HttpServletResponse response)\nthrows ServletException, IOException {\ncheckAndPrepare(request, response"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/support/WebContentGenerator.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5055,
+                        "safe_score": 0.5535,
+                        "margin": -0.048,
+                        "verdict": "yes",
+                        "evidence": "private boolean useCacheControlNoStore = true;\nprivate int cacheSeconds = -1;\npublic WebContentGenerator() {\nthis(true);\npublic WebContentGenerator(boolean restrictDefaultSupportedMethods) {\nif (restrictDefaultSupportedMethods) {\nthis.supportedMethods = new HashSet<String>(4);\nthis.supportedMethods."
+                    }
+                },
+                "367048c5d14b6e7b702f58267814949bec70c993": {
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/AbstractHttpRequestHandlerBeanDefinitionParser.java": {
+                        "method": "parse",
+                        "vule_score": 0.4538,
+                        "safe_score": 0.5156,
+                        "margin": -0.0618,
+                        "verdict": "no",
+                        "evidence": "public BeanDefinition parse(Element element, ParserContext parserContext) {\nObject source = parserContext.extractSource(element);\nregisterHandlerAdapterIfNecessary(parserContext, source);\ndoParse(element, parserContext);\nreturn null;\npublic abstract void doParse(Element element, ParserContext parser"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/DefaultServletHandlerBeanDefinitionParser.java": {
+                        "method": "doParse",
+                        "vule_score": 0.4106,
+                        "safe_score": 0.4767,
+                        "margin": -0.0661,
+                        "verdict": "no",
+                        "evidence": "public void doParse(Element element, ParserContext parserContext) {\nObject source = parserContext.extractSource(element);\nString defaultServletName = element.getAttribute(\"default-servlet-name\");\nRootBeanDefinition defaultServletHandlerDef = new RootBeanDefinition(DefaultServletHttpRequestHandler.cl"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/MvcNamespaceHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5734,
+                        "safe_score": 0.5622,
+                        "margin": 0.0112,
+                        "verdict": "yes",
+                        "evidence": "registerBeanDefinitionParser(\"default-servlet-handler\", new DefaultServletHandlerBeanDefinitionParser());"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/config/ResourcesBeanDefinitionParser.java": {
+                        "method": "doParse",
+                        "vule_score": 0.4589,
+                        "safe_score": 0.5237,
+                        "margin": -0.0648,
+                        "verdict": "no",
+                        "evidence": "public void doParse(Element element, ParserContext parserContext) {\nregisterResourceMappings(parserContext, element, source);\nprivate void registerResourceMappings(ParserContext parserContext, Element element, Object source) {\nString resourceHandlerName = registerResourceHandler(parserContext, eleme"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resources/DefaultServletHttpRequestHandler.java": {
+                        "method": "setDefaultServletName",
+                        "vule_score": 0.5023,
+                        "safe_score": 0.5085,
+                        "margin": -0.0062,
+                        "verdict": "yes",
+                        "evidence": "public void setDefaultServletName(String defaultServletName) {\nthis.defaultServletName = defaultServletName;\npublic void setServletContext(ServletContext servletContext) {\nthis.servletContext = servletContext;"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resources/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.6001,
+                        "safe_score": 0.6548,
+                        "margin": -0.0547,
+                        "verdict": "no",
+                        "evidence": "private final int maxAge = 31556926;\nif (resource == null) {\nOutputStream out = response.getOutputStream();\nprivate interface FileMediaTypeMap {\nprivate static class DefaultFileMediaTypeMap implements FileMediaTypeMap {\nprivate final long lastModified;\nprivate final int contentLength;\nprivate final "
+                    }
+                },
+                "f6c07b371f20ff8dc38660cbbd48c874681a2c67": {
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/DispatcherServlet.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.4904,
+                        "safe_score": 0.53,
+                        "margin": -0.0396,
+                        "verdict": "yes",
+                        "evidence": "mappedHandler = getHandler(processedRequest);\nHandlerAdapter ha = getHandlerAdapter(mappedHandler.getHandler());\nString method = request.getMethod();\nboolean isGet = \"GET\".equals(method);\nif (isGet || \"HEAD\".equals(method)) {\nlong lastModified = ha.getLastModified(request, mappedHandler.getHandler()"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "getResource",
+                        "vule_score": 0.5736,
+                        "safe_score": 0.5269,
+                        "margin": 0.0467,
+                        "verdict": "yes",
+                        "evidence": "protected Resource getResource(HttpServletRequest request) {\nprotected void setHeaders(Resource resource, HttpServletResponse response) throws IOException {\nprotected void writeContent(Resource resource, HttpServletResponse response) throws IOException {\nFileCopyUtils.copy(resource.getInputStream(),"
+                    },
+                    "org.springframework.web/src/main/java/org/springframework/web/context/request/ServletWebRequest.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5168,
+                        "safe_score": 0.5593,
+                        "margin": -0.0425,
+                        "verdict": "yes",
+                        "evidence": "return getRequest().getRemoteUser();\npublic Principal getUserPrincipal() {\nreturn getRequest().getUserPrincipal();\npublic boolean isUserInRole(String role) {\nreturn getRequest().isUserInRole(role);\npublic boolean isSecure() {\nreturn getRequest().isSecure();\npublic boolean checkNotModified(long lastM"
+                    }
+                },
+                "bd4f4d0d308841b5ec7235da7f8a6673fdc24887": {
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resources/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5805,
+                        "safe_score": 0.5781,
+                        "margin": 0.0024,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceHttpRequestHandler implements HttpRequestHandler, ServletContextAware {\nprivate static final String defaultMediaTypes = \"image/*,text/css,text/javascript,text/html\";\nprivate List<MediaType> allowedMediaTypes = new ArrayList<MediaType>();\nprivate FileMediaTypeMap fileMediaTypeMap"
+                    }
+                },
+                "ecb351c4756c99afefb9379677a4c3a22fd7806c": {
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5597,
+                        "safe_score": 0.5688,
+                        "margin": -0.0091,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceHttpRequestHandler extends WebContentGenerator implements HttpRequestHandler {\nprivate List<Resource> locations;\npublic ResourceHttpRequestHandler() {\nsuper(METHOD_GET, METHOD_HEAD);\npublic void setLocations(List<Resource> locations) {\nAssert.notEmpty(locations, \"Location list m"
+                    }
+                },
+                "771db056089ad85e3dbe9834b3524fa8e002a783": {
+                    "org.springframework.core/src/main/java/org/springframework/core/io/AbstractFileResolvingResource.java": {
+                        "method": "contentLength",
+                        "vule_score": 0.63,
+                        "safe_score": 0.6074,
+                        "margin": 0.0226,
+                        "verdict": "yes",
+                        "evidence": "public long contentLength() throws IOException {\nreturn super.contentLength();\nelse {\nURLConnection con = url.openConnection();\ncon.setUseCaches(false);\nif (con instanceof HttpURLConnection) {\n((HttpURLConnection) con).setRequestMethod(\"HEAD\");\nreturn con.getContentLength();\npublic long lastModified"
+                    },
+                    "org.springframework.core/src/main/java/org/springframework/core/io/AbstractResource.java": {
+                        "method": "contentLength",
+                        "vule_score": 0.5861,
+                        "safe_score": 0.6105,
+                        "margin": -0.0244,
+                        "verdict": "yes",
+                        "evidence": "public long contentLength() throws IOException {\nreturn getFile().length();\npublic long lastModified() throws IOException {\nlong lastModified = getFileForLastModifiedCheck().lastModified();\nif (lastModified == 0L) {\nthrow new FileNotFoundException(getDescription() +\n\" cannot be resolved in the file "
+                    },
+                    "org.springframework.core/src/main/java/org/springframework/core/io/Resource.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5634,
+                        "safe_score": 0.577,
+                        "margin": -0.0136,
+                        "verdict": "yes",
+                        "evidence": "boolean exists();\nboolean isReadable();\nboolean isOpen();\nURL getURL() throws IOException;\nURI getURI() throws IOException;\nFile getFile() throws IOException;\nlong contentLength() throws IOException;\nlong lastModified() throws IOException;\nResource createRelative(String relativePath) throws IOExcept"
+                    },
+                    "org.springframework.web.servlet/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5024,
+                        "safe_score": 0.594,
+                        "margin": -0.0916,
+                        "verdict": "no",
+                        "evidence": "long ifModifiedSince = request.getDateHeader(\"If-Modified-Since\");\nlong lastModified = resource.lastModified();\nboolean notModified = ifModifiedSince >= (lastModified / 1000 * 1000);\nif (notModified) {\nresponse.setStatus(HttpServletResponse.SC_NOT_MODIFIED);\nelse {\nresponse.setDateHeader(\"Last-Modif"
+                    }
+                }
+            }
+        },
+        {
+            "base_tag": "v3.2.18.RELEASE",
+            "head_tag": "v4.0.0.RELEASE",
+            "analysis": {
+                "94685481162a93666fc2f39b66223833a6bcb418": {
+                    "spring-web/src/main/java/org/springframework/web/util/ServletContextPropertyUtils.java": {
+                        "method": "resolvePlaceholder",
+                        "vule_score": 0.5295,
+                        "safe_score": 0.5953,
+                        "margin": -0.0658,
+                        "verdict": "no",
+                        "evidence": "public static String resolvePlaceholders(String text, ServletContext servletContext) {\nreturn resolvePlaceholders(text, servletContext, false);\npublic static String resolvePlaceholders(String text, ServletContext servletContext, boolean ignoreUnresolvablePlaceholders) {\nPropertyPlaceholderHelper hel"
+                    }
+                },
+                "6a323292d8675fb20006b0d12bfb14c329118c4c": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistration.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5755,
+                        "safe_score": 0.6166,
+                        "margin": -0.0411,
+                        "verdict": "yes",
+                        "evidence": "requestHandler.setLocations(locations);\nif (cachePeriod != null) {\nrequestHandler.setCacheSeconds(cachePeriod);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "getResource",
+                        "vule_score": 0.5989,
+                        "safe_score": 0.6197,
+                        "margin": -0.0208,
+                        "verdict": "yes",
+                        "evidence": "protected Resource getResource(HttpServletRequest request) {\nfor (Resource location : this.locations) {\ntry {\nif (logger.isDebugEnabled()) {\nResource resource = location.createRelative(path);\nif (resource.exists() && resource.isReadable()) {\nif (logger.isDebugEnabled()) {\nreturn resource;\nelse if (l"
+                    }
+                },
+                "0e58125b157f0be6440ffdf1a38a0d4957a6f4a2": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistry.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.4917,
+                        "safe_score": 0.5414,
+                        "margin": -0.0497,
+                        "verdict": "yes",
+                        "evidence": "try {\nrequestHandler.afterPropertiesSet();\ncatch (Exception e) {\nthrow new BeanInitializationException(\"Failed to init ResourceHttpRequestHandler\", e);\nSimpleUrlHandlerMapping handlerMapping = new SimpleUrlHandlerMapping();\nhandlerMapping.setOrder(order);\nhandlerMapping.setUrlMap(urlMap);\nreturn han"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/AbstractResourceResolver.java": {
+                        "method": "resolveUrl",
+                        "vule_score": 0.6045,
+                        "safe_score": 0.5711,
+                        "margin": 0.0334,
+                        "verdict": "yes",
+                        "evidence": "public String resolveUrl(String resourcePath, List<Resource> locations, ResourceResolverChain chain) {"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/DefaultResourceResolverChain.java": {
+                        "method": "resolveAndTransform",
+                        "vule_score": 0.55,
+                        "safe_score": 0.5924,
+                        "margin": -0.0424,
+                        "verdict": "yes",
+                        "evidence": "class DefaultResourceResolverChain implements ResourceResolverChain {\nthis.resolvers = (resolvers != null) ? resolvers : new ArrayList<ResourceResolver>();\nthis.transformers = (transformers != null) ? transformers : new ArrayList<ResourceTransformer>();\npublic Resource resolveAndTransform(HttpServle"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/EncodedResource.java": {
+                        "method": "getContentEncoding",
+                        "vule_score": 0.5774,
+                        "safe_score": 0.5482,
+                        "margin": 0.0292,
+                        "verdict": "yes",
+                        "evidence": "public String getContentEncoding();"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ExtensionMappingResourceResolver.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.563,
+                        "safe_score": 0.6302,
+                        "margin": -0.0672,
+                        "verdict": "no",
+                        "evidence": "private static final Log logger = LogFactory.getLog(ExtensionMappingResourceResolver.class);\nList<Resource> locations, ResourceResolverChain chain, Resource resource) {\nif ((resource != null) && !this.compareTimeStamp) {\nreturn resource;\nfor (String fileName : basePath.getFile().list(new ExtensionFi"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/FingerprintResourceResolver.java": {
+                        "method": "extractHash",
+                        "vule_score": 0.5446,
+                        "safe_score": 0.6246,
+                        "margin": -0.08,
+                        "verdict": "no",
+                        "evidence": "private String extractHash(String path) {\nMatcher matcher = this.pattern.matcher(path);\nif (matcher.find()) {\nString match = matcher.group(1);\nreturn match.contains(\"-\") ? match.substring(match.lastIndexOf(\"-\") + 1) : match;\nelse {\nreturn \"\";\npublic String resolveUrl(String resourcePath, List<Resour"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/GzipResourceResolver.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5322,
+                        "safe_score": 0.6147,
+                        "margin": -0.0825,
+                        "verdict": "no",
+                        "evidence": "private static final Log logger = LogFactory.getLog(GzipResourceResolver.class);\nList<Resource> locations, ResourceResolverChain chain, Resource resource) {\nif ((resource == null) || !isGzipAccepted(request)) {\nreturn resource;\nResource gzipped = new GzippedResource(resource);\ncatch (IOException e) "
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/LessResourceTransformer.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5326,
+                        "safe_score": 0.6013,
+                        "margin": -0.0687,
+                        "verdict": "no",
+                        "evidence": "else {\ncontent = this.compiler.compile(original.getFile());\ntransformed = new TransformedResource(original.getFilename().replace(\n\".\" + LESS_EXT, \"\"), content.getBytes(\"UTF-8\"), original.lastModified());\ncatch (LessException ex) {\nex.printStackTrace();\npublic boolean handles(HttpServletRequest reque"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PathResourceResolver.java": {
+                        "method": "resolve",
+                        "vule_score": 0.5606,
+                        "safe_score": 0.5915,
+                        "margin": -0.0309,
+                        "verdict": "yes",
+                        "evidence": "private Resource resolveInternal(String path, List<Resource> locations) {\nfor (Resource location : locations) {\ntry {\nif (logger.isDebugEnabled()) {\nResource resource = location.createRelative(path);\nif (resource.exists() && resource.isReadable()) {\nif (logger.isDebugEnabled()) {\nreturn resource;\nel"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "getLocations",
+                        "vule_score": 0.5209,
+                        "safe_score": 0.5084,
+                        "margin": 0.0125,
+                        "verdict": "yes",
+                        "evidence": "public List<Resource> getLocations() {\nreturn this.locations;\npublic List<ResourceResolver> getResourceResolvers() {\nreturn this.resourceResolvers;\npublic List<ResourceTransformer> getResourceTransformers() {\nreturn this.resourceTransformers;\nreturn this.resolverChain.resolveAndTransform(request, pa"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolver.java": {
+                        "method": "resolve",
+                        "vule_score": 0.593,
+                        "safe_score": 0.5618,
+                        "margin": 0.0312,
+                        "verdict": "yes",
+                        "evidence": "public Resource resolve(HttpServletRequest request, String requestPath,\nList<Resource> locations, ResourceResolverChain chain);"
+                    }
+                },
+                "3c48b421065607689068676eab005269a4d06ed6": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/DefaultResourceResolverChain.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6149,
+                        "safe_score": 0.5886,
+                        "margin": 0.0263,
+                        "verdict": "yes",
+                        "evidence": "public Resource resolveResource(HttpServletRequest request, String requestPath, List<Resource> locations) {\nResourceResolver resolver = getNextResolver();\nif (resolver == null) {\nreturn null;\ntry {\nlogBefore(resolver);\nResource resource = resolver.resolveResource(request, requestPath, locations, thi"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/FingerprintResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6669,
+                        "safe_score": 0.6074,
+                        "margin": 0.0595,
+                        "verdict": "yes",
+                        "evidence": "public class FingerprintResourceResolver implements ResourceResolver {\npublic Resource resolveResource(HttpServletRequest request, String requestPath,\nList<Resource> locations, ResourceResolverChain chain) {\nResource resolved = chain.resolveResource(request, requestPath, locations);\nString hash = ex"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/GzipResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6395,
+                        "safe_score": 0.5607,
+                        "margin": 0.0788,
+                        "verdict": "yes",
+                        "evidence": "public class GzipResourceResolver implements ResourceResolver {\npublic Resource resolveResource(HttpServletRequest request, String requestPath,\nList<Resource> locations, ResourceResolverChain chain) {\nResource resource = chain.resolveResource(request, requestPath, locations);\npublic String resolveUr"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/LessResourceTransformer.java": {
+                        "method": "willTransform",
+                        "vule_score": 0.5993,
+                        "safe_score": 0.5609,
+                        "margin": 0.0384,
+                        "verdict": "yes",
+                        "evidence": "public boolean willTransform(HttpServletRequest request, Resource original) {"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PathExtensionResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6496,
+                        "safe_score": 0.5804,
+                        "margin": 0.0692,
+                        "verdict": "yes",
+                        "evidence": "public class PathExtensionResourceResolver implements ResourceResolver {\nprivate static final Log logger = LogFactory.getLog(PathExtensionResourceResolver.class);\npublic PathExtensionResourceResolver() {\npublic PathExtensionResourceResolver(boolean compareTimeStamp) {\npublic Resource resolveResource"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PathResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.587,
+                        "safe_score": 0.602,
+                        "margin": -0.015,
+                        "verdict": "yes",
+                        "evidence": "public Resource resolveResource(HttpServletRequest request,\nString requestPath, List<Resource> locations, ResourceResolverChain chain) {\nreturn getResource(requestPath, locations);\npublic String resolveUrlPath(String resourcePath, List<Resource> locations, ResourceResolverChain chain) {\nreturn (getR"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "setResourceTransformers",
+                        "vule_score": 0.5342,
+                        "safe_score": 0.6033,
+                        "margin": -0.0691,
+                        "verdict": "no",
+                        "evidence": "public void setResourceTransformers(List<ResourceTransformer> transformers) {\nthis.resourceTransformers = (transformers != null) ? transformers : new ArrayList<ResourceTransformer>();\nResourceResolverChain chain = new DefaultResourceResolverChain(this.resourceResolvers);\nResource resource = chain.re"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolver.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5974,
+                        "safe_score": 0.5983,
+                        "margin": -0.0009,
+                        "verdict": "yes",
+                        "evidence": "Resource resolveResource(HttpServletRequest request, String requestPath,\nList<Resource> locations, ResourceResolverChain chain);\nString resolveUrlPath(String resourcePath, List<Resource> locations, ResourceResolverChain chain);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolverChain.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.6042,
+                        "safe_score": 0.5903,
+                        "margin": 0.0139,
+                        "verdict": "yes",
+                        "evidence": "Resource resolveResource(HttpServletRequest request, String requestPath, List<Resource> locations);\nString resolveUrlPath(String resourcePath, List<Resource> locations);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceTransformer.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.606,
+                        "safe_score": 0.5961,
+                        "margin": 0.0099,
+                        "verdict": "yes",
+                        "evidence": "boolean willTransform(HttpServletRequest request, Resource resource);\nResource transform(Resource resource) throws IOException;"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlEncodingFilter.java": {
+                        "method": "doFilterInternal",
+                        "vule_score": 0.5618,
+                        "safe_score": 0.5876,
+                        "margin": -0.0258,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceUrlEncodingFilter extends OncePerRequestFilter {\nprotected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,\nFilterChain filterChain) throws ServletException, IOException {\nprivate String pathPrefix;\nprivate ResourceUrlResponseWrapper(HttpServletReq"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlMapper.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5483,
+                        "safe_score": 0.6028,
+                        "margin": -0.0545,
+                        "verdict": "no",
+                        "evidence": "return bean;\npublic void onApplicationEvent(ContextRefreshedEvent event) {\nOrderComparator.sort(this.mappings);\nfor (SimpleUrlHandlerMapping mapping : mappings) {\nfor(Entry<String, ?> mappingEntry : mapping.getUrlMap().entrySet()) {\nObject val = mappingEntry.getValue();\nthis.handlers.put(mappingEntr"
+                    }
+                },
+                "2670d94c6abf07e787efcd1867fafc86f62b6fac": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistration.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5305,
+                        "safe_score": 0.5553,
+                        "margin": -0.0248,
+                        "verdict": "yes",
+                        "evidence": "return pathPatterns;\nprotected ResourceHttpRequestHandler getRequestHandler() {\nAssert.isTrue(!CollectionUtils.isEmpty(locations), \"At least one location is required for resource handling.\");\nResourceHttpRequestHandler requestHandler = new ResourceHttpRequestHandler();\nif (this.resourceResolvers != "
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistry.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.4777,
+                        "safe_score": 0.5082,
+                        "margin": -0.0305,
+                        "verdict": "yes",
+                        "evidence": "ResourceHttpRequestHandler requestHandler = registration.getRequestHandler();\nrequestHandler.setServletContext(servletContext);\nrequestHandler.setApplicationContext(applicationContext);\nrequestHandler.afterPropertiesSet();\nurlMap.put(pathPattern, requestHandler);\nSimpleUrlHandlerMapping handlerMappi"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.4729,
+                        "safe_score": 0.5109,
+                        "margin": -0.038,
+                        "verdict": "yes",
+                        "evidence": "ResourceHandlerRegistry registry = new ResourceHandlerRegistry(applicationContext, servletContext);\nprotected void addResourceHandlers(ResourceHandlerRegistry registry) {\n@Bean\npublic HandlerMapping defaultServletHandlerMapping() {\nDefaultServletHandlerConfigurer configurer = new DefaultServletHandl"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5221,
+                        "safe_score": 0.5636,
+                        "margin": -0.0415,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceHttpRequestHandler extends WebContentGenerator implements HttpRequestHandler, InitializingBean {\nprivate final static Log logger = LogFactory.getLog(ResourceHttpRequestHandler.class);\nprivate static final boolean jafPresent =\nClassUtils.isPresent(\"javax.activation.FileTypeMap\", "
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlGenerator.java": {
+                        "method": "setResourceHandlerMappings",
+                        "vule_score": 0.5276,
+                        "safe_score": 0.5893,
+                        "margin": -0.0617,
+                        "verdict": "no",
+                        "evidence": "public void setResourceHandlerMappings(List<SimpleUrlHandlerMapping> handlerMappings) {\nthis.resourceMappings.clear();\nif (handlerMappings == null) {\nreturn;\nfor (SimpleUrlHandlerMapping handlerMapping : handlerMappings) {\nPathMatcher pathMatcher = handlerMapping.getPathMatcher();\nfor(Entry<String, "
+                    }
+                },
+                "f8e1f06d08d0401eb44ef832122235300b1b8fac": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistration.java": {
+                        "method": "getResourceResolvers",
+                        "vule_score": 0.4893,
+                        "safe_score": 0.5055,
+                        "margin": -0.0162,
+                        "verdict": "yes",
+                        "evidence": "protected List<ResourceResolver> getResourceResolvers() {\nreturn this.resourceResolvers;\nprotected List<ResourceTransformer> getResourceTransformers() {\nreturn this.resourceTransformers;\nprotected ResourceHttpRequestHandler getRequestHandler() {\nAssert.isTrue(!CollectionUtils.isEmpty(locations), \"At"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistry.java": {
+                        "method": "hasMappingForPattern",
+                        "vule_score": 0.4774,
+                        "safe_score": 0.5264,
+                        "margin": -0.049,
+                        "verdict": "yes",
+                        "evidence": "public boolean hasMappingForPattern(String pathPattern) {\nfor (ResourceHandlerRegistration registration : registrations) {\nif (Arrays.asList(registration.getPathPatterns()).contains(pathPattern)) {\nreturn true;\nreturn false;\npublic void setResourceResolvers(List<ResourceResolver> resourceResolvers) "
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.java": {
+                        "method": "resourceUrlGenerator",
+                        "vule_score": 0.4734,
+                        "safe_score": 0.4959,
+                        "margin": -0.0225,
+                        "verdict": "yes",
+                        "evidence": "public ResourceUrlGenerator resourceUrlGenerator() {\nSimpleUrlHandlerMapping hm = (SimpleUrlHandlerMapping) resourceHandlerMapping();\nreturn new ResourceUrlGenerator(hm.getUrlMap());\nprotected void addResourceHandlers(ResourceHandlerRegistry registry) {\n@Bean\npublic HandlerMapping defaultServletHand"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5155,
+                        "safe_score": 0.5473,
+                        "margin": -0.0318,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceHttpRequestHandler extends WebContentGenerator implements HttpRequestHandler, InitializingBean {\nprivate final static Log logger = LogFactory.getLog(ResourceHttpRequestHandler.class);\nprivate static final boolean jafPresent =\nClassUtils.isPresent(\"javax.activation.FileTypeMap\", "
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlGenerator.java": {
+                        "method": "initResourceMappings",
+                        "vule_score": 0.5217,
+                        "safe_score": 0.5782,
+                        "margin": -0.0565,
+                        "verdict": "no",
+                        "evidence": "private static List<ResourceMapping> initResourceMappings(Map<String, ?> handlerMap) {\nPathMatcher pathMatcher = new AntPathMatcher();\nList<ResourceMapping> result = new ArrayList<ResourceMapping>();\nfor(Entry<String, ?> entry : handlerMap.entrySet()) {\nObject value = entry.getValue();\nif (value ins"
+                    }
+                },
+                "61e61bd5fdd2d5b1e2d5bf132dca59ee83f0da5e": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/AbstractResourceResolver.java": {
+                        "method": "resolveUrl",
+                        "vule_score": 0.6495,
+                        "safe_score": 0.5634,
+                        "margin": 0.0861,
+                        "verdict": "yes",
+                        "evidence": "public abstract class AbstractResourceResolver implements ResourceResolver {\npublic final Resource resolve(HttpServletRequest request, String path,\nList<Resource> locations, ResourceResolverChain chain) {\nResource candidate = chain.next(this).resolve(request, path, locations, chain);\nreturn resolveI"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/DefaultResourceResolverChain.java": {
+                        "method": "next",
+                        "vule_score": 0.5675,
+                        "safe_score": 0.6362,
+                        "margin": -0.0687,
+                        "verdict": "no",
+                        "evidence": "public ResourceResolver next(ResourceResolver current) {\nreturn this.resolvers.get(this.resolvers.indexOf(current) + 1);\npublic Resource resolveAndTransform(HttpServletRequest request, String path,\nList<Resource> locations) throws IOException{\nResource resolved = this.resolvers.get(0).resolve(reques"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/EncodedResource.java": {
+                        "method": "getEncoding",
+                        "vule_score": 0.5731,
+                        "safe_score": 0.53,
+                        "margin": 0.0431,
+                        "verdict": "yes",
+                        "evidence": "public interface EncodedResource extends Resource {\npublic String getEncoding();"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ExtensionMappingResourceResolver.java": {
+                        "method": "resolveInternal",
+                        "vule_score": 0.5436,
+                        "safe_score": 0.5839,
+                        "margin": -0.0403,
+                        "verdict": "yes",
+                        "evidence": "public class ExtensionMappingResourceResolver extends AbstractResourceResolver {\nprivate final Log logger = LogFactory.getLog(getClass());\nprivate final boolean compareTimeStamp;\npublic ExtensionMappingResourceResolver() {\nthis.compareTimeStamp = false;\npublic ExtensionMappingResourceResolver(boolea"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/FingerprintingResourceResolver.java": {
+                        "method": "resolveInternal",
+                        "vule_score": 0.5704,
+                        "safe_score": 0.6359,
+                        "margin": -0.0655,
+                        "verdict": "no",
+                        "evidence": "public class FingerprintingResourceResolver extends AbstractResourceResolver {\nprivate final Log logger = LogFactory.getLog(getClass());\nprivate Pattern pattern = Pattern.compile(\"-(\\\\S*)\\\\.\");\nprotected Resource resolveInternal(HttpServletRequest request, String path, List<Resource> locations,\nReso"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/GzipResourceResolver.java": {
+                        "method": "resolveInternal",
+                        "vule_score": 0.532,
+                        "safe_score": 0.5741,
+                        "margin": -0.0421,
+                        "verdict": "yes",
+                        "evidence": "public class GzipResourceResolver extends AbstractResourceResolver {\nprivate final Log logger = LogFactory.getLog(getClass());\nprotected Resource resolveInternal(HttpServletRequest request, String path,\nList<Resource> locations, ResourceResolverChain chain, Resource resolved) {\nif (!isGzipAccepted(r"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/LessResourceTransformer.java": {
+                        "method": "transform",
+                        "vule_score": 0.5466,
+                        "safe_score": 0.6081,
+                        "margin": -0.0615,
+                        "verdict": "no",
+                        "evidence": "public Resource transform(Resource original) throws IOException {\nTransformedResource transformed;\ntry {\nString content = \"\";\nif (original instanceof TransformedResource) {\ncontent = ((TransformedResource) original).getContentAsString();\n} else {\ncontent = compiler.compile(original.getFile());\ntrans"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "getLocations",
+                        "vule_score": 0.5128,
+                        "safe_score": 0.5134,
+                        "margin": -0.0006,
+                        "verdict": "yes",
+                        "evidence": "public List<Resource> getLocations() {\nreturn this.locations;\npublic List<ResourceResolver> getResourceResolvers() {\nreturn this.resourceResolvers;\npublic List<ResourceTransformer> getResourceTransformers() {\nreturn this.resourceTransformers;\npublic void setResourceResolvers(List<ResourceResolver> r"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolver.java": {
+                        "method": "resolve",
+                        "vule_score": 0.5715,
+                        "safe_score": 0.5496,
+                        "margin": 0.0219,
+                        "verdict": "yes",
+                        "evidence": "public interface ResourceResolver {\npublic Resource resolve(HttpServletRequest request, String path, List<Resource> locations, ResourceResolverChain chain);\npublic String resolveUrl(String resourcePath, List<Resource> locations,\nResourceResolverChain chain);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolverChain.java": {
+                        "method": "resolveAndTransform",
+                        "vule_score": 0.5586,
+                        "safe_score": 0.5453,
+                        "margin": 0.0133,
+                        "verdict": "yes",
+                        "evidence": "public interface ResourceResolverChain {\npublic Resource resolveAndTransform(HttpServletRequest request, String path, List<Resource> locations)\nthrows IOException;\npublic ResourceResolver next(ResourceResolver current);\npublic String resolveUrl(String resourcePath, List<Resource> locations);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceTransformer.java": {
+                        "method": "transform",
+                        "vule_score": 0.5832,
+                        "safe_score": 0.5724,
+                        "margin": 0.0108,
+                        "verdict": "yes",
+                        "evidence": "public interface ResourceTransformer {\npublic Resource transform(Resource original) throws IOException;\npublic boolean handles(HttpServletRequest request, Resource original);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlEncodingFilter.java": {
+                        "method": "doFilterInternal",
+                        "vule_score": 0.5039,
+                        "safe_score": 0.5098,
+                        "margin": -0.0059,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceUrlEncodingFilter extends OncePerRequestFilter {\nprivate ResourceUrlMapper mapper;\nprotected void doFilterInternal(HttpServletRequest request,\nHttpServletResponse response, FilterChain filterChain)\nthrows ServletException, IOException {\nfilterChain.doFilter(request, new Resource"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlMapper.java": {
+                        "method": "postProcessBeforeInitialization",
+                        "vule_score": 0.4894,
+                        "safe_score": 0.5027,
+                        "margin": -0.0133,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceUrlMapper implements BeanPostProcessor, ApplicationListener<ContextRefreshedEvent>{\nprivate final Map<String, ResourceHttpRequestHandler> handlers = new LinkedHashMap<String, ResourceHttpRequestHandler>();\nprivate final List<SimpleUrlHandlerMapping> mappings = new ArrayList<Simp"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/TransformedResource.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5324,
+                        "safe_score": 0.5747,
+                        "margin": -0.0423,
+                        "verdict": "yes",
+                        "evidence": "public class TransformedResource extends ByteArrayResource {\nprivate final String filename;\nprivate final long lastModified;\npublic TransformedResource(String filename, byte[] transformedContent) {\nsuper(transformedContent);\nthis.filename = filename;\nthis.lastModified = new Date().getTime();\npublic "
+                    }
+                },
+                "bc5246938d07820305167e581e7a8ece23ed265e": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.557,
+                        "safe_score": 0.5752,
+                        "margin": -0.0182,
+                        "verdict": "yes",
+                        "evidence": "if (logger.isWarnEnabled() && CollectionUtils.isEmpty(this.locations)) {\npublic void handleRequest(HttpServletRequest request, HttpServletResponse response)\nthrows ServletException, IOException {\ncheckAndPrepare(request, response, true);\nResource resource = getResource(request);\nif (resource == null"
+                    }
+                },
+                "a4c15d6678e63b6d70af79d4c97c40e75c2e9152": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.566,
+                        "safe_score": 0.6113,
+                        "margin": -0.0453,
+                        "verdict": "yes",
+                        "evidence": "private final static Log logger = LogFactory.getLog(ResourceHttpRequestHandler.class);\nif (logger.isWarnEnabled()) {\npublic void handleRequest(HttpServletRequest request, HttpServletResponse response)\nthrows ServletException, IOException {\ncheckAndPrepare(request, response, true);\nResource resource "
+                    }
+                }
+            }
+        },
+        {
+            "base_tag": "v4.0.9.RELEASE",
+            "head_tag": "v4.1.0.RELEASE",
+            "analysis": {
+                "6cb9a144db46af981fea4829e84044f05ce60a78": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistration.java": {
+                        "method": "setResourceResolvers",
+                        "vule_score": 0.6048,
+                        "safe_score": 0.5267,
+                        "margin": 0.0781,
+                        "verdict": "yes",
+                        "evidence": "public void setResourceResolvers(List<ResourceResolver> resourceResolvers) {\nthis.resourceResolvers = resourceResolvers;\nreturn this.pathPatterns;\nprotected List<ResourceResolver> getResourceResolvers() {\nreturn this.resourceResolvers;\nif (this.resourceResolvers != null) {\nrequestHandler.setResource"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistry.java": {
+                        "method": "setResourceResolvers",
+                        "vule_score": 0.5743,
+                        "safe_score": 0.526,
+                        "margin": 0.0483,
+                        "verdict": "yes",
+                        "evidence": "public void setResourceResolvers(List<ResourceResolver> resourceResolvers) {\nthis.resourceResolvers = resourceResolvers;\nResourceHttpRequestHandler handler = registration.getRequestHandler();\nhandler.setServletContext(servletContext);\nhandler.setApplicationContext(applicationContext);\nif ((this.reso"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.java": {
+                        "method": "getPathMatchConfigurer",
+                        "vule_score": 0.5475,
+                        "safe_score": 0.4859,
+                        "margin": 0.0616,
+                        "verdict": "yes",
+                        "evidence": "protected PathMatchConfigurer getPathMatchConfigurer() {\nif (this.pathMatchConfigurer == null) {\nthis.pathMatchConfigurer = new PathMatchConfigurer();\nconfigurePathMatch(this.pathMatchConfigurer);\nreturn this.pathMatchConfigurer;\npublic void configurePathMatch(PathMatchConfigurer configurer) {\nregis"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/DefaultResourceResolverChain.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6214,
+                        "safe_score": 0.5895,
+                        "margin": 0.0319,
+                        "verdict": "yes",
+                        "evidence": "public Resource resolveResource(HttpServletRequest request, String requestPath, List<Resource> locations) {\nResourceResolver resolver = getNextResolver();\nif (resolver == null) {\nreturn null;\ntry {\nlogBefore(resolver);\nResource resource = resolver.resolveResource(request, requestPath, locations, thi"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/EncodedResource.java": {
+                        "method": "getContentEncoding",
+                        "vule_score": 0.5957,
+                        "safe_score": 0.5248,
+                        "margin": 0.0709,
+                        "verdict": "yes",
+                        "evidence": "public interface EncodedResource extends Resource {\npublic String getContentEncoding();"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/FingerprintResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6339,
+                        "safe_score": 0.5599,
+                        "margin": 0.074,
+                        "verdict": "yes",
+                        "evidence": "public class FingerprintResourceResolver implements ResourceResolver {\nprivate static final Log logger = LogFactory.getLog(FingerprintResourceResolver.class);\nprivate final Pattern pattern = Pattern.compile(\"-(\\\\S*)\\\\.\");\npublic Resource resolveResource(HttpServletRequest request, String requestPath"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/GzipResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6262,
+                        "safe_score": 0.5481,
+                        "margin": 0.0781,
+                        "verdict": "yes",
+                        "evidence": "public class GzipResourceResolver implements ResourceResolver {\nprivate static final Log logger = LogFactory.getLog(GzipResourceResolver.class);\npublic Resource resolveResource(HttpServletRequest request, String requestPath,\nList<Resource> locations, ResourceResolverChain chain) {\nResource resource "
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PathResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.5836,
+                        "safe_score": 0.5952,
+                        "margin": -0.0116,
+                        "verdict": "yes",
+                        "evidence": "public class PathResourceResolver implements ResourceResolver {\nprivate static final Log logger = LogFactory.getLog(PathResourceResolver.class);\npublic Resource resolveResource(HttpServletRequest request,\nString requestPath, List<Resource> locations, ResourceResolverChain chain) {\nreturn getResource"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PrefixResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.6568,
+                        "safe_score": 0.5803,
+                        "margin": 0.0765,
+                        "verdict": "yes",
+                        "evidence": "public class PrefixResourceResolver implements ResourceResolver {\nprivate final String prefix;\npublic PrefixResourceResolver(String prefix) {\nAssert.hasText(prefix, \"resource path prefix should not be null\");\nthis.prefix = prefix.startsWith(\"/\") ? prefix : \"/\" + prefix;\npublic Resource resolveResour"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PublicResourceUrlProvider.java": {
+                        "method": "setUrlPathHelper",
+                        "vule_score": 0.5087,
+                        "safe_score": 0.5798,
+                        "margin": -0.0711,
+                        "verdict": "no",
+                        "evidence": "public void setUrlPathHelper(UrlPathHelper pathHelper) {\nthis.pathHelper = pathHelper;\npublic UrlPathHelper getPathHelper() {\nreturn this.pathHelper;\npublic void setPathMatcher(PathMatcher pathMatcher) {\nthis.pathMatcher = pathMatcher;\npublic PathMatcher getPathMatcher() {\nreturn this.pathMatcher;\np"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PublicResourceUrlProviderExposingInterceptor.java": {
+                        "method": "preHandle",
+                        "vule_score": 0.4865,
+                        "safe_score": 0.492,
+                        "margin": -0.0055,
+                        "verdict": "yes",
+                        "evidence": "public class PublicResourceUrlProviderExposingInterceptor extends HandlerInterceptorAdapter {\npublic static final String RESOURCE_URL_PROVIDER_ATTR = PublicResourceUrlProvider.class.getName().toString();\nprivate final PublicResourceUrlProvider resourceUrlProvider;\npublic PublicResourceUrlProviderExp"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "getLocations",
+                        "vule_score": 0.6257,
+                        "safe_score": 0.5286,
+                        "margin": 0.0971,
+                        "verdict": "yes",
+                        "evidence": "public List<Resource> getLocations() {\nreturn this.locations;\npublic void setResourceResolvers(List<ResourceResolver> resourceResolvers) {\nthis.resourceResolvers.clear();\nif (resourceResolvers != null) {\nthis.resourceResolvers.addAll(resourceResolvers);\npublic List<ResourceResolver> getResourceResol"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolver.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5944,
+                        "safe_score": 0.5719,
+                        "margin": 0.0225,
+                        "verdict": "yes",
+                        "evidence": "public interface ResourceResolver {\nResource resolveResource(HttpServletRequest request, String requestPath,\nList<Resource> locations, ResourceResolverChain chain);\nString getPublicUrlPath(String resourceUrlPath, List<Resource> locations, ResourceResolverChain chain);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolverChain.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.6035,
+                        "safe_score": 0.5821,
+                        "margin": 0.0214,
+                        "verdict": "yes",
+                        "evidence": "public interface ResourceResolverChain {\nResource resolveResource(HttpServletRequest request, String requestPath, List<Resource> locations);\nString resolveUrlPath(String resourcePath, List<Resource> locations);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlEncodingFilter.java": {
+                        "method": "doFilterInternal",
+                        "vule_score": 0.5172,
+                        "safe_score": 0.5199,
+                        "margin": -0.0027,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceUrlEncodingFilter extends OncePerRequestFilter {\nprivate static Log logger = LogFactory.getLog(ResourceUrlEncodingFilter.class);\nprotected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,\nFilterChain filterChain) throws ServletException, IOExceptio"
+                    }
+                },
+                "6966e89578e6c5ce18224bbbb3a3ecf809757661": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistration.java": {
+                        "method": "setResourceResolvers",
+                        "vule_score": 0.4911,
+                        "safe_score": 0.5214,
+                        "margin": -0.0303,
+                        "verdict": "yes",
+                        "evidence": "public ResourceHandlerRegistration setResourceResolvers(ResourceResolver... resourceResolvers) {\nreturn this;\npublic ResourceHandlerRegistration setResourceTransformers(ResourceTransformer... transformers) {\nthis.resourceTransformers = Arrays.asList(transformers);\nreturn this;\nprotected List<Resourc"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistry.java": {
+                        "method": "setResourceResolvers",
+                        "vule_score": 0.4956,
+                        "safe_score": 0.5398,
+                        "margin": -0.0442,
+                        "verdict": "yes",
+                        "evidence": "public ResourceHandlerRegistry setResourceResolvers(ResourceResolver... resolvers) {\nthis.resourceResolvers = Arrays.asList(resolvers);\nreturn this;\npublic ResourceHandlerRegistry setResourceTransformers(ResourceTransformer... transformers) {\nthis.resourceTransformers = Arrays.asList(transformers);\n"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/CachingResourceResolver.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5234,
+                        "safe_score": 0.5975,
+                        "margin": -0.0741,
+                        "verdict": "no",
+                        "evidence": "public static final String RESOLVED_RESOURCE_CACHE_KEY_PREFIX = \"resolvedResource:\";\npublic static final String RESOLVED_URL_PATH_CACHE_KEY_PREFIX = \"resolvedUrlPath:\";\nString key = RESOLVED_RESOURCE_CACHE_KEY_PREFIX + requestPath;\nString key = RESOLVED_URL_PATH_CACHE_KEY_PREFIX + resourceUrlPath;\ni"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/CachingResourceTransformer.java": {
+                        "method": "getCache",
+                        "vule_score": 0.5334,
+                        "safe_score": 0.5634,
+                        "margin": -0.03,
+                        "verdict": "yes",
+                        "evidence": "public Cache getCache() {\nreturn this.cache;\npublic Resource transform(HttpServletRequest request, Resource resource, ResourceTransformerChain transformerChain)\nthrows IOException {\nResource transformed = this.cache.get(resource, Resource.class);\nif (transformed != null) {\nif (logger.isTraceEnabled("
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/CssLinkResourceTransformer.java": {
+                        "method": "transform",
+                        "vule_score": 0.5833,
+                        "safe_score": 0.5152,
+                        "margin": 0.0681,
+                        "verdict": "yes",
+                        "evidence": "public class CssLinkResourceTransformer implements ResourceTransformer {\nprivate static final Log logger = LogFactory.getLog(CssLinkResourceTransformer.class);\nprivate static final Charset DEFAULT_CHARSET = Charset.forName(\"UTF-8\");\nprivate final List<CssLinkParser> linkParsers = new ArrayList<CssLi"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/DefaultResourceResolverChain.java": {
+                        "method": "getNext",
+                        "vule_score": 0.5558,
+                        "safe_score": 0.6093,
+                        "margin": -0.0535,
+                        "verdict": "no",
+                        "evidence": "private ResourceResolver getNext() {\nif (this.index == (this.resolvers.size() - 1)) {\nreturn null;\nthis.index++;\nreturn this.resolvers.get(this.index);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/DefaultResourceTransformerChain.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5235,
+                        "safe_score": 0.5784,
+                        "margin": -0.0549,
+                        "verdict": "no",
+                        "evidence": "class DefaultResourceTransformerChain implements ResourceTransformerChain {\nprivate final ResourceResolverChain resolverChain;\nprivate final List<ResourceTransformer> transformers = new ArrayList<ResourceTransformer>();\nprivate int index = -1;\npublic DefaultResourceTransformerChain(ResourceResolverC"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "setResourceTransformers",
+                        "vule_score": 0.5109,
+                        "safe_score": 0.5799,
+                        "margin": -0.069,
+                        "verdict": "no",
+                        "evidence": "public void setResourceTransformers(List<ResourceTransformer> resourceTransformers) {\nthis.resourceTransformers.clear();\nif (resourceTransformers != null) {\nthis.resourceTransformers.addAll(resourceTransformers);\npublic List<ResourceTransformer> getResourceTransformers() {\nreturn this.resourceTransf"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceTransformer.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5678,
+                        "safe_score": 0.5614,
+                        "margin": 0.0064,
+                        "verdict": "yes",
+                        "evidence": "public interface ResourceTransformer {\nResource transform(HttpServletRequest request, Resource resource, ResourceTransformerChain transformerChain)\nthrows IOException;"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceTransformerChain.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5685,
+                        "safe_score": 0.5715,
+                        "margin": -0.003,
+                        "verdict": "yes",
+                        "evidence": "public interface ResourceTransformerChain {\nResourceResolverChain getResolverChain();\nResource transform(HttpServletRequest request, Resource resource) throws IOException;"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceUrlProvider.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5699,
+                        "safe_score": 0.6568,
+                        "margin": -0.0869,
+                        "verdict": "no",
+                        "evidence": "String resolvedPath = getForLookupPath(lookupPath);\nreturn (resolvedPath != null) ? prefix + resolvedPath : null;\npublic final String getForLookupPath(String lookupPath) {\nif (logger.isTraceEnabled()) {\nfor (String pattern : this.handlerMap.keySet()) {\nif (!getPathMatcher().match(pattern, lookupPath"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/TransformedResource.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5521,
+                        "safe_score": 0.5871,
+                        "margin": -0.035,
+                        "verdict": "yes",
+                        "evidence": "public class TransformedResource extends ByteArrayResource {\nprivate final String filename;\nprivate final long lastModified;\npublic TransformedResource(Resource original, byte[] transformedContent) {\nsuper(transformedContent);\nthis.filename = original.getFilename();\ntry {\nthis.lastModified = origina"
+                    }
+                },
+                "4df05d1f98ade553c085ebd811f806c77f090a7d": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5529,
+                        "safe_score": 0.5675,
+                        "margin": -0.0146,
+                        "verdict": "yes",
+                        "evidence": "public class ResourceHttpRequestHandler extends WebContentGenerator implements HttpRequestHandler, InitializingBean {\nprivate final static Log logger = LogFactory.getLog(ResourceHttpRequestHandler.class);\nprivate static final boolean jafPresent =\nClassUtils.isPresent(\"javax.activation.FileTypeMap\", "
+                    }
+                },
+                "b1158aa913900b03155712536dee85802624e99f": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/AbstractResourceResolver.java": {
+                        "method": "resolveResource",
+                        "vule_score": 0.55,
+                        "safe_score": 0.5597,
+                        "margin": -0.0097,
+                        "verdict": "yes",
+                        "evidence": "public abstract class AbstractResourceResolver implements ResourceResolver {\nprotected final Log logger = LogFactory.getLog(getClass());\npublic Resource resolveResource(HttpServletRequest request, String requestPath,\nList<? extends Resource> locations, ResourceResolverChain chain) {\nif (logger.isTra"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/DefaultResourceResolverChain.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.609,
+                        "safe_score": 0.6127,
+                        "margin": -0.0037,
+                        "verdict": "yes",
+                        "evidence": "return resolver.resolveResource(request, requestPath, locations, this);\nreturn resolver.resolvePublicUrlPath(resourcePath, locations, this);"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/FingerprintResourceResolver.java": {
+                        "method": "resolveResourceInternal",
+                        "vule_score": 0.5478,
+                        "safe_score": 0.5624,
+                        "margin": -0.0146,
+                        "verdict": "yes",
+                        "evidence": "public class FingerprintResourceResolver extends AbstractResourceResolver {\nprotected Resource resolveResourceInternal(HttpServletRequest request, String requestPath,\nList<? extends Resource> locations, ResourceResolverChain chain) {\nif (logger.isTraceEnabled()) {\nif (logger.isTraceEnabled()) {\nif ("
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/GzipResourceResolver.java": {
+                        "method": "resolveResourceInternal",
+                        "vule_score": 0.5271,
+                        "safe_score": 0.5412,
+                        "margin": -0.0141,
+                        "verdict": "yes",
+                        "evidence": "public class GzipResourceResolver extends AbstractResourceResolver {\nprotected Resource resolveResourceInternal(HttpServletRequest request, String requestPath,\nList<? extends Resource> locations, ResourceResolverChain chain) {\nprotected String resolvePublicUrlPathInternal(String resourceUrlPath, Lis"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PathResourceResolver.java": {
+                        "method": "resolveResourceInternal",
+                        "vule_score": 0.5765,
+                        "safe_score": 0.5834,
+                        "margin": -0.0069,
+                        "verdict": "yes",
+                        "evidence": "public class PathResourceResolver extends AbstractResourceResolver {\nprotected Resource resolveResourceInternal(HttpServletRequest request, String requestPath,\nList<? extends Resource> locations, ResourceResolverChain chain) {\nprotected String resolvePublicUrlPathInternal(String resourceUrlPath, Lis"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PrefixResourceResolver.java": {
+                        "method": "resolveResourceInternal",
+                        "vule_score": 0.5438,
+                        "safe_score": 0.5558,
+                        "margin": -0.012,
+                        "verdict": "yes",
+                        "evidence": "public class PrefixResourceResolver extends AbstractResourceResolver {\nprivate static final Log logger = LogFactory.getLog(PathResourceResolver.class);\nprotected Resource resolveResourceInternal(HttpServletRequest request, String requestPath,\nList<? extends Resource> locations, ResourceResolverChain"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/PublicResourceUrlProvider.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5172,
+                        "safe_score": 0.5569,
+                        "margin": -0.0397,
+                        "verdict": "yes",
+                        "evidence": "public void onApplicationEvent(ContextRefreshedEvent event) {\nif (isAutodetect()) {\nthis.handlerMap.clear();\ndetectResourceHandlers(event.getApplicationContext());\nif (this.handlerMap.isEmpty() && logger.isDebugEnabled()) {\nprotected void detectResourceHandlers(ApplicationContext applicationContext)"
+                    },
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toString",
+                        "vule_score": 0.5702,
+                        "safe_score": 0.5635,
+                        "margin": 0.0067,
+                        "verdict": "yes",
+                        "evidence": "public String toString() {\nreturn \"ResourceHttpRequestHandler [locations=\" +\ngetLocations() + \", resolvers=\" + getResourceResolvers() + \"]\";\nprivate static class ActivationMediaTypeFactory {\nprivate static final FileTypeMap fileTypeMap;\nstatic {\nfileTypeMap = loadFileTypeMapFromContextSupportModule("
+                    }
+                },
+                "3a96f16654d4af72d5d30efa4558d599e68e3800": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5433,
+                        "safe_score": 0.6066,
+                        "margin": -0.0633,
+                        "verdict": "no",
+                        "evidence": "if (jafMediaType != null && !MediaType.APPLICATION_OCTET_STREAM.equals(jafMediaType)) {\nmediaType = jafMediaType;\nreturn mediaType;\nprotected void setHeaders(HttpServletResponse response, Resource resource, MediaType mediaType) throws IOException {\nlong length = resource.contentLength();\nif (length "
+                    }
+                },
+                "2ef20f63bc97cb4612befdc9d63cab1554694992": {
+                    "spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java": {
+                        "method": "toBigDecimal",
+                        "vule_score": 0.5526,
+                        "safe_score": 0.5806,
+                        "margin": -0.028,
+                        "verdict": "yes",
+                        "evidence": "private final static Log logger = LogFactory.getLog(ResourceHttpRequestHandler.class);\nprivate static final boolean jafPresent =\nClassUtils.isPresent(\"javax.activation.FileTypeMap\", ResourceHttpRequestHandler.class.getClassLoader());\nprivate static final String CONTENT_ENCODING = \"Content-Encoding\";"
+                    }
+                }
+            }
+        }
+    ]
+}

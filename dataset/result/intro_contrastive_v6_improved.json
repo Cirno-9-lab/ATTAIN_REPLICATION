@@ -1,0 +1,2277 @@
+{
+  "cve-2011-2732": [
+    {
+      "base_tag": "3.0.5.RELEASE",
+      "head_tag": "3.0.6.RELEASE",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2013-2055": [
+    {
+      "base_tag": "wicket-1.5.0",
+      "head_tag": "wicket-1.5.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2013-6430": [
+    {
+      "base_tag": "v6.1.1",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2013-7285": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2014-0050": [
+    {
+      "base_tag": "FILEUPLOAD_1_3",
+      "head_tag": "FILEUPLOAD_1_3_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2014-0097": [
+    {
+      "base_tag": "3.0.8.RELEASE",
+      "head_tag": "3.1.0.RELEASE",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "530f686149f2567ddbce1a97476361214b5edc19",
+            "confidence": 0.6996619718309859,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2014-0114": [
+    {
+      "base_tag": "BEANUTILS_1_6_1",
+      "head_tag": "BEANUTILS_1_7_0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2014-125087": [
+    {
+      "base_tag": "v1.0",
+      "head_tag": "v1.1",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "7bb5795f633370865f35db6d28393931794e6ce7",
+            "confidence": 0.7369500674763834,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2014-3004": [
+    {
+      "base_tag": "1.3.3-rc1",
+      "head_tag": "castor-1.3.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2014-3578": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2014-3625": [
+    {
+      "base_tag": "v3.0.3.RELEASE",
+      "head_tag": "v3.0.4.RELEASE",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "5a1bd20864d9255eafb23d551f7dfe34ed0961e9",
+            "confidence": 0.7893688524590163,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "60a69bd6536656af560ab71df4a14e50acc92320",
+            "confidence": 0.7863176470588236,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "b4cd58394a3f5477d72a5e5f0476acc8c37bd8d3",
+            "confidence": 0.7878620689655172,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "367048c5d14b6e7b702f58267814949bec70c993",
+            "confidence": 0.39727173913043473,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "f6c07b371f20ff8dc38660cbbd48c874681a2c67",
+            "confidence": 0.7415227272727273,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2014-4172": [
+    {
+      "base_tag": "v3.2.1",
+      "head_tag": "cas-client-3.2.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2015-0250": [
+    {
+      "base_tag": "batik-1_6_1",
+      "head_tag": "batik-1_7",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2015-6748": [
+    {
+      "base_tag": "jsoup-1.6.1",
+      "head_tag": "jsoup-1.6.2",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "433d2f180058b8b73e1951c6cfbb986714e68b0f",
+            "confidence": 0.7127073170731707,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "8749726a79c22451b1f01b14fb2137f734e926b4",
+            "confidence": 0.8240495964592554,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "d8c3f9cbc6a562a7d23711d4c0f97f4e4758444e",
+            "confidence": 0.6542368421052631,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "18e9a8f2ba83bd50dff8766bb0dab902a317f2f5",
+            "confidence": 0.6896760563380282,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "1e84edbe208aab0c9330eadc50f9773d81d70cd6",
+            "confidence": 0.6368214285714285,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2016-1000031": [
+    {
+      "base_tag": "commons-fileupload-1.2.2",
+      "head_tag": "FILEUPLOAD_1_3",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2016-1000338": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2016-4465": [
+    {
+      "base_tag": "STRUTS_2_3_16_3",
+      "head_tag": "STRUTS_2_3_20",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2016-6814": [
+    {
+      "base_tag": "GROOVY_2_4_7",
+      "head_tag": "GROOVY_2_4_8",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2016-7051": [
+    {
+      "base_tag": "jackson-dataformat-xml-2.7.7",
+      "head_tag": "jackson-dataformat-xml-2.7.8",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2016-9879": [
+    {
+      "base_tag": "3.0.3.RELEASE",
+      "head_tag": "3.0.4.RELEASE",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "ed9411c6608b044ee40dcc25ba71f87e73282740",
+            "confidence": 0.7059521276595744,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2017-1000190": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2017-1000487": [
+    {
+      "base_tag": "plexus-utils-1.4",
+      "head_tag": "plexus-utils-1.4.1",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "f0782961aaeb61e7799aece51b611337ccd4e6fa",
+            "confidence": 0.7698846153846154,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "975e8c96c1c813921f02f296d7b2030fdaa91889",
+            "confidence": 0.7730622119815668,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "7d9bbcf058d1ce0e33e50cc6aa4cfb8a9fa36e5d",
+            "confidence": 0.7520971074380165,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "3b10a04f75eef72084984b0f4a7aac6962b4f57d",
+            "confidence": 0.5384999999999999,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "9dad2cfcdd7f57f31ad5fef5c53865ded340429d",
+            "confidence": 0.6447857142857143,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2017-15095": [
+    {
+      "base_tag": "jackson-databind-2.6.7.1",
+      "head_tag": "jackson-databind-2.6.7.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2017-4995": [
+    {
+      "base_tag": "4.1.5.RELEASE",
+      "head_tag": "4.2.0.RELEASE",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2017-7525": [
+    {
+      "base_tag": "jackson-databind-2.6.6",
+      "head_tag": "jackson-databind-2.6.7.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2017-7957": [
+    {
+      "base_tag": "XSTREAM_1_4_4",
+      "head_tag": "XSTREAM_1_4_5",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "7c383704c9577d09d5f90747e4078f505d492333",
+            "confidence": 0.6527058823529411,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2018-1000613": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2018-1000632": [
+    {
+      "base_tag": "version-2.0.2",
+      "head_tag": "version-2.0.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-1000844": [
+    {
+      "base_tag": "parent-2.4.0",
+      "head_tag": "parent-2.5.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-1000873": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-1002200": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-1002201": [
+    {
+      "base_tag": "zt-zip-1.12",
+      "head_tag": "zt-zip-1.13",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-11039": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "v3.0.0.RELEASE",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-12036": [
+    {
+      "base_tag": "v1.2.1",
+      "head_tag": "v1.2.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-12418": [
+    {
+      "base_tag": "junrar-1.0.0",
+      "head_tag": "junrar-1.0.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-12544": [
+    {
+      "base_tag": "3.5.3",
+      "head_tag": "3.5.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-1261": [
+    {
+      "base_tag": "zip.v1.0.0.RELEASE",
+      "head_tag": "zip.v1.0.1.RELEASE",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-1274": [
+    {
+      "base_tag": "1.13.10.RELEASE",
+      "head_tag": "1.13.11.RELEASE",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-1324": [
+    {
+      "base_tag": "rel/1.10",
+      "head_tag": "rel/1.11",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2018-14721": [
+    {
+      "base_tag": "jackson-databind-2.6.7.1",
+      "head_tag": "jackson-databind-2.6.7.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-15756": [
+    {
+      "base_tag": "v4.1.9.RELEASE",
+      "head_tag": "v4.2.0.RELEASE",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2018-18893": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2018-19360": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-19361": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-20227": [
+    {
+      "base_tag": "2.4.2",
+      "head_tag": "2.4.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2018-21234": [
+    {
+      "base_tag": "v4.2.0",
+      "head_tag": "v4.3.0",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2018-8009": [
+    {
+      "base_tag": "release-0.22.0",
+      "head_tag": "release-0.23.1",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "dbecbe5dfe50f834fc3b8401709079e9470cc517",
+            "confidence": 0.5565940781366611,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "a196766ea07775f18ded69bd9e8d239f8cfd3ccc",
+            "confidence": 0.5570354416619373,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "0f6dfeeacbab65a31a33927a4eb84871d371fe52",
+            "confidence": 0.666,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "b211fc72cceb839c152eeedd03cce1a645b0efe5",
+            "confidence": 0.8015893854748602,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "1191be630ff05c9f1a540b952a8e34665f7fc181",
+            "confidence": 0.5355,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2019-10086": [
+    {
+      "base_tag": "beanutils-1.9.3-RC1",
+      "head_tag": "commons-beanutils-1.9.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-10094": [
+    {
+      "base_tag": "1.18",
+      "head_tag": "1.19",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-10219": [
+    {
+      "base_tag": "6.0.4.Final",
+      "head_tag": "6.0.5.Final",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "d7aa76bb3f321b72cb3f1ef1267eba3622a9c016",
+            "confidence": 0.6741976112920738,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2019-11272": [
+    {
+      "base_tag": "2.0.8.RELEASE",
+      "head_tag": "3.0.0.RELEASE",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2019-12086": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-12384": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-12402": [
+    {
+      "base_tag": "rel/1.14",
+      "head_tag": "rel/1.15",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2019-12415": [
+    {
+      "base_tag": "REL_4_1_0",
+      "head_tag": "REL_4_1_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-13990": [
+    {
+      "base_tag": "quartz-2.0.2",
+      "head_tag": "quartz-2.1.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2019-14379": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-14439": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-14540": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-14893": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-16771": [
+    {
+      "base_tag": "armeria-0.84.0",
+      "head_tag": "armeria-0.85.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2019-16869": [
+    {
+      "base_tag": "netty-4.0.56.Final",
+      "head_tag": "netty-4.1.0.Beta1",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "d0912f27091e4548466df81f545c017a25c9d256",
+            "confidence": 0.7730430622009569,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "db3709e652dfc42514fd61698a4114941916ff7e",
+            "confidence": 0.7538285714285714,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "4b4f4e619e776e661e439ee6f6f89d4f4e123291",
+            "confidence": 0.6559999999999999,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "681d4609382f9741325b0b2743eb19b85352f425",
+            "confidence": 0.8049204616344354,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "f402350d76e764ee0667b1d02563abe53df7eb6a",
+            "confidence": 0.6417758620689655,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2019-16942": [
+    {
+      "base_tag": "jackson-databind-2.2.4",
+      "head_tag": "jackson-databind-2.3.0-rc1",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2019-16943": [
+    {
+      "base_tag": "jackson-databind-2.6.7.2",
+      "head_tag": "jackson-databind-2.6.7.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-20330": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2019-20444": [
+    {
+      "base_tag": "netty-4.0.56.Final",
+      "head_tag": "netty-4.1.0.Beta1",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2019-20445": [
+    {
+      "base_tag": "netty-4.0.56.Final",
+      "head_tag": "netty-4.1.0.Beta1",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2019-5312": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2019-5427": [
+    {
+      "base_tag": "c3p0-0.9.5.2",
+      "head_tag": "c3p0-0.9.5.3",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2020-10650": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-10672": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-10683": [
+    {
+      "base_tag": "dom4j-2.0.0-RC1",
+      "head_tag": "v2.0.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2020-10968": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-11112": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-11113": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-11619": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-11988": [
+    {
+      "base_tag": "commons-2_4",
+      "head_tag": "commons-2_6",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-13956": [
+    {
+      "base_tag": "rel/v4.3-alpha1",
+      "head_tag": "rel/v4.3-beta1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-13973": [
+    {
+      "base_tag": "release-1.2.0",
+      "head_tag": "v1.2.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-14060": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-14062": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-15250": [
+    {
+      "base_tag": "r4.6",
+      "head_tag": "r4.7",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2020-1953": [
+    {
+      "base_tag": "CONFIGURATION_2_1_1",
+      "head_tag": "CONFIGURATION_2_2",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "09e2fe28c098908ab80bdfc68f5e971d70c7ddaa",
+            "confidence": 0.699352380952381,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2020-24616": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2020-24750": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-26217": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2020-26258": [
+    {
+      "base_tag": "XSTREAM_1_0_2",
+      "head_tag": "XSTREAM_1_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-26259": [
+    {
+      "base_tag": "XSTREAM_1_0_1",
+      "head_tag": "XSTREAM_1_0_2",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2020-28052": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2020-28491": [
+    {
+      "base_tag": "jackson-dataformats-binary-2.9.10",
+      "head_tag": "jackson-dataformats-binary-2.10.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2020-35728": [
+    {
+      "base_tag": "jackson-databind-2.6.7.4",
+      "head_tag": "jackson-databind-2.6.7.5",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-36183": [
+    {
+      "base_tag": "jackson-databind-2.6.7.4",
+      "head_tag": "jackson-databind-2.6.7.5",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-36186": [
+    {
+      "base_tag": "jackson-databind-2.2.4",
+      "head_tag": "jackson-databind-2.3.0-rc1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-36188": [
+    {
+      "base_tag": "jackson-databind-2.6.7.4",
+      "head_tag": "jackson-databind-2.6.7.5",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-36518": [
+    {
+      "base_tag": "jackson-databind-2.3.5",
+      "head_tag": "jackson-databind-2.4.0-rc1",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2020-5245": [
+    {
+      "base_tag": "v1.3.8",
+      "head_tag": "v1.3.9",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-5398": [
+    {
+      "base_tag": "v4.3.30.RELEASE",
+      "head_tag": "v5.0.0.RELEASE",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "cc74a2891a4d2a4c7bcec059f20c35aa80bcf668",
+            "confidence": 0.7976420175251121,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "f813712f5b413b354560cd7cc006352e9defa9a3",
+            "confidence": 0.7326679197994986,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "87598f48e41d483745aba56cbf4e998c6f6d680c",
+            "confidence": 0.6714164167916041,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "00d2606b000f9bdafbd7f4a16b6599fb51b53fa4",
+            "confidence": 0.6467548387096773,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "1f28825f9da63a13aaf8940aadedcf81358dc506",
+            "confidence": 0.6954870689655172,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2020-6858": [
+    {
+      "base_tag": "styx-styx-1.0.0.beta2",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-8929": [
+    {
+      "base_tag": "v1.2.2",
+      "head_tag": "v1.3.0-rc1",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "397d2a74295fb401e7d52d87bbbfaf998399c4b4",
+            "confidence": 0.7149942459115687,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "182cc2c5b5f9991914996a15b1f9ad61bd6567fd",
+            "confidence": 0.7514519650655022,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "7daeb33e39e8c69fd12efd8fc9a3af470e1af0f5",
+            "confidence": 0.6985918367346938,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "36b26da2559e69d1a53e6790aa731b6d728279bf",
+            "confidence": 0.6227169811320754,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "c5a44bdbf74463ac2c21aec14937ee197fb6154d",
+            "confidence": 0.674125,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2020-9546": [
+    {
+      "base_tag": "jackson-databind-2.4.1.1",
+      "head_tag": "jackson-databind-2.4.1.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-9547": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2020-9548": [
+    {
+      "base_tag": "jackson-databind-2.6.7.3",
+      "head_tag": "jackson-databind-2.6.7.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-21234": [
+    {
+      "base_tag": "0.2.8",
+      "head_tag": "0.2.9",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2021-21344": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-21345": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-21346": [
+    {
+      "base_tag": "XSTREAM_1_4_5",
+      "head_tag": "XSTREAM_1_4_6",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2021-21349": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-21351": [
+    {
+      "base_tag": "XSTREAM_1_4_5",
+      "head_tag": "XSTREAM_1_4_6",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2021-23792": [
+    {
+      "base_tag": "twelvemonkeys-3.7.0",
+      "head_tag": "twelvemonkeys-3.7.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-23899": [
+    {
+      "base_tag": "v1.2.1",
+      "head_tag": "v1.2.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-23900": [
+    {
+      "base_tag": "v1.2.1",
+      "head_tag": "v1.2.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-27568": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2021-27807": [
+    {
+      "base_tag": "1.8.17",
+      "head_tag": "2.0.0-RC1",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2021-29061": [
+    {
+      "base_tag": "vfsjfilechooser2-0.2.8",
+      "head_tag": "vfsjfilechooser2-0.2.9",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-29425": [
+    {
+      "base_tag": "rel/commons-io-2.21.0",
+      "head_tag": "IO_1_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-29505": [
+    {
+      "base_tag": "XSTREAM_1_4_5",
+      "head_tag": "XSTREAM_1_4_6",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2021-30468": [
+    {
+      "base_tag": "cxf-3.3.10",
+      "head_tag": "cxf-3.3.11",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-31684": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2021-33609": [
+    {
+      "base_tag": "8.0.5",
+      "head_tag": "8.0.6",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "e6c8a9e89eda7f5064e7be8f04f8520a70af9fef",
+            "confidence": 0.46849999999999997,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "fd5ddf6bc96817cb57c3313eec51b49df6e22c7b",
+            "confidence": 0.6540365853658536,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2021-33813": [
+    {
+      "base_tag": "JDOM-2.0.6",
+      "head_tag": "JDOM-2.0.6.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-35043": [
+    {
+      "base_tag": "v1.6.2",
+      "head_tag": "1.6.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-35516": [
+    {
+      "base_tag": "rel/1.19",
+      "head_tag": "rel/1.20",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2021-3878": [
+    {
+      "base_tag": "v4.3.0",
+      "head_tag": "v4.3.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-39141": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-39144": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-39150": [
+    {
+      "base_tag": "XSTREAM_1_4",
+      "head_tag": "XSTREAM_1_4_1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-40111": [
+    {
+      "base_tag": "james-project-3.4.0",
+      "head_tag": "james-project-3.5.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2021-40660": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-42575": [
+    {
+      "base_tag": "release-20160628.1",
+      "head_tag": "release-20160827.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-43090": [
+    {
+      "base_tag": "1.5.1",
+      "head_tag": "1.5.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-43113": [
+    {
+      "base_tag": "7.1.11",
+      "head_tag": "7.1.12",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2021-43795": [
+    {
+      "base_tag": "armeria-1.11.0",
+      "head_tag": "armeria-1.12.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2021-43797": [
+    {
+      "base_tag": "netty-4.1.0.CR7",
+      "head_tag": "netty-4.1.0.Final",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2021-43859": [
+    {
+      "base_tag": "XSTREAM_1_3_1",
+      "head_tag": "XSTREAM_1_4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-44228": [
+    {
+      "base_tag": "log4j-2.12.0-rc1",
+      "head_tag": "log4j-2.12.0-rc2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2021-45046": [
+    {
+      "base_tag": "log4j-2.12.0-rc1",
+      "head_tag": "log4j-2.12.0-rc2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-0272": [
+    {
+      "base_tag": "v1.9.1",
+      "head_tag": "v1.10.0-RC1",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-0839": [
+    {
+      "base_tag": "liquibase-parent-3.1.1",
+      "head_tag": "liquibase-parent-3.2.0",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-1471": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-1848": [
+    {
+      "base_tag": "v1.42.1",
+      "head_tag": "v1.42.2",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2022-21126": [
+    {
+      "base_tag": "2.3.0",
+      "head_tag": "2.4.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-21724": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "REL9.4.1208",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-22968": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "v3.0.0.RELEASE",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-22976": [
+    {
+      "base_tag": "5.4.10",
+      "head_tag": "5.4.11",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-22978": [
+    {
+      "base_tag": "3.1.7.RELEASE",
+      "head_tag": "3.2.0.RELEASE",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "e9bb9e766e984bf14d22c310d31d64610437e23a",
+            "confidence": 0.7248343558282209,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          },
+          {
+            "hash": "d0c4e6ca7240a135e2a671ac08c9572c6a4edab4",
+            "confidence": 0.7257499999999999,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-22980": [
+    {
+      "base_tag": "2.1.21.RELEASE",
+      "head_tag": "2.2.0.RELEASE",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "8e21cc181e27647e331f17baacc9c21db63ee5c4",
+            "confidence": 0.770324275362319,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          },
+          {
+            "hash": "221ffb194733d0c272afff3d5c44525ac901c9d1",
+            "confidence": 0.7100759803921568,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-23082": [
+    {
+      "base_tag": "v1.0.3",
+      "head_tag": "v1.1.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2022-23457": [
+    {
+      "base_tag": "esapi-2.2.0.0-RC3",
+      "head_tag": "esapi-2.2.1.0",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "b8c48a9c22317eff3ac52003de9b6eaecce0f7de",
+            "confidence": 0.5175,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-23596": [
+    {
+      "base_tag": "junrar-1.0.1",
+      "head_tag": "junrar-2.0.0",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "75cb6a58c9b3ca08db954eec241b91a5331dd632",
+            "confidence": 0.7512592592592593,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-24196": [
+    {
+      "base_tag": "7.1.17",
+      "head_tag": "7.1.18",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-24197": [
+    {
+      "base_tag": "7.1.17",
+      "head_tag": "7.1.18",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-24615": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "v2.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-24897": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "xwiki-commons-15.4-rc-1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-24898": [
+    {
+      "base_tag": "xwiki-commons-12.10.9",
+      "head_tag": "xwiki-commons-12.10.10",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-24913": [
+    {
+      "base_tag": "java-merge-sort-1.0.2",
+      "head_tag": "java-merge-sort-1.1.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-25845": [
+    {
+      "base_tag": "1.1.63.android",
+      "head_tag": "1.1.64.android",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "ab459ff0598f5bf381412fc2c723176ca38e8fe0",
+            "confidence": 0.6287499999999999,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "678fa878228eab58539381403125585c8f637faa",
+            "confidence": 0.63205,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "ef631f29af5c3663cbae8c0029ef99f3f4f6b580",
+            "confidence": 0.6614782608695652,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "6c15d0945258beddb23e4250dadaea2be0ab0fd2",
+            "confidence": 0.6245657894736841,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-25857": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-25867": [
+    {
+      "base_tag": "socket.io-client-0.9.0",
+      "head_tag": "socket.io-client-1.0.0",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "7279919ef96895893035f2db731baaca97afbc92",
+            "confidence": 0.73822,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "3d98ed9fe9c524fc7cf24235197b8ae3afb159a3",
+            "confidence": 0.6480999999999999,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "229a820bf5104e1b92eaabfb4e4f0dfbccc255d2",
+            "confidence": 0.666,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          },
+          {
+            "hash": "f6bb7678b6f249ead1811276e200a9778a0441e1",
+            "confidence": 0.61975,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-25914": [
+    {
+      "base_tag": "v0.1.0",
+      "head_tag": "v0.1.1",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-28367": [
+    {
+      "base_tag": "v1.6.2",
+      "head_tag": "1.6.3",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2022-29546": [
+    {
+      "base_tag": "2.60.0",
+      "head_tag": "2.61.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-29577": [
+    {
+      "base_tag": "v1.6.2",
+      "head_tag": "1.6.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-29599": [
+    {
+      "base_tag": "maven-shared-utils-3.2.1",
+      "head_tag": "maven-shared-utils-3.3.3",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-29631": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-32549": [
+    {
+      "base_tag": "org.apache.sling.api-2.23.6",
+      "head_tag": "org.apache.sling.api-2.24.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2022-34662": [
+    {
+      "base_tag": "2.0.0-alpha",
+      "head_tag": "2.0.0",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "98b8d5424ab07d8e539ce476ff01f951318cfb80",
+            "confidence": 0.703076923076923,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-36033": [
+    {
+      "base_tag": "jsoup-1.13.1",
+      "head_tag": "jsoup-1.14.1",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "b431fb2dd002c0425d5938ca2ce4d1c967336a5b",
+            "confidence": 0.7092960199004975,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-38750": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-38751": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-38752": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-39243": [
+    {
+      "base_tag": "nuprocess-1.1.3",
+      "head_tag": "nuprocess-1.2.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-40151": [
+    {
+      "base_tag": "XSTREAM_1_3_1",
+      "head_tag": "XSTREAM_1_4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-41854": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-41915": [
+    {
+      "base_tag": "netty-4.1.82.Final",
+      "head_tag": "netty-4.1.83.Final",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "980f48a9089849adda1d5035eb3ac5ba567a3b23",
+            "confidence": 0.786972972972973,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-41966": [
+    {
+      "base_tag": "XSTREAM_1_3_1",
+      "head_tag": "XSTREAM_1_4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-42003": [
+    {
+      "base_tag": "jackson-databind-2.3.5",
+      "head_tag": "jackson-databind-2.4.0-rc1",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2022-42004": [
+    {
+      "base_tag": "jackson-databind-2.3.5",
+      "head_tag": "jackson-databind-2.4.0-rc1",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2022-42889": [
+    {
+      "base_tag": "commons-text-1.7",
+      "head_tag": "commons-text-1.8",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "b74ff3ccea36147460804290a9e5316abe9f08e2",
+            "confidence": 0.5384999999999999,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2022-4565": [
+    {
+      "base_tag": "5.8.10",
+      "head_tag": "5.8.11",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-45685": [
+    {
+      "base_tag": "jettison-1.0-beta-1",
+      "head_tag": "jettison-1.0-RC1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-45688": [
+    {
+      "base_tag": "20220924",
+      "head_tag": "20230227",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2022-45690": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2022-45693": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "jettison-1.3.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-1370": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-1436": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "jettison-1.3.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-24163": [
+    {
+      "base_tag": "5.4.7",
+      "head_tag": "5.5.0",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2023-31582": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2023-33962": [
+    {
+      "base_tag": "v0.18.0",
+      "head_tag": "v0.19.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-34453": [
+    {
+      "base_tag": "1.1.3-M1",
+      "head_tag": "1.1.3-M2",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2023-34454": [
+    {
+      "base_tag": "snappy-java-1.0.1-rc3",
+      "head_tag": "snappy-java-1.0.1-rc4",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2023-34455": [
+    {
+      "base_tag": "1.1.2.1",
+      "head_tag": "1.1.2.2",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-34610": [
+    {
+      "base_tag": "4.14.0",
+      "head_tag": "4.14.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-34620": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2023-34624": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2023-3894": [
+    {
+      "base_tag": "jackson-dataformats-text-2.14.3",
+      "head_tag": "jackson-dataformats-text-2.15.0-rc1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-39010": [
+    {
+      "base_tag": "v0.39",
+      "head_tag": "v0.39.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-39685": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "v3.0.1",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2023-4043": [
+    {
+      "base_tag": "1.0.4",
+      "head_tag": "1.0.5",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-41034": [
+    {
+      "base_tag": "leshan-1.0.2",
+      "head_tag": "leshan-1.1.0",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "3cd7ad20cae1ca16a644da254c88e21b229e3c89",
+            "confidence": 0.6626881720430107,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2023-42276": [
+    {
+      "base_tag": "5.8.21",
+      "head_tag": "5.8.22",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-42278": [
+    {
+      "base_tag": "5.4.5",
+      "head_tag": "5.4.6",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "f0399a72ade326692fe5bf27e76b73040696d5a6",
+            "confidence": 0.6092142857142857,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "5208e5b02d2eed0d8935345bd1fa5a021f4fbbd0",
+            "confidence": 0.38599999999999995,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          },
+          {
+            "hash": "c4a91615b4537378d4bc2691d62d3b85e426d6da",
+            "confidence": 0.54,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": true,
+            "feature_count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2023-42503": [
+    {
+      "base_tag": "rel/1.21",
+      "head_tag": "rel/1.22",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2023-43642": [
+    {
+      "base_tag": "v1.1.10.3",
+      "head_tag": "v1.1.10.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-49093": [
+    {
+      "base_tag": "3.8.0",
+      "head_tag": "3.9.0",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2023-49250": [
+    {
+      "base_tag": "1.3.9",
+      "head_tag": "2.0.0-alpha",
+      "analysis": {
+        "intro_commits": [
+          {
+            "hash": "0c8d08cbaa0636ef93cbcb01c43a34f002bb7fdb",
+            "confidence": 0.7255368188512519,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          },
+          {
+            "hash": "57414c4df70d8931157d4b4608170a4784193c2a",
+            "confidence": 0.7075674931129476,
+            "method": "contrastive_inference_v6_improved",
+            "has_fix_features": false,
+            "feature_count": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cve-2023-5072": [
+    {
+      "base_tag": "20170516",
+      "head_tag": "20171018",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2023-51074": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2023-51075": [
+    {
+      "base_tag": "5.7.19",
+      "head_tag": "5.7.20",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2023-51080": [
+    {
+      "base_tag": "5.8.21",
+      "head_tag": "5.8.22",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2023-52428": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2023-7272": [
+    {
+      "base_tag": "1.0.3",
+      "head_tag": "1.0.4",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2024-1597": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "REL9.4.1210",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2024-22257": [
+    {
+      "base_tag": "2.0.8.RELEASE",
+      "head_tag": "3.0.0.RELEASE",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2024-23635": [
+    {
+      "base_tag": "unknown",
+      "head_tag": "unknown",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2024-23833": [
+    {
+      "base_tag": "3.7.2",
+      "head_tag": "3.8-beta1",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ],
+  "cve-2024-25125": [
+    {
+      "base_tag": "v0.10.5",
+      "head_tag": "v0.10.5.1",
+      "analysis": {},
+      "note": "skipped: no_intro_candidates"
+    }
+  ],
+  "cve-2024-25710": [
+    {
+      "base_tag": "rel/1.2",
+      "head_tag": "rel/1.3",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2024-26308": [
+    {
+      "base_tag": "rel/1.20",
+      "head_tag": "rel/1.21",
+      "analysis": {},
+      "note": "no_intro_commit_found"
+    }
+  ],
+  "cve-2024-31860": [
+    {
+      "base_tag": "v0.8.2",
+      "head_tag": "v0.9.0-preview1",
+      "analysis": {},
+      "note": "skipped: no_fix_commits"
+    }
+  ]
+}
