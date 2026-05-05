@@ -2,7 +2,6 @@ import json
 import os
 import pandas as pd
 
-BASE_PATH = "/home/xinweimao/alv_evaluate/myResearch/workspace/dataset"
 CVE_LIST_PATH = os.path.join(BASE_PATH, "list/cve_list.json")
 ANALYSIS_JSON_PATH = os.path.join(BASE_PATH, "result/intro_contrastive_v6_improved.json")
 EXCEL_PATH = os.path.join(BASE_PATH, "execution_result.xlsx")

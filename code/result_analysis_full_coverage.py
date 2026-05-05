@@ -7,7 +7,6 @@ import pandas as pd
 
 from llm_token_logger import log_llm_usage
 
-BASE_PATH = "/home/xinweimao/alv_evaluate/myResearch/workspace/dataset"
 EXCEL_PATH = os.path.join(BASE_PATH, "execution_result.xlsx")
 
 FORWARD_PROPAGATION_LABELS = {"not affected_patch", "affected_patch"}

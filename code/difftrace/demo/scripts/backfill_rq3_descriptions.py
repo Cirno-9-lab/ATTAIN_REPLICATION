@@ -6,11 +6,6 @@
 - Updates /data-1/.../batch-results/batch-summary.json cases[] entries.
 - Updates each case's case-result.json (and nested test_results[].description if present).
 
-Usage (from workspace root):
-
-    python code/difftrace/demo/scripts/backfill_rq3_descriptions.py \
-      --cve-list dataset/list/cve_list_rq3.json \
-      --batch-summary /data-1/xinweimao/code/difftrace/demo/target/batch-results/batch-summary.json
 
 After running this, you can re-run backfill_llm_scenarios.py --force to regenerate
 llm-scenario.json files that include the description field, and then re-run the

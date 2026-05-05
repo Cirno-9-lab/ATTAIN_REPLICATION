@@ -2,7 +2,6 @@ import pandas as pd
 import os
 
 # --- 路径配置 ---
-BASE_PATH = "/home/xinweimao/alv_evaluate/myResearch/workspace/dataset"
 EXCEL_PATH = os.path.join(BASE_PATH, "execution_result.xlsx")
 
 def get_state(val):

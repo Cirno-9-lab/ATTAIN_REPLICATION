@@ -4,9 +4,6 @@ import os
 import pathlib
 
 
-PREFERRED_DEMO_TARGET_ROOT = pathlib.Path("/data-1/xinweimao/code/difftrace/demo/target")
-
-
 def demo_root() -> pathlib.Path:
     return pathlib.Path(__file__).resolve().parents[1]
 

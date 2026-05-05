@@ -3,7 +3,6 @@ import os
 import pandas as pd
 
 # --- 配置 ---
-BASE_PATH = "/home/xinweimao/alv_evaluate/myResearch/workspace/dataset"
 CVE_LIST_PATH = os.path.join(BASE_PATH, "list/cve_list.json")
 ANALYSIS_JSON_PATH = os.path.join(BASE_PATH, "result/patch_only_results.json")
 EXCEL_PATH = os.path.join(BASE_PATH, "execution_result.xlsx")

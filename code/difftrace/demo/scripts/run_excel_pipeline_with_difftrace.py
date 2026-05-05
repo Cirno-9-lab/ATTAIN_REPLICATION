@@ -21,7 +21,6 @@ DEFAULT_UNKNOWN_INFER_SCRIPT = CODE_ROOT / "unknown_infer.py"
 DEFAULT_RESULT_ANALYSIS_SCRIPT = CODE_ROOT / "result_analysis.py"
 DEFAULT_FULL_COVERAGE_RESULT_ANALYSIS_SCRIPT = CODE_ROOT / "result_analysis_full_coverage.py"
 DEFAULT_WORKSPACE_TARGET_ROOT = REPO_ROOT / "code" / "difftrace" / "demo" / "target"
-DEFAULT_EXTERNAL_TARGET_ROOT = pathlib.Path("/data-1/xinweimao/code/difftrace/demo/target")
 EVAL_FILENAME = "llm_vulnerability_presence_eval.json"
 
 KNOWN_PREDICTIONS = {"affected", "not affected", "unknown"}

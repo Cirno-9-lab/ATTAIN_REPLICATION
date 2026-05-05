@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 
 # --- 配置区 ---
-BASE_PATH = "/home/xinweimao/alv_evaluate/myResearch/workspace/dataset"
 CVE_LIST_PATH = os.path.join(BASE_PATH, "list/cve_list.json")
 ANALYSIS_JSON_PATH = os.path.join(BASE_PATH, "result/intro_contrastive_final_f.json") 
 EXCEL_PATH = os.path.join(BASE_PATH, "execution_result.xlsx")

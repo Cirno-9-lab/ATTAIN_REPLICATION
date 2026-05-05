@@ -5,7 +5,7 @@ from typing import Any, Dict, Optional
 from collections.abc import Mapping
 
 
-LOG_PATH = Path("/home/xinweimao/alv_evaluate/myResearch/workspace/logs/llm_token_usage.jsonl")
+
 
 
 def log_llm_usage(
